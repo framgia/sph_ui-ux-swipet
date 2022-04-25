@@ -73,6 +73,7 @@ module.exports = {
           800: '#f6ef1a',
           900: '#f5ed00',
         },
+        'dark-ash': '#2D2D2D',
       },
     },
   },
