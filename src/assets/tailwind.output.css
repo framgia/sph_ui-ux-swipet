@@ -4,3 +4,12 @@
 @import 'tailwindcss/utilities';
 
 /* Custom Components */
+@font-face {
+  font-family: 'Allison Regular';
+  src: url('./fonts/Allison-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-VariableFont_wght.ttf');
+}
