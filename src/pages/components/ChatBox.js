@@ -50,7 +50,7 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           />
         </svg>
       </div>
-      <div className="h-[23rem] p-3 flex flex-col gap-4 overflow-auto overflow-x-hidden">
+      <div className="bg-white h-[23rem] p-3 flex flex-col gap-4 overflow-auto overflow-x-hidden">
         {messages.map((message, idx) => {
           return (
             <Fragment key={idx}>
@@ -81,7 +81,7 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           );
         })}
       </div>
-      <form onSubmit={onMessageSend} className="relative border-t p-3">
+      <form onSubmit={onMessageSend} className="bg-white relative border-t p-3">
         <input
           type="text"
           className="border w-full text-xs rounded-lg p-3 pr-11 bg-stone-100"
