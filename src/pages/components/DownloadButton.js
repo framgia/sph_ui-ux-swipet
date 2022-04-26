@@ -3,7 +3,8 @@ import React from 'react'
 const DownloadButton = ({src , alt, upperText, lowerText, link}) => {
   return (
     <button
-      className="bg-dark-ash text-white w-[165px] h-[48px] rounded p-2 font-bold mx-2 desktop:mx-0 desktop:mr-4"
+      className="bg-dark-ash text-white w-[165px] h-[48px] rounded p-2 font-bold mx-2 
+        desktop:mx-0 desktop:mr-4 lg:mr-5 lg:ml-0"
       onClick={() => (window.location.href = link)}
     >
       <div className="flex items-center">
