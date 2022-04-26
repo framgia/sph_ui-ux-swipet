@@ -4,7 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         allison: ['Allison Regular'],
-        nunito: ['Nunito'],
+        nunito: ['Nunito']
+      },
+      boxShadow: {
+        md: '0 4px 4px rgba(0, 0, 0, 0.25)'
       },
       colors: {
         brown: {
@@ -16,7 +19,7 @@ module.exports = {
           600: '#8c8280',
           700: '#7c706d',
           800: '#6b5e5b',
-          900: '#5B4C49',
+          900: '#5B4C49'
         },
         orange: {
           100: '#fbf2ea',
@@ -27,7 +30,7 @@ module.exports = {
           600: '#e4a16d',
           700: '#e09358',
           800: '#dc8643',
-          900: '#d8782e',
+          900: '#d8782e'
         },
         mocha: {
           100: '#fbf8f5',
@@ -38,7 +41,7 @@ module.exports = {
           600: '#f0e7dc',
           700: '#ede4d7',
           800: '#ebe0d2',
-          900: '#e9ddcd',
+          900: '#e9ddcd'
         },
         navy: {
           100: '#dadfe1',
@@ -49,7 +52,7 @@ module.exports = {
           600: '#7c8e97',
           700: '#697e89',
           800: '#576e7a',
-          900: '#445e6b',
+          900: '#445e6b'
         },
         sky: {
           100: '#f2f5f7',
@@ -60,7 +63,7 @@ module.exports = {
           600: '#d0dce3',
           700: '#c9d7df',
           800: '#c3d2db',
-          900: '#bccdd7',
+          900: '#bccdd7'
         },
         yellow: {
           100: '#fdfbcc',
@@ -71,11 +74,11 @@ module.exports = {
           600: '#f8f24d',
           700: '#f7f133',
           800: '#f6ef1a',
-          900: '#f5ed00',
+          900: '#f5ed00'
         },
-        'dark-ash': '#2D2D2D',
-      },
-    },
+        'dark-ash': '#2D2D2D'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
