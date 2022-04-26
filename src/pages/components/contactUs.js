@@ -1,22 +1,23 @@
 import React, { Fragment, useState } from 'react';
-import ChatBox from './chatBox';
+import ChatBox from './ChatBox';
 
 const ContactUs = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
 
   return (
     <Fragment>
-      <ChatBox isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
-      <img
-        className={isOpen ? 'hidden' : 'floating-button'}
-        onClick={() => setIsOpen(true)}
-        src="/images/ChatFloatingButton.svg"
-        alt="chat floating button"
+      <ChatBox
+        isChatBoxOpen={isChatBoxOpen}
+        closeChatBox={() => setIsChatBoxOpen(false)}
       />
       <img
-        className={isOpen ? 'floating-button' : 'hidden'}
-        onClick={() => setIsOpen(false)}
-        src="/images/CloseFloatingButton.svg"
+        className="floating-button"
+        onClick={() => setIsChatBoxOpen(!isChatBoxOpen)}
+        src={
+          isChatBoxOpen
+            ? '/images/CloseFloatingButton.svg'
+            : '/images/ChatFloatingButton.svg'
+        }
         alt="chat floating button"
       />
     </Fragment>

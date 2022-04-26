@@ -1,6 +1,6 @@
 import React from 'react';
 import MainHeadline from './components/MainHeadline';
-import ContactUs from './components/contactUs';
+import ContactUs from './components/ContactUs';
 
 const Home = () => {
   return (

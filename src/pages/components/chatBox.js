@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 
-const ChatBox = ({ isOpen, setIsOpen }) => {
+const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
   const [newMessage, setNewMessage] = useState('');
   const [messages, setMessages] = useState([
     { sender: 'chatbot', text: 'Hi, how can I help you?' },
@@ -23,7 +23,7 @@ const ChatBox = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className={
-        isOpen
+        isChatBoxOpen
           ? 'fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[3.5rem] lg:mb-[6.5rem] border md:w-96 lg:w-96 rounded-lg shadow-md'
           : 'hidden'
       }
@@ -35,7 +35,7 @@ const ChatBox = ({ isOpen, setIsOpen }) => {
           alt="logo"
         />
         <svg
-          onClick={setIsOpen}
+          onClick={closeChatBox}
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-white cursor-pointer"
           fill="none"
