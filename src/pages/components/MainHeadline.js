@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import DownloadButton from './DownloadButton';
 
 const MainHeadline = () => {
@@ -50,6 +50,6 @@ const MainHeadline = () => {
       </div>
     </header>
   );
-}
+};
 
 export default MainHeadline;

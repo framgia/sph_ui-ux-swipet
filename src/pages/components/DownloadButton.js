@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const DownloadButton = ({src , alt, upperText, lowerText, link}) => {
+const DownloadButton = ({ src, alt, upperText, lowerText, link }) => {
   return (
     <button
       className="bg-dark-ash text-white w-[165px] h-[48px] rounded p-2 font-bold mx-2 
@@ -18,6 +18,6 @@ const DownloadButton = ({src , alt, upperText, lowerText, link}) => {
       </div>
     </button>
   );
-}
+};
 
-export default DownloadButton
+export default DownloadButton;
