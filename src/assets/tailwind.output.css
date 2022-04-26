@@ -3,13 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base {
-  html {
-    font-family: 'Nunito', sans-serif;
-  }
-}
-
-/* Custom Components */
 @font-face {
   font-family: 'Allison Regular';
   src: url('./fonts/Allison-Regular.ttf');
@@ -19,3 +12,11 @@
   font-family: 'Nunito';
   src: url('./fonts/Nunito-VariableFont_wght.ttf');
 }
+
+@layer base {
+  html {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+/* Custom Components */
