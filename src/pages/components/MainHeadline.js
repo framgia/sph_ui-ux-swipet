@@ -8,7 +8,7 @@ const MainHeadline = () => {
         sm:pt-[38px] px-[20px] sm:px-[55px] lg:pt-[51px] lg:px-[200px] lg:h-[572px]"
     >
       <div className="w-[165px] h-[39px] sm:m-auto lg:w-[192px] lg:h-[48px]">
-        <img src="/images/logo_mix.svg" alt="swipet logo" />
+        <img src="/images/LogoMix.svg" alt="swipet logo" />
       </div>
       <div className="flex flex-col relative items-center lg:items-start">
         <h1
@@ -27,14 +27,14 @@ const MainHeadline = () => {
         </p>
         <div className="flex justify-center">
           <DownloadButton
-            src="./images/google_play.svg"
+            src="./images/GooglePlay.svg"
             alt="google play store"
             upperText="ANDROID APP ON"
             lowerText="Google Play"
             link="https://play.google.com/store"
           />
           <DownloadButton
-            src="./images/app_store.svg"
+            src="./images/AppStore.svg"
             alt="apple app store"
             upperText="DOWNLOAD ON THE"
             lowerText="App Store"
@@ -42,10 +42,10 @@ const MainHeadline = () => {
           />
         </div>
         <div
-          className="absolute w-[349px] h-[376px] top-[328px] origin-center rotate-12 sm:w-[408px] sm:h-[446px] 
+          className="absolute w-[290px] h-[311px] top-[328px] origin-center rotate-12 sm:w-[408px] sm:h-[446px] 
             sm:top-[300px] lg:right-0 lg:top-[40px] lg:rotate-0 lg:w-[464px] lg:h-[507px]"
         >
-          <img src="./images/hero_full.png" alt=" a dog on the app" />
+          <img src="./images/Hero.png" alt=" a dog on the app" />
         </div>
       </div>
     </header>
