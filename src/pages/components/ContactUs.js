@@ -11,7 +11,7 @@ const ContactUs = () => {
         closeChatBox={() => setIsChatBoxOpen(false)}
       />
       <img
-        className="floating-button"
+        className="cursor-pointer fixed bottom-0 right-0 mb-3 mr-6 w-[50px] md:mb-6 md:mr-[3.5rem] lg:w-[4.5rem] lg:my-4"
         onClick={() => setIsChatBoxOpen(!isChatBoxOpen)}
         src={
           isChatBoxOpen

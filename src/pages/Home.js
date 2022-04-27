@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <div>
       <MainHeadline />
-      Welcome!
       {/* Divide here per section */}
       <ContactUs />
     </div>

@@ -1,10 +1,11 @@
 import React, { Fragment, useState } from 'react';
+import CloseIcon from './icons/CloseIcon';
 
 const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
   const [newMessage, setNewMessage] = useState('');
   const [messages, setMessages] = useState([
     { sender: 'chatbot', text: 'Hi, how can I help you?' },
-    { sender: 'user', text: 'Is this application free to use?' }
+    { sender: 'user', text: 'Is this application free to use?' },
   ]);
 
   const onMessageSend = (e) => {
@@ -34,21 +35,7 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           src="/images/RoundOrangeLogo.svg"
           alt="logo"
         />
-        <svg
-          onClick={closeChatBox}
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white cursor-pointer"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
+        <CloseIcon closeChatBox={closeChatBox} />
       </div>
       <div className="bg-white h-[23rem] p-3 flex flex-col gap-4 overflow-auto overflow-x-hidden">
         {messages.map((message, idx) => {
