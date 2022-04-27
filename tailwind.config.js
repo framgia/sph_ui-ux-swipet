@@ -77,6 +77,7 @@ module.exports = {
           900: '#f5ed00',
         },
         'dark-ash': '#2D2D2D',
+        'main-backgound': '#F9F5F1',
       },
     },
   },
