@@ -6,6 +6,9 @@ module.exports = {
         allison: ['Allison Regular'],
         nunito: ['Nunito'],
       },
+      boxShadow: {
+        md: '0 4px 4px rgba(0, 0, 0, 0.25)',
+      },
       colors: {
         brown: {
           100: '#dedbdb',
