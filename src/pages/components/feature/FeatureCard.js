@@ -14,8 +14,8 @@ const FeatureCard = ({ item }) => {
           <div className="flex flex-1 justify-center mb-[15px] sm:mb-0">
             <img
               className="w-3/4 h-3/4 lg:w-5/6 lg:h-5/6"
-              src="/images/FeatureProfile.png"
-              alt="profile"
+              src={item.src}
+              alt={item.name}
             />
           </div>
           {/* Content */}
