@@ -5,7 +5,7 @@ const CloseIcon = ({ closeChatBox }) => {
     <svg
       onClick={closeChatBox}
       xmlns="http://www.w3.org/2000/svg"
-      className="h-8 w-8 text-white cursor-pointer p-1 rounded-lg hover:bg-stone-300"
+      className="h-8 w-8 text-white cursor-pointer p-1 rounded-lg hover:bg-orange-300"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
