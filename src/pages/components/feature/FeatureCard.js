@@ -1,6 +1,26 @@
 import React from 'react';
 
 const FeatureCard = ({ item, index, length }) => {
+  const displayPaws = () => {
+    if (index < length - 1) {
+      return (
+        <div
+          className={`hidden md:block absolute ${
+            index % 2 !== 0
+              ? '-bottom-32 lg:-bottom-48 left-[200px] lg:left-[300px]'
+              : 'left-[200px] lg:left-[300px]'
+          }`}
+        >
+          <img
+            className={`w-1/2 h-1/2 ${index % 2 !== 0 ? '' : '-rotate-90'}`}
+            src="/images/PawTrail.svg"
+            alt=""
+          />
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="px-5 sm:px-14 lg:px-[200px]">
       {/* feature */}
@@ -28,21 +48,7 @@ const FeatureCard = ({ item, index, length }) => {
             </p>
           </div>
         </div>
-        {index < length - 1 && (
-          <div
-            className={`hidden md:block absolute ${
-              index % 2 !== 0
-                ? '-bottom-32 lg:-bottom-48 left-[200px] lg:left-[300px]'
-                : 'left-[200px] lg:left-[300px]'
-            }`}
-          >
-            <img
-              className={`w-1/2 h-1/2 ${index % 2 !== 0 ? '' : '-rotate-90'}`}
-              src="/images/PawTrail.svg"
-              alt=""
-            />
-          </div>
-        )}
+        {displayPaws()}
       </div>
     </div>
   );
