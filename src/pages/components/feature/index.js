@@ -11,7 +11,12 @@ const FeatureSection = () => {
       </div>
       {/* Cards */}
       {features.map((item, index) => (
-        <FeatureCard item={item} key={index} />
+        <FeatureCard
+          item={item}
+          key={index}
+          index={index}
+          length={features.length}
+        />
       ))}
     </section>
   );
