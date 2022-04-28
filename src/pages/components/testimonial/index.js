@@ -34,7 +34,7 @@ const Testimonial = () => {
         <h2>Start a life-changing journey</h2>
       </div>
       {/* Carousel */}
-      <div className="z-0 sm:pl-14 lg:pl-[200px] mt-[96px]">
+      <div className="z-0 pb-16 sm:pl-14 lg:pl-[200px] lg:pb-[144px] mt-[96px]">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
