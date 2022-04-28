@@ -32,3 +32,24 @@ export const features = [
       'Adopt, don’t shop. Make a deal with the pet keeper, and become a certified fur parent.',
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Woman kissing dog.",
+    src: "/images/Test00.jpg",
+    text: "This is the best thing that ever happened to me. Buddy is the most loving dog.",
+    author: "Therese"
+  },
+  {
+    name: "Man hugging dog.",
+    src: "/images/Test01.jpg",
+    text: "Awesome app! I really like how it matched me with the pet that always wanted.",
+    author: "Egie"
+  },
+  {
+    name: "Child kissing dog.",
+    src: "/images/Test02.jpg",
+    text: "Never thought I'd get interested in an app like this. I love Swipet.",
+    author: "Joash"
+  },
+];

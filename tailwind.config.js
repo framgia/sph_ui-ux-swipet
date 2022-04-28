@@ -9,6 +9,9 @@ module.exports = {
       boxShadow: {
         md: '0 4px 4px rgba(0, 0, 0, 0.25)',
       },
+      dropShadow: {
+        md: '2px 3px 3px rgba(0, 0, 0, 0.5)',
+      },
       colors: {
         brown: {
           100: '#dedbdb',
