@@ -43,7 +43,7 @@ export const testimonials = [
   {
     name: "Man hugging dog.",
     src: "/images/Test01.jpg",
-    text: "Awesome app! I really like how it matched me with the pet that always wanted.",
+    text: "Awesome app! I really like how it matched me with the pet that I always wanted.",
     author: "Egie"
   },
   {
