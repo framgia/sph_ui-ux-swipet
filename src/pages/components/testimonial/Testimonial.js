@@ -30,7 +30,7 @@ const Testimonial = () => {
   return (
     <section>
       {/* Heading */}
-      <div className="w-2/3 lg:w-2/5 mx-auto sm:text-[40px] pt-[60px] sm:pt-[160px]">
+      <div className="title-heading">
         <h2>Start a life-changing journey</h2>
       </div>
       {/* Carousel */}
