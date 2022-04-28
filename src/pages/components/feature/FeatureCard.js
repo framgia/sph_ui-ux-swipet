@@ -20,10 +20,10 @@ const FeatureCard = ({ item }) => {
           </div>
           {/* Content */}
           <div className="flex flex-1 flex-col items-center md:items-start">
-            <h2 className="text-[28px] text-center sm:text-[32px] sm:text-left md:mb-4 mb-0 font-semibold text-navy-900">
+            <h3 className="text-center sm:text-[32px] sm:text-left md:mb-4 mb-0 font-semibold text-navy-900">
               {item.title}
-            </h2>
-            <p className="text-base sm:text-xl md:text-left text-justify md:w-full text-brown-900">
+            </h3>
+            <p className="sm:text-xl md:text-left text-justify md:w-full text-brown-900">
               {item.description}
             </p>
           </div>

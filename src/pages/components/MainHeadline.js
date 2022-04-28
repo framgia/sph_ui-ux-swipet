@@ -17,14 +17,14 @@ const MainHeadline = () => {
         >
           Find your&nbsp;<span className="text-yellow-900">best companion</span>
         </h1>
-        <p
+        <h3
           className="text-white leading-7 text-lg pb-4 sm:text-center sm:pb-[35px] 
             lg:text-left lg:w-[545px] lg:pb-12"
         >
           Tired of dating apps? Your partner left you for someone else? Get a
           furbaby instead. With <span className="text-yellow-900">swipet</span>,
           you get the love you deserve.
-        </p>
+        </h3>
         <div className="flex justify-center">
           <DownloadButton
             src="./images/GooglePlay.svg"

@@ -17,8 +17,15 @@
   html {
     font-family: 'Nunito', sans-serif;
   }
+  h2 {
+    @apply text-5xl text-center font-semibold text-navy-900;
+  }
+  p {
+    @apply text-base;
+  }
 }
 
 /* Custom Components */
+@import './css/body-heading.css';
 @import './css/chat-bubble.css';
 @import './css/testimonials.css';
