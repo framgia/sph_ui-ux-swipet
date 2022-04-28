@@ -25,7 +25,7 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
     <div
       className={
         isChatBoxOpen
-          ? 'fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[3.5rem] lg:mb-[6.5rem] border md:w-96 lg:w-96 rounded-lg shadow-md'
+          ? 'z-50 fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[3.5rem] lg:mb-[6.5rem] border md:w-96 lg:w-96 rounded-lg shadow-md'
           : 'hidden'
       }
     >
