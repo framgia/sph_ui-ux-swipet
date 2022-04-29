@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './assets/tailwind.output.css';
 import Home from './pages/Home';
+import AboutPage from './pages/links/aboutPage';
+import FAQsPage from './pages/links/faqsPage';
+import TermAndConditions from './pages/links/termsAndConditionsPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +14,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path='/faq' element={<FAQsPage/>}></Route>
+        <Route path='/about' element={<AboutPage/>}></Route>
+        <Route path='/term-and-conditions' element={<TermAndConditions/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
