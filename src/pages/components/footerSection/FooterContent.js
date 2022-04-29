@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterContent = () => {
   return (
-    <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-brown-900'>
+    <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-footer-color pt-8'>
       <div className='flex flex-col justify-between items-center md:flex-row sm:gap-12'>
         <div className='flex flex-col justify-center items-center w-[300px] md:w-[250px] pb-6 md:pb-12 mt-7 md:mt-3 md:items-start'>
           <img
@@ -16,7 +16,30 @@ const FooterContent = () => {
             easier.
           </p>
         </div>
-        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px]'>
+        <div className='ml-[122px] flex flex-row gap-x-32'>
+          <div className='flex flex-col gap-y-4'>
+            <div className='font-bold text-2xl'>Links</div>
+            <Link to='/about-swipet' className='hover:text-orange-700'>
+              About Swipet
+            </Link>
+            <Link to='/faq' className='hover:text-orange-700'>
+              FAQs
+            </Link>
+            <Link to='/terms-and-conditions' className='hover:text-orange-700'>
+              Terms & Conditions
+            </Link>
+            <Link to='/privacy-policy' className='hover:text-orange-700'>
+              Privacy Policy
+            </Link>
+          </div>
+          <div className='flex flex-col gap-y-4'>
+            <div className='font-bold text-2xl'>Contact</div>
+            <div className=''>+63-905-478-9285</div>
+            <div className=''>swipet.contact@sun-asterisk.com</div>
+            <div>Don Gil Garcia St, Cebu City</div>
+          </div>
+        </div>
+        {/* <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px]'>
           <div className='font-bold text-2xl'>Links</div>
           <Link to='/about-swipet' className='mt-7 mb-2 hover:text-orange-700'>
             About Swipet
@@ -39,7 +62,7 @@ const FooterContent = () => {
           <div className='mt-7'>+63-905-478-9285</div>
           <div className='mt-2 mb-2'>swipet.contact@sun-asterisk.com</div>
           <div>Don Gil Garcia St, Cebu City</div>
-        </div>
+        </div> */}
       </div>
       <hr />
       <div className='flex flex-col justify-between items-center gap-10 my-11 md:flex-row'>
