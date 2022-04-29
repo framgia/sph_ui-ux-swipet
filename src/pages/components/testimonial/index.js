@@ -30,11 +30,11 @@ const Testimonial = () => {
   return (
     <section>
       {/* Heading */}
-      <div className="title-heading">
+      <div className='title-heading'>
         <h2>Start a life-changing journey</h2>
       </div>
       {/* Carousel */}
-      <div className="z-0 pb-16 sm:pl-14 lg:pl-[200px] lg:pb-[144px] mt-[96px]">
+      <div className='z-0 pb-16 sm:pl-14 lg:pl-[200px] lg:pb-[144px] mt-[96px]'>
         <Slider
           ref={(slider) => {
             sliderRef = slider;
@@ -47,13 +47,13 @@ const Testimonial = () => {
         </Slider>
         {/* Controls */}
         <button
-          className="group slider-control"
+          className='group slider-control'
           onClick={() => sliderRef.slickPrev()}
         >
           <PreviousIcon />
         </button>
         <button
-          className="group slider-control"
+          className='group slider-control'
           onClick={() => sliderRef.slickNext()}
         >
           <NextIcon />
