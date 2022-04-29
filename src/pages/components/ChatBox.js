@@ -68,7 +68,7 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           );
         })}
       </div>
-      <form onSubmit={onMessageSend} className="bg-white relative border-t p-3">
+      <form onSubmit={onMessageSend} className="bg-white relative border-t p-3 rounded-b-md">
         <input
           type="text"
           className="border w-full text-xs rounded-lg p-3 pr-11 bg-stone-100"
