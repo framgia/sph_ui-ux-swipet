@@ -3,7 +3,7 @@ import MainHeadline from './components/MainHeadline';
 import ContactUs from './components/ContactUs';
 import FeatureSection from './components/feature';
 import Testimonial from './components/testimonial';
-import FooterSection from './components/FooterSection';
+import FooterSection from './components/footerSection';
 
 const Home = () => {
   return (
