@@ -10,11 +10,9 @@ const Home = () => {
     <div>
       <MainHeadline />
       <ContactUs />
-      <div className="bg-main-backgound">
-        <FeatureSection />
-        <Testimonial />
-        <FooterSection />
-      </div>
+      <FeatureSection />
+      <Testimonial />
+      <FooterSection />
     </div>
   );
 };

@@ -15,7 +15,7 @@
 
 @layer base {
   html {
-    font-family: 'Nunito', sans-serif;
+    @apply font-nunito bg-main-backgound
   }
   h2 {
     @apply text-5xl text-center font-semibold text-navy-900;
