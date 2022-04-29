@@ -13,8 +13,8 @@ const Home = () => {
       <div className="bg-main-backgound">
         <FeatureSection />
         <Testimonial />
+        <FooterSection />
       </div>
-      <FooterSection />
     </div>
   );
 };
