@@ -16,7 +16,7 @@ const FooterContent = () => {
             easier.
           </p>
         </div>
-        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px] sm:mt-[57px]'>
+        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px] md:mt-[57px]'>
           <div className='font-bold text-2xl'>Links</div>
           <Link to='/about-swipet' className='mt-7 mb-2 hover:text-orange-700'>
             About Swipet
