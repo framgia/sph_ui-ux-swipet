@@ -5,7 +5,7 @@ import FooterContent from '../footerSection/FooterContent';
 const ExternalPageTemplate = ({ title, children }) => {
   return (
     <Fragment>
-      <header className='bg-main-backgound h-[100px] border-b border-brown-900 flex items-center sticky top-0'>
+      <header className='bg-orange-100 h-[100px] border-b border-brown-900 flex items-center sticky top-0'>
         <Link
           to='/'
           className='w-[70px] h-[70px] ml-[20px] lg:ml-[100px] md:ml-[50px] xl:ml-[200px]'

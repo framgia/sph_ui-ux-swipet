@@ -6,7 +6,7 @@ const FeatureSection = () => {
   return (
     <section>
       {/* Heading */}
-      <div className="title-heading">
+      <div className='title-heading'>
         <h2>Adopting a pet has never been easier</h2>
       </div>
       {/* Cards */}

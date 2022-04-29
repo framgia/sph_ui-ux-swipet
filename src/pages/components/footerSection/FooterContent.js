@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterContent = () => {
   return (
-    <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-footer-color'>
+    <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-brown-900'>
       <div className='flex flex-col justify-between items-center md:flex-row sm:gap-12'>
         <div className='flex flex-col justify-center items-center w-[300px] md:w-[250px] pb-6 md:pb-12 mt-7 md:mt-3 md:items-start'>
           <img
@@ -16,7 +16,7 @@ const FooterContent = () => {
             easier.
           </p>
         </div>
-        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px]'>
+        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px] md:mt-[57px]'>
           <div className='font-bold text-2xl'>Links</div>
           <Link to='/about-swipet' className='mt-7 mb-2 hover:text-orange-700'>
             About Swipet

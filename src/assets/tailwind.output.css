@@ -15,7 +15,7 @@
 
 @layer base {
   html {
-    @apply font-nunito bg-main-backgound
+    @apply font-nunito bg-orange-100;
   }
   h2 {
     @apply text-5xl text-center font-semibold text-navy-900;

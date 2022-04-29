@@ -4,7 +4,7 @@ import { termsAndConditionsConstant } from '../../../utilities/constants';
 
 const TermsAndConditionsPage = () => {
   const allUlTags = termsAndConditionsConstant.filter(
-    (list) => list.isUlTag === true
+    (list) => list.isUlTag === true,
   );
 
   const allListText = allUlTags.map((list) => list.text);

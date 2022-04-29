@@ -29,38 +29,38 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           : 'hidden'
       }
     >
-      <div className="h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3">
+      <div className='h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3'>
         <img
-          className="rounded-full w-10"
-          src="/images/RoundOrangeLogo.svg"
-          alt="logo"
+          className='rounded-full w-10'
+          src='/images/RoundOrangeLogo.svg'
+          alt='logo'
         />
         <CloseIcon closeChatBox={closeChatBox} />
       </div>
-      <div className="bg-white h-[23rem] p-3 flex flex-col gap-4 overflow-auto overflow-x-hidden">
+      <div className='bg-white h-[23rem] p-3 flex flex-col gap-4 overflow-auto overflow-x-hidden'>
         {messages.map((message, idx) => {
           return (
             <Fragment key={idx}>
               {message.sender === 'chatbot' ? (
-                <div className="flex items-center">
+                <div className='flex items-center'>
                   <img
-                    className="border rounded-full w-10 h-10 mr-2"
-                    src="/images/ChatbotAvatar.svg"
-                    alt="chatbot avatar"
+                    className='border rounded-full w-10 h-10 mr-2'
+                    src='/images/ChatbotAvatar.svg'
+                    alt='chatbot avatar'
                   />
-                  <span className="bg-mocha-400 chat-bubble">
+                  <span className='bg-mocha-400 chat-bubble'>
                     {message.text}
                   </span>
                 </div>
               ) : (
-                <div className="flex justify-end items-center float-right">
-                  <span className="bg-orange-300 chat-bubble">
+                <div className='flex justify-end items-center float-right'>
+                  <span className='bg-orange-300 chat-bubble'>
                     {message.text}
                   </span>
                   <img
-                    className="border rounded-full w-10 h-10"
-                    src="/images/UserAvatar.svg"
-                    alt="user avatar"
+                    className='border rounded-full w-10 h-10'
+                    src='/images/UserAvatar.svg'
+                    alt='user avatar'
                   />
                 </div>
               )}
@@ -68,19 +68,22 @@ const ChatBox = ({ isChatBoxOpen, closeChatBox }) => {
           );
         })}
       </div>
-      <form onSubmit={onMessageSend} className="bg-white relative border-t p-3 rounded-b-md">
+      <form
+        onSubmit={onMessageSend}
+        className='bg-white relative border-t p-3 rounded-b-md'
+      >
         <input
-          type="text"
-          className="border w-full text-xs rounded-lg p-3 pr-11 bg-stone-100"
-          placeholder="Send a message..."
+          type='text'
+          className='border w-full text-xs rounded-lg p-3 pr-11 bg-stone-100'
+          placeholder='Send a message...'
           value={newMessage}
           onChange={onMessageValueChange}
         />
-        <button type="submit">
+        <button type='submit'>
           <img
-            className="absolute inset-y-5 right-6"
-            src="/images/SendIcon.svg"
-            alt="paper plane send icon"
+            className='absolute inset-y-5 right-6'
+            src='/images/SendIcon.svg'
+            alt='paper plane send icon'
           />
         </button>
       </form>
