@@ -81,7 +81,7 @@ module.exports = {
         },
         'dark-ash': '#2D2D2D',
         'main-backgound': '#F9F5F1',
-        'text-header-dark-color' : '#594C4A',
+        'footer-color': '#594C4A',
       },
     },
   },
