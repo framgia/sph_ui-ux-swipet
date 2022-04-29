@@ -3,12 +3,14 @@ import React from 'react';
 const FeatureCard = ({ item, index, length }) => {
   const displayPaws = () => {
     if (index < length - 1) {
+      // ? '-bottom-32 lg:-bottom-48 left-[200px] lg:left-[300px]'
+      // : 'left-[200px] lg:left-[300px]'
       return (
         <div
           className={`hidden md:block absolute ${
             index % 2 !== 0
-              ? '-bottom-32 lg:-bottom-48 left-[200px] lg:left-[300px]'
-              : 'left-[200px] lg:left-[300px]'
+              ? '-bottom-32 lg:-bottom-36 xl:-bottom-48 left-[100px] lg:left-[150px] xl:left-[300px]'
+              : 'left-[200px] xl:left-[300px] 2xl:-bottom-[17rem]'
           }`}
         >
           <img
