@@ -25,7 +25,7 @@ const MainHeadline = () => {
           furbaby instead. With <span className='text-yellow-900'>swipet</span>,
           you get the love you deserve.
         </h3>
-        <div className='flex justify-center'>
+        <div className='flex justify-center space-x-3 lg:space-x-4'>
           <DownloadButton
             src='./images/GooglePlay.svg'
             alt='google play store'

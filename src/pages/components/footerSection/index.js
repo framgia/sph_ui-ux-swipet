@@ -13,7 +13,7 @@ const FooterSection = () => {
               waiting for <span className='text-yellow-900'>you</span>
             </p>
           </div>
-          <div className='flex justify-center'>
+          <div className='flex justify-center space-x-3 lg:space-x-4'>
             <DownloadButton
               src='./images/GooglePlay.svg'
               alt='google play store'
