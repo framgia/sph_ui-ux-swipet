@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialCard = ({ item }) => {
   return (
-    <figure className='relative px-5 pb-5'>
+    <figure className='relative pr-5 pb-5'>
       {/* Image */}
       <img
         className='object-cover w-full rounded-lg drop-shadow-md'
