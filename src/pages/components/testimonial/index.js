@@ -16,7 +16,7 @@ const Testimonial = () => {
     infinite: false,
     autoplay: false,
     speed: 500,
-    slidesToShow: 4.5,
+    slidesToShow: 3.5,
     responsive: [
       {
         breakpoint: 1280,
@@ -46,7 +46,7 @@ const Testimonial = () => {
         <h2>Start a life-changing journey</h2>
       </div>
       {/* Carousel */}
-      <div className='z-0 pb-16 sm:pl-14 lg:pl-[200px] lg:pb-[144px]'>
+      <div className='z-0 pb-20 sm:pl-14 lg:pl-[200px]'>
         <Slider
           ref={(slider) => {
             sliderRef = slider;
