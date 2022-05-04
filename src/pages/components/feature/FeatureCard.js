@@ -37,7 +37,6 @@ const FeatureCard = ({ item, index, length }) => {
           {/* Image */}
           <div
             data-aos='fade-up'
-            data-aos-delay='1800'
             className='flex flex-1 justify-center mb-[15px] sm:mb-0'
           >
             <img
