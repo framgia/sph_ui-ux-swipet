@@ -48,6 +48,24 @@ export const testimonials = [
     text: "Never thought I'd get interested in an app like this. I love Swipet.",
     author: 'Joash',
   },
+  {
+    name: 'Woman with cat.',
+    src: '/images/Test03.jpg',
+    text: 'I really find my happiness here.',
+    author: 'Rose',
+  },
+  {
+    name: 'Cat love cat.',
+    src: '/images/Test04.jpg',
+    text: 'My pet found his spouse. So sweet',
+    author: 'Charlote',
+  },
+  {
+    name: 'Child hugging dog.',
+    src: '/images/Test05.jpg',
+    text: "My new pet is my new bestfriend, thank you Swipet.",
+    author: 'Fumihito',
+  },
 ];
 
 export const aboutPageConstant = [
