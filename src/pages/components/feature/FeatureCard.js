@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import PawTrail from './PawTrail';
 
 const FeatureCard = ({ item, index, length }) => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+    window.addEventListener('load', AOS.refresh);
+  }, []);
+
   const displayPaws = () => {
     if (index < length - 1) {
       return (
         <div
-          className={`hidden md:block absolute ${
-            index % 2 !== 0
-              ? '-bottom-32 lg:-bottom-36 xl:-bottom-48 left-[100px] lg:left-[150px] xl:left-[300px]'
-              : 'left-[200px] xl:left-[300px] 2xl:-bottom-[17rem]'
-          }`}
+          className={`-z-50 hidden absolute md:block md:left-[270px] top-[155px] 
+            lg:left-[245px] xl:left-[400px] xl:top-[270px] 2xl:left-[575px] 2xl:top-[380px]
+            ${index % 2 !== 0 ? 'rotate-[50deg]' : 'rotate-[-50deg]'}`}
         >
-          <img
-            className={`w-1/2 h-1/2 ${index % 2 !== 0 ? '' : '-rotate-90'}`}
-            src='/images/PawTrail.svg'
-            alt='paws'
-          />
+          <PawTrail />
         </div>
       );
     }
@@ -31,9 +35,13 @@ const FeatureCard = ({ item, index, length }) => {
           } items-center justify-center gap-x-40 md:gap-x-10`}
         >
           {/* Image */}
-          <div className='flex flex-1 justify-center mb-[15px] sm:mb-0'>
+          <div
+            data-aos='fade-up'
+            data-aos-delay='1800'
+            className='flex flex-1 justify-center mb-[15px] sm:mb-0'
+          >
             <img
-              className='w-3/4 h-3/4 lg:w-5/6 lg:h-5/6 z-10'
+              className='w-3/4 h-3/4 lg:w-5/6 lg:h-5/6 z-50'
               src={item.src}
               alt={item.name}
             />
