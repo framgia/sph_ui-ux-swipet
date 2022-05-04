@@ -4,6 +4,7 @@ import ContactUs from './components/ContactUs';
 import FeatureSection from './components/feature';
 import Testimonial from './components/testimonial';
 import FooterSection from './components/footerSection';
+import CookiePolicy from './components/CookiePolicy';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <FeatureSection />
       <Testimonial />
       <FooterSection />
+      <CookiePolicy />
     </div>
   );
 };
