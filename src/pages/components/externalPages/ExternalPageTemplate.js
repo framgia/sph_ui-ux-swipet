@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import FooterContent from '../footerSection/FooterContent';
+import CookiePolicy from '../CookiePolicy';
 
 const ExternalPageTemplate = ({ title, children }) => {
   return (
@@ -21,6 +22,7 @@ const ExternalPageTemplate = ({ title, children }) => {
         {children}
       </main>
       <FooterContent />
+      <CookiePolicy />
     </Fragment>
   );
 };
