@@ -4,6 +4,10 @@ import ChatBox from './ChatBox';
 const ContactUs = () => {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
 
+  window.addEventListener('beforeunload', () => {
+    localStorage.removeItem('chat_messages');
+  });
+
   return (
     <Fragment>
       <ChatBox

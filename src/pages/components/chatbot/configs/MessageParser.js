@@ -7,6 +7,16 @@ class MessageParser {
   parse(message) {
     message = message.toLowerCase();
 
+    /*
+        Alternate way to save the messages in the localstorage
+
+        Downside:
+
+        - will only save the messages when the user sends a message
+        - the latest sent message will not be included in the saved messages
+    */
+    localStorage.setItem('chat_messages', JSON.stringify(this.state.messages));
+
     if (
       message.includes('options') ||
       message.includes('help') ||

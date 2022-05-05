@@ -7,11 +7,9 @@ const Process = () => {
       <ul>
         {adoptionProcess.map((process) => {
           return (
-            <Fragment>
+            <Fragment key={process.id}>
               <h1 className="font-bold pb-2">{process.title}</h1>
-              <li className="pb-5" key={process.id}>
-                {process.text}
-              </li>
+              <li className="pb-5">{process.text}</li>
             </Fragment>
           );
         })}
