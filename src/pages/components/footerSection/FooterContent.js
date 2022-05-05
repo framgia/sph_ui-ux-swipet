@@ -17,20 +17,33 @@ const FooterContent = () => {
           </p>
         </div>
         <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px] md:mt-[57px]'>
-          <div className='font-bold text-2xl'>Links</div>
-          <Link to='/about-swipet' className='mt-7 mb-2 hover:text-orange-700'>
+          <div className='font-bold text-2xl'>Information</div>
+          <Link
+            className='mt-7 mb-2 hover:text-orange-700'
+            to='/about-swipet'
+            target='_blank'
+          >
             About Swipet
           </Link>
-          <Link to='/faq' className='mt-2 mb-2 hover:text-orange-700'>
+          <Link
+            className='mt-2 mb-2 hover:text-orange-700'
+            to='/faq'
+            target='_blank'
+          >
             FAQs
           </Link>
           <Link
-            to='/terms-and-conditions'
             className='mt-2 mb-2 hover:text-orange-700'
+            to='/terms-and-conditions'
+            target='_blank'
           >
             Terms & Conditions
           </Link>
-          <Link to='/privacy-policy' className='mt-2 hover:text-orange-700'>
+          <Link
+            className='mt-2 hover:text-orange-700'
+            to='/privacy-policy'
+            target='_blank'
+          >
             Privacy Policy
           </Link>
         </div>
@@ -44,21 +57,21 @@ const FooterContent = () => {
       <hr />
       <div className='flex flex-col justify-between items-center gap-10 my-11 md:flex-row'>
         <div className='w-80 flex justify-center gap-12 md:justify-start'>
-          <a href='https://www.facebook.com/' target='none'>
+          <a href='https://www.facebook.com/' target='_blank' rel='noreferrer noopener'>
             <img
               src='/images/Facebook.svg'
               className='h-6 hover:contrast-50'
               alt='instagram icon'
             />
           </a>
-          <a href='https://www.instagram.com/' target='none'>
+          <a href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'>
             <img
               src='/images/Instagram.svg'
               className='h-6 hover:contrast-50'
               alt='instagram icon'
             />
           </a>
-          <a href='https://www.twitter.com/' target='none'>
+          <a href='https://www.twitter.com/' target='_blank' rel='noreferrer noopener'>
             <img
               src='/images/Twitter.svg'
               alt='twitter icon'

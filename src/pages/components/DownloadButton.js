@@ -4,7 +4,7 @@ const DownloadButton = ({ src, alt, upperText, lowerText, link }) => {
   return (
     <button
       className='bg-dark-ash text-white w-[165px] h-[48px] rounded p-2 font-bold desktop:mx-0'
-      onClick={() => (window.location.href = link)}
+      onClick={() => (window.open(link, '_blank'))}
     >
       <div className='flex items-center'>
         <div className='mr-3.5'>
