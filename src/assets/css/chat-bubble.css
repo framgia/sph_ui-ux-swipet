@@ -1,3 +1,0 @@
-.chat-bubble {
-  @apply p-3 rounded-lg mr-2 max-w-[12rem] md:max-w-[15rem] lg:md:max-w-[15rem] break-words;
-}

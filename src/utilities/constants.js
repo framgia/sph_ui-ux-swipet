@@ -631,3 +631,18 @@ export const notFoundMetaData = {
   title: '404',
   content: "Wooofs! We can't sniff out the page you're looking for.",
 };
+
+export const requirements = [
+  {
+    id: 1,
+    text: 'Can cover all the financial expenses of owning a pet.',
+  },
+  {
+    id: 2,
+    text: 'Has a secure and suitable home for a pet.',
+  },
+  {
+    id: 3,
+    text: 'Has the time to train and socialise with a pet to give them enough company so they don’t get lonely.',
+  },
+];

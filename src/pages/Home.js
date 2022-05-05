@@ -1,6 +1,7 @@
 import React from 'react';
 import MainHeadline from './components/MainHeadline';
-import ContactUs from './components/ContactUs';
+// import ContactUs from './components/ContactUs';
+import Chatbot from './components/chatbot';
 import FeatureSection from './components/feature';
 import Testimonial from './components/testimonial';
 import FooterSection from './components/footerSection';
@@ -10,7 +11,8 @@ const Home = () => {
   return (
     <div className='overflow-x-hidden'>
       <MainHeadline />
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <Chatbot />
       <FeatureSection />
       <Testimonial />
       <FooterSection />
