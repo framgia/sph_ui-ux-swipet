@@ -16,10 +16,6 @@ class MessageParser {
       return this.actionProvider.showOptions();
     }
 
-    if (message.includes('account')) {
-      return this.actionProvider.handleAccountReply();
-    }
-
     if (message.includes('adopt') || message.includes('process')) {
       return this.actionProvider.handleAdoptionProcessReply();
     }

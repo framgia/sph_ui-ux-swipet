@@ -47,22 +47,6 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
-  handleAccountReply = (event = false) => {
-    if (event.type === 'click') {
-      const userMessage = this.createClientMessage('Account');
-
-      this.addMessageToState(userMessage);
-    }
-
-    const botMmessage = this.createChatBotMessage('Sample Reply for Account', {
-      loading: true,
-      terminateLoading: true,
-      withAvatar: true,
-    });
-
-    this.addMessageToState(botMmessage);
-  };
-
   handleAdoptionProcessReply = (event = false) => {
     if (event.type === 'click') {
       const userMessage = this.createClientMessage('Adoption Process');
@@ -70,8 +54,8 @@ class ActionProvider {
       this.addMessageToState(userMessage);
     }
 
-    const botMmessage = this.createChatBotMessage(
-      'The adoption process will be a personal transaction between the pet handler and the future owner through our chat feature.',
+    const botMmessage1 = this.createChatBotMessage(
+      'Once you have matched with a pet that liked you back, the adoption process will be a personal transaction between you and the pet handler through our chat feature.',
       {
         loading: true,
         terminateLoading: true,
@@ -79,7 +63,32 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage);
+    this.addMessageToState(botMmessage1);
+
+    const botMmessage2 = this.createChatBotMessage(
+      'But here are some steps of what you can expect especially if the pet is from an animal shelter:',
+      {
+        loading: true,
+        terminateLoading: true,
+        withAvatar: true,
+        delay: 800,
+        widget: 'process',
+      },
+    );
+
+    this.addMessageToState(botMmessage2);
+
+    const botMmessage3 = this.createChatBotMessage(
+      'The pet adoption steps mentioned above may differ because some may have an additional step or two that you need to go through to proceed with the adoption.',
+      {
+        loading: true,
+        terminateLoading: true,
+        withAvatar: true,
+        delay: 800,
+      },
+    );
+
+    this.addMessageToState(botMmessage3);
   };
 
   handlePaperworksReply = (event = false) => {
@@ -90,7 +99,7 @@ class ActionProvider {
     }
 
     const botMmessage = this.createChatBotMessage(
-      'Sample Reply for Paperwork',
+      'The paperwork needed to adopt will be provided by the pet handler of your matched pet.',
       {
         loading: true,
         terminateLoading: true,

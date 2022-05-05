@@ -1,5 +1,5 @@
 .react-chatbot-kit-chat-container {
-  @apply z-50 fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[3.5rem] lg:mb-[6.5rem] border md:w-96 lg:w-96 rounded-lg shadow-md;
+  @apply z-50 fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[2rem] lg:mb-[7rem] border md:w-96 lg:w-96 rounded-lg shadow-md;
 }
 
 .react-chatbot-kit-chat-inner-container {

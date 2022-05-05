@@ -3,11 +3,6 @@ import Options from './Options';
 const GeneralOptions = (props) => {
   const options = [
     {
-      name: 'Account',
-      handler: props.actionProvider.handleAccountReply,
-      id: 1,
-    },
-    {
       name: 'Adoption Process',
       handler: props.actionProvider.handleAdoptionProcessReply,
       id: 2,

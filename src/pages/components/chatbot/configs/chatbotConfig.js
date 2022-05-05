@@ -2,6 +2,7 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 import CloseIcon from '../../../components/icons/CloseIcon';
 import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
+import Process from '../widgets/Process';
 
 const config = (closeChatBox) => {
   return {
@@ -52,6 +53,10 @@ const config = (closeChatBox) => {
       {
         widgetName: 'requirements',
         widgetFunc: (props) => <Requirements {...props} />,
+      },
+      {
+        widgetName: 'process',
+        widgetFunc: (props) => <Process {...props} />,
       },
     ],
   };
