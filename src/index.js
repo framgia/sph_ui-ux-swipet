@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import './assets/tailwind.output.css';
 import ScrollToTop from './pages/components/ScrollToTop';
 import Home from './pages/Home';
@@ -12,22 +13,28 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path='/about-swipet' element={<AboutSwipet />} />
-          <Route path='/faq' element={<FaqPage />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-          <Route
-            path='/terms-and-conditions'
-            element={<TermsAndConditions />}
-          />
-        </Routes>
-      </ScrollToTop>
-    </BrowserRouter>
-  </React.StrictMode>,
+  <HelmetProvider>
+    <React.StrictMode>
+      <Helmet>
+        <title>Swipet</title>
+      </Helmet>
+
+      <Router>
+        <ScrollToTop>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path='/about-swipet' element={<AboutSwipet />} />
+            <Route path='/faq' element={<FaqPage />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route
+              path='/terms-and-conditions'
+              element={<TermsAndConditions />}
+            />
+          </Routes>
+        </ScrollToTop>
+      </Router>
+    </React.StrictMode>
+  </HelmetProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

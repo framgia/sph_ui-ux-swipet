@@ -1,10 +1,11 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import { termsAndConditionsConstant } from '../../../utilities/constants';
 
 const TermsAndConditionsPage = () => {
   const allUlTags = termsAndConditionsConstant.filter(
-    (list) => list.isUlTag === true,
+    (list) => list.isUlTag === true
   );
 
   const allListText = allUlTags.map((list) => list.text);
@@ -16,6 +17,10 @@ const TermsAndConditionsPage = () => {
 
   return (
     <ExternalPageTemplate title='Terms and Conditions'>
+      <Helmet>
+        <title>Terms & Conditions</title>
+      </Helmet>
+
       {termsAndConditionsConstant.map((item, index) => {
         return (
           <div key={index}>
