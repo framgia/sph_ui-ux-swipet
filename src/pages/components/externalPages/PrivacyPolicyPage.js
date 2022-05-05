@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import { privacyPolicyConstant } from '../../../utilities/constants';
 
@@ -9,6 +10,10 @@ const PrivacyPolicyPage = () => {
 
   return (
     <ExternalPageTemplate title='Privacy Policy for Swipet'>
+      <Helmet>
+        <title>Privacy Policy</title>
+      </Helmet>
+
       {privacyPolicyConstant.map((item, index) => {
         return (
           <div key={index}>
