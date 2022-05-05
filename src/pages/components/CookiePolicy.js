@@ -42,7 +42,7 @@ const CookiePolicy = () => {
           By using our site you agree to our use of cookies.
         </p>
         <button
-          className='px-8 py-2 bg-orange-900 rounded-lg text-white text-center font-semibold ml-0 md:ml-8 mt-4 md:mt-0'
+          className='primary-button ml-0 md:ml-8 mt-4 md:mt-0'
           onClick={onClickNoted}
         >
           Got it!

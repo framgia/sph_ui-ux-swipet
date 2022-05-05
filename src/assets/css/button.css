@@ -1,0 +1,3 @@
+.primary-button {
+  @apply px-8 py-2 bg-orange-900 rounded-lg text-white text-center font-semibold
+}

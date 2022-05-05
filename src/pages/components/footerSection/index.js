@@ -1,5 +1,5 @@
 import React from 'react';
-import DownloadButton from '../DownloadButton';
+import DownloadButton from '../button/DownloadButton';
 import FooterContent from './FooterContent';
 
 const FooterSection = () => {
