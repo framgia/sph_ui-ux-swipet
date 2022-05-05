@@ -9,6 +9,7 @@ import AboutSwipet from './pages/components/externalPages/AboutPage';
 import FaqPage from './pages/components/externalPages/FaqPage';
 import PrivacyPolicy from './pages/components/externalPages/PrivacyPolicyPage';
 import TermsAndConditions from './pages/components/externalPages/TermsAndConditionsPage';
+import NotFound from './pages/components/externalPages/NotFound';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
       <Router>
         <ScrollToTop>
           <Routes>
+            <Route path='*' element={<NotFound />} />
             <Route index element={<Home />} />
             <Route path='/about-swipet' element={<AboutSwipet />} />
             <Route path='/faq' element={<FaqPage />} />
