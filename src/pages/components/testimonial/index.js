@@ -40,7 +40,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='bg-white'>
+    <section className='bg-white pl-6 sm:px-0'>
       {/* Heading */}
       <div className='title-heading py-20'>
         <h2>Start a life-changing journey</h2>
