@@ -1,7 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import ExternalPageTemplate from './ExternalPageTemplate';
+import MetaDecorator from '../MetaDecorator';
 import { termsAndConditionsConstant } from '../../../utilities/constants';
+import { termServiceMetaData } from '../../../utilities/constants';
 
 const TermsAndConditionsPage = () => {
   const allUlTags = termsAndConditionsConstant.filter(
@@ -17,9 +18,10 @@ const TermsAndConditionsPage = () => {
 
   return (
     <ExternalPageTemplate title='Terms and Conditions'>
-      <Helmet>
-        <title>Terms & Conditions</title>
-      </Helmet>
+      <MetaDecorator
+        title={termServiceMetaData.title}
+        content={termServiceMetaData.content}
+      />
 
       {termsAndConditionsConstant.map((item, index) => {
         return (

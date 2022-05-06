@@ -63,7 +63,7 @@ export const testimonials = [
   {
     name: 'Child hugging dog.',
     src: '/images/Test05.jpg',
-    text: "My new pet is my new bestfriend, thank you Swipet.",
+    text: 'My new pet is my new bestfriend, thank you Swipet.',
     author: 'Fumihito',
   },
 ];
@@ -602,3 +602,32 @@ export const termsAndConditionsConstant = [
     text: 'As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.',
   },
 ];
+
+export const aboutMetaData = {
+  title: 'About Swipet',
+  content:
+    'Swipet is a mobile application that pets (tinder pets) with their new forever homes. Swipet assured that finding a four-legged partner is quick, exciting, and addicting for pet lovers by combining strong location-based technology with the Swipe user interface popularized by applications like Tinder.',
+};
+
+export const faqMetaData = {
+  title: 'FAQs',
+  content:
+    "Thank you for choosing to adopt a pet! We'll be there for you every step of the way. Learn the answers to the most frequently asked questions about adopting a pet through Swipet.",
+};
+
+export const termServiceMetaData = {
+  title: 'Terms & Conditions',
+  content:
+    'The following Terms & Conditions form a legal agreement between you and Swipet. You must agree to all of the terms in order to use our service.',
+};
+
+export const policyMetaData = {
+  title: 'Privacy Policy',
+  content:
+    'You understand that by using or accessing the Services in any way, you accept the practices and policies mentioned in this Privacy Policy.',
+};
+
+export const notFoundMetaData = {
+  title: '404',
+  content: "Wooofs! We can't sniff out the page you're looking for.",
+};

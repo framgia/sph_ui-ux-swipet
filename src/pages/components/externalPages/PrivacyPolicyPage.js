@@ -1,7 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import ExternalPageTemplate from './ExternalPageTemplate';
+import MetaDecorator from '../MetaDecorator';
 import { privacyPolicyConstant } from '../../../utilities/constants';
+import { policyMetaData } from '../../../utilities/constants';
 
 const PrivacyPolicyPage = () => {
   const listItems = privacyPolicyConstant[11].text.map((list, index) => (
@@ -10,9 +11,10 @@ const PrivacyPolicyPage = () => {
 
   return (
     <ExternalPageTemplate title='Privacy Policy for Swipet'>
-      <Helmet>
-        <title>Privacy Policy</title>
-      </Helmet>
+      <MetaDecorator
+        title={policyMetaData.title}
+        content={policyMetaData.content}
+      />
 
       {privacyPolicyConstant.map((item, index) => {
         return (

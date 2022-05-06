@@ -1,7 +1,8 @@
 import React from 'react';
 import ExternalPageTemplate from './ExternalPageTemplate';
+import MetaDecorator from '../MetaDecorator';
 import { aboutPageConstant } from '../../../utilities/constants';
-import { Helmet } from 'react-helmet-async';
+import { aboutMetaData } from '../../../utilities/constants';
 
 const AboutSwipet = () => {
   const listItems = aboutPageConstant[5].text.map((list, index) => (
@@ -10,9 +11,10 @@ const AboutSwipet = () => {
 
   return (
     <ExternalPageTemplate title='About Swipet'>
-      <Helmet>
-        <title>About Swipet</title>
-      </Helmet>
+      <MetaDecorator
+        title={aboutMetaData.title}
+        content={aboutMetaData.content}
+      />
 
       {aboutPageConstant.map((item, index) => {
         return (
