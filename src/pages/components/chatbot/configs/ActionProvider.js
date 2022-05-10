@@ -5,7 +5,6 @@ class ActionProvider {
     createClientMessage,
     stateRef,
     createCustomMessage,
-    ...rest
   ) {
     this.createChatBotMessage = createChatBotMessage;
     this.setState = setStateFunc;
@@ -14,11 +13,17 @@ class ActionProvider {
     this.createCustomMessage = createCustomMessage;
   }
 
-  addMessageToState = (message) => {
+  addMessageToStateAndSave = (message) => {
     this.setState((state) => ({
       ...state,
       messages: [...state.messages, message],
     }));
+
+    const messages = JSON.parse(localStorage.getItem('chat_messages'));
+
+    messages.push(message);
+
+    localStorage.setItem('chat_messages', JSON.stringify(messages));
   };
 
   showOptions = () => {
@@ -31,7 +36,7 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(optionsMessage);
+    this.addMessageToStateAndSave(optionsMessage);
   };
 
   handleUnkownKeywords = () => {
@@ -44,14 +49,14 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(message);
+    this.addMessageToStateAndSave(message);
   };
 
   handleAdoptionProcessReply = (event = false) => {
     if (event.type === 'click') {
       const userMessage = this.createClientMessage('Adoption Process');
 
-      this.addMessageToState(userMessage);
+      this.addMessageToStateAndSave(userMessage);
     }
 
     const botMmessage1 = this.createChatBotMessage(
@@ -63,7 +68,7 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage1);
+    this.addMessageToStateAndSave(botMmessage1);
 
     const botMmessage2 = this.createChatBotMessage(
       'But here are some steps of what you can expect especially if the pet is from an animal shelter:',
@@ -76,7 +81,7 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage2);
+    this.addMessageToStateAndSave(botMmessage2);
 
     const botMmessage3 = this.createChatBotMessage(
       'The pet adoption steps mentioned above may differ because some may have an additional step or two that you need to go through to proceed with the adoption.',
@@ -88,14 +93,14 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage3);
+    this.addMessageToStateAndSave(botMmessage3);
   };
 
   handlePaperworksReply = (event = false) => {
     if (event.type === 'click') {
       const userMessage = this.createClientMessage('Paperwork');
 
-      this.addMessageToState(userMessage);
+      this.addMessageToStateAndSave(userMessage);
     }
 
     const botMmessage = this.createChatBotMessage(
@@ -107,14 +112,14 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage);
+    this.addMessageToStateAndSave(botMmessage);
   };
 
   handleRequirementsReply = (event = false) => {
     if (event.type === 'click') {
       const userMessage = this.createClientMessage('Requirements');
 
-      this.addMessageToState(userMessage);
+      this.addMessageToStateAndSave(userMessage);
     }
 
     const botMmessage = this.createChatBotMessage(
@@ -127,7 +132,7 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(botMmessage);
+    this.addMessageToStateAndSave(botMmessage);
 
     const followUp = this.createChatBotMessage(
       'Take note that these are just the basic requirements and may vary, some pet owners may require more than what is on the given list.',
@@ -139,7 +144,7 @@ class ActionProvider {
       },
     );
 
-    this.addMessageToState(followUp);
+    this.addMessageToStateAndSave(followUp);
   };
 }
 

@@ -5,17 +5,17 @@ class MessageParser {
   }
 
   parse(message) {
+    const messages = this.state.messages;
+
+    messages.push({
+      id: Math.floor(Math.random() * 100),
+      message,
+      type: 'user',
+    });
+
     message = message.toLowerCase();
 
-    /*
-        Alternate way to save the messages in the localstorage
-
-        Downside:
-
-        - will only save the messages when the user sends a message
-        - the latest sent message will not be included in the saved messages
-    */
-    localStorage.setItem('chat_messages', JSON.stringify(this.state.messages));
+    localStorage.setItem('chat_messages', JSON.stringify(messages));
 
     if (
       message.includes('options') ||

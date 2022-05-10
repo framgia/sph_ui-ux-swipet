@@ -5,18 +5,26 @@ import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
 const config = (closeChatBox) => {
+  let initialMessages = [
+    createChatBotMessage("Hi, I'm Swipet Assistant"),
+    createChatBotMessage(
+      'How may I help you? Below list are the topics I can help you with.',
+      {
+        withAvatar: true,
+        delay: 700,
+        widget: 'options',
+      },
+    ),
+  ];
+
+  const messages = JSON.parse(localStorage.getItem('chat_messages'));
+
+  if (!messages) {
+    localStorage.setItem('chat_messages', JSON.stringify(initialMessages));
+  }
+
   return {
-    initialMessages: [
-      createChatBotMessage("Hi, I'm Swipet Assistant"),
-      createChatBotMessage(
-        'How may I help you? Below list are the topics I can help you with.',
-        {
-          withAvatar: true,
-          delay: 700,
-          widget: 'options',
-        },
-      ),
-    ],
+    initialMessages,
     customComponents: {
       header: () => (
         <div className="h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3">
