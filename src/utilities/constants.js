@@ -606,13 +606,13 @@ export const termsAndConditionsConstant = [
 export const aboutMetaData = {
   title: 'About Swipet',
   content:
-    'Swipet is a mobile application that pets (tinder pets) with their new forever homes. Swipet assured that finding a four-legged partner is quick, exciting, and addicting for pet lovers by combining strong location-based technology with the Swipe user interface popularized by applications like Tinder.',
+    'Swipet is a mobile application that connect pets with their new forever homes that combines location-based and swipe technology popularized by dating apps like Tinder.',
 };
 
 export const faqMetaData = {
   title: 'FAQs',
   content:
-    "Thank you for choosing to adopt a pet! We'll be there for you every step of the way. Learn the answers to the most frequently asked questions about adopting a pet through Swipet.",
+    "We'll be there for you every step of the way. Learn the answers to the most frequently asked questions about adopting a pet through Swipet.",
 };
 
 export const termServiceMetaData = {
