@@ -63,7 +63,7 @@ export const testimonials = [
   {
     name: 'Child hugging dog.',
     src: '/images/Test05.jpg',
-    text: "My new pet is my new bestfriend, thank you Swipet.",
+    text: 'My new pet is my new bestfriend, thank you Swipet.',
     author: 'Fumihito',
   },
 ];
@@ -282,7 +282,7 @@ export const privacyPolicyConstant = [
   },
   {
     isPTag: true,
-    text: 'For more general information on cookies, please read https://www.generateprivacypolicy.com/#cookies the Cookies article on Generate Privacy Policy website </a> .',
+    text: 'For more general information on cookies, please read https://www.generateprivacypolicy.com/ the Cookies article on Generate Privacy Policy website.',
   },
   {
     isH3Tag: true,
