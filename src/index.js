@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import './assets/tailwind.output.css';
 import ScrollToTop from './pages/components/ScrollToTop';
 import Home from './pages/Home';
@@ -16,10 +16,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HelmetProvider>
     <React.StrictMode>
-      <Helmet>
-        <title>Swipet</title>
-      </Helmet>
-
       <Router>
         <ScrollToTop>
           <Routes>

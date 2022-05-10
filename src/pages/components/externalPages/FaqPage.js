@@ -1,14 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import ExternalPageTemplate from './ExternalPageTemplate';
+import MetaDecorator from '../MetaDecorator';
 import { faqConstant } from '../../../utilities/constants';
+import { faqMetaData } from '../../../utilities/constants';
 
 const FaqPage = () => {
   return (
     <ExternalPageTemplate title='FAQs About Pet Adoption'>
-      <Helmet>
-        <title>FAQs</title>
-      </Helmet>
+      <MetaDecorator title={faqMetaData.title} content={faqMetaData.content} />
 
       {faqConstant.map((item, index) => {
         return (
