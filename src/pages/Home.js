@@ -8,7 +8,7 @@ import CookiePolicy from './components/CookiePolicy';
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <MainHeadline />
       <ContactUs />
       <FeatureSection />
