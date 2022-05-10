@@ -44,10 +44,13 @@ const MainHeadline = () => {
         <div
           data-aos='fade-left'
           data-aos-duration='1000'
-          className='absolute w-[290px] h-[311px] top-[328px] origin-center rotate-12 sm:w-[408px] sm:h-[446px] 
-            sm:top-[300px] lg:right-0 lg:top-[40px] lg:rotate-0 lg:w-[430px] lg:h-[507px] xl:w-[464px]'
+          className='absolute w-[290px] h-[311px] top-[328px] sm:w-[408px] sm:h-[446px] 
+            sm:top-[300px] lg:right-0 lg:top-[40px] lg:w-[430px] lg:h-[507px] xl:w-[464px]'
         >
-          <img src='./images/Hero.png' alt=' a dog on the app' />
+          <img
+            className='origin-center rotate-12 lg:rotate-0'
+            src='./images/Hero.png' alt=' a dog on the app'
+          />
         </div>
       </div>
     </header>
