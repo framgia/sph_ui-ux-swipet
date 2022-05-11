@@ -7,7 +7,7 @@ const Requirements = () => {
       <ul className='list-disc'>
         {requirements.map((req) => {
           return (
-            <li className="pb-3" key={req.id}>
+            <li className='pb-3' key={req.id}>
               {req.text}
             </li>
           );

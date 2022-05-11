@@ -8,8 +8,8 @@ const Process = () => {
         {adoptionProcess.map((process) => {
           return (
             <Fragment key={process.id}>
-              <h1 className="font-bold pb-2">{process.title}</h1>
-              <li className="pb-5">{process.text}</li>
+              <h1 className='font-bold pb-2'>{process.title}</h1>
+              <li className='pb-5'>{process.text}</li>
             </Fragment>
           );
         })}
