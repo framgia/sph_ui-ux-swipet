@@ -27,28 +27,28 @@ const config = (closeChatBox) => {
     initialMessages,
     customComponents: {
       header: () => (
-        <div className="h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3">
+        <div className='h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3'>
           <img
-            className="rounded-full w-10"
-            src="/images/RoundOrangeLogo.svg"
-            alt="logo"
+            className='rounded-full w-10'
+            src='/images/RoundOrangeLogo.svg'
+            alt='logo'
           />
           <CloseIcon closeChatBox={closeChatBox} />
         </div>
       ),
       botAvatar: () => (
         <img
-          className="border rounded-full w-10 h-10"
-          src="/images/ChatbotAvatar.svg"
-          alt="chatbot avatar"
+          className='border rounded-full w-10 h-10'
+          src='/images/ChatbotAvatar.svg'
+          alt='chatbot avatar'
         />
       ),
 
       userAvatar: () => (
         <img
-          className="border rounded-full w-10 h-10"
-          src="/images/UserAvatar.svg"
-          alt="user avatar"
+          className='border rounded-full w-10 h-10'
+          src='/images/UserAvatar.svg'
+          alt='user avatar'
         />
       ),
     },
