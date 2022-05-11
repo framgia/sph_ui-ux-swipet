@@ -6,11 +6,13 @@ const FooterContent = () => {
     <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-brown-900'>
       <div className='flex flex-col justify-between items-center md:flex-row sm:gap-12'>
         <div className='flex flex-col justify-center items-center w-[300px] md:w-[250px] pb-6 md:pb-12 mt-7 md:mt-3 md:items-start'>
-          <img
-            src='/images/LogoDarkFit.svg'
-            alt='LogoDark'
-            className='h-12 w-48'
-          />
+          <Link to='/'>
+            <img
+              src='/images/LogoDarkFit.svg'
+              alt='LogoDark'
+              className='h-12 w-48'
+            />
+          </Link>
           <p className='text-center md:text-left mt-8'>
             Swipet is a mobile application that makes pet adoption fun and
             easier.
