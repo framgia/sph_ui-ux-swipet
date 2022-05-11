@@ -17,6 +17,10 @@ const ContactUs = () => {
 
   const closeChatBox = () => setIsChatBoxOpen(false);
 
+  const validateInput = (input) => {
+    return input ? true : false;
+  };
+
   const loadMessages = () => {
     const messages = JSON.parse(localStorage.getItem('chat_messages'));
 
@@ -32,6 +36,7 @@ const ContactUs = () => {
           messageHistory={loadMessages()}
           messageParser={MessageParser}
           placeholderText='Send a message...'
+          validator={validateInput}
         />
       )}
 
