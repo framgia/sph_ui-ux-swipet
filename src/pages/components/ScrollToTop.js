@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { useLocation } from 'react-router';
 
 const ScrollToTop = ({ children }) => {
