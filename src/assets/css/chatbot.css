@@ -46,7 +46,7 @@
 }
 
 .react-chatbot-kit-chat-message-container {
-  @apply overflow-y-auto overflow-x-hidden p-3;
+  @apply overflow-y-auto overflow-x-hidden p-3 overscroll-contain;
 }
 
 ::-webkit-scrollbar {
