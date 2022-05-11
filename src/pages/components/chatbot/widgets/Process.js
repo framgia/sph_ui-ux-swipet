@@ -3,7 +3,7 @@ import { adoptionProcess } from '../../../../utilities/constants';
 
 const Process = () => {
   return (
-    <div className="border-2 p-5 pb-0 mx-12 bg-sky-100 rounded-lg">
+    <div className='border-2 p-5 pb-0 mx-12 bg-sky-100 rounded-lg'>
       <ul>
         {adoptionProcess.map((process) => {
           return (
