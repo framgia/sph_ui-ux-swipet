@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DownloadButton from './DownloadButton';
 
 const MainHeadline = () => {
@@ -8,7 +9,9 @@ const MainHeadline = () => {
         sm:pt-[38px] px-[20px] sm:px-[55px] lg:pt-[51px] lg:px-[100px] lg:h-[572px] xl:px-[200px] 2xl:px-[339px]'
     >
       <div className='w-[165px] h-[39px] sm:m-auto lg:w-[192px] lg:h-[48px]'>
-        <img src='/images/LogoMix.svg' alt='swipet logo' />
+        <Link to='/'>
+          <img src='/images/LogoMix.svg' alt='swipet logo' />
+        </Link>
       </div>
       <div className='flex flex-col relative items-center lg:items-start'>
         <h1
