@@ -2,28 +2,28 @@ export const features = [
   {
     name: 'profile',
     title: 'Let them know you',
-    src: '/images/FeatureProfile.png',
+    src: '/images/FeatureProfile.webp',
     description:
       'Flex your best qualities on your profile. Show your interests. Let it scream, “I’m the best fur parent in the whole world!”.',
   },
   {
     name: 'match',
     title: 'Match with your perfect buddy',
-    src: '/images/FeatureMatch.png',
+    src: '/images/FeatureMatch.webp',
     description:
       'Swipe to the right for the pet you like until you get your match.',
   },
   {
     name: 'chat',
     title: ' Get to know them',
-    src: '/images/FeatureChat.png',
+    src: '/images/FeatureChat.webp',
     description:
       'Chat with the keeper of your match pet, and learn more about them.',
   },
   {
     name: 'adopt',
     title: 'Adopt',
-    src: '/images/FeatureAdopt.png',
+    src: '/images/FeatureAdopt.webp',
     description:
       'Adopt, don’t shop. Make a deal with the pet keeper, and become a certified fur parent.',
   },
@@ -32,37 +32,37 @@ export const features = [
 export const testimonials = [
   {
     name: 'Woman kissing dog.',
-    src: '/images/Test00.jpg',
+    src: '/images/Test00.webp',
     text: 'This is the best thing that ever happened to me. Buddy is the most loving dog.',
     author: 'Therese',
   },
   {
     name: 'Man hugging dog.',
-    src: '/images/Test01.jpg',
+    src: '/images/Test01.webp',
     text: 'Awesome app! I really like how it matched me with the pet that always wanted.',
     author: 'Egie',
   },
   {
     name: 'Child kissing dog.',
-    src: '/images/Test02.jpg',
+    src: '/images/Test02.webp',
     text: "Never thought I'd get interested in an app like this. I love Swipet.",
     author: 'Joash',
   },
   {
     name: 'Woman with cat.',
-    src: '/images/Test03.jpg',
+    src: '/images/Test03.webp',
     text: 'I really find my happiness here.',
     author: 'Rose',
   },
   {
     name: 'Cat love cat.',
-    src: '/images/Test04.jpg',
+    src: '/images/Test04.webp',
     text: 'My pet found his spouse. So sweet',
     author: 'Charlote',
   },
   {
     name: 'Child hugging dog.',
-    src: '/images/Test05.jpg',
+    src: '/images/Test05.webp',
     text: 'My new pet is my new bestfriend, thank you Swipet.',
     author: 'Fumihito',
   },
@@ -667,5 +667,42 @@ export const adoptionProcess = [
     id: 4,
     title: 'Finalizing the Adoption',
     text: 'Once you have passed and gone through all the other steps, the final thing to do is you would need to sign some paperwork and others may require you to pay certain fees.',
+  },
+];
+
+export const informationLinks = [
+  {
+    to: '/about-swipet',
+    title: 'About Swipet',
+  },
+  {
+    to: '/faq',
+    title: 'FAQs',
+  },
+  {
+    to: '/terms-and-conditions',
+    title: 'Terms & Conditions',
+  },
+  {
+    to: '/privacy-policy',
+    title: 'Privacy Policy',
+  },
+];
+
+export const socialMediaLinks = [
+  {
+    href: 'https://www.facebook.com/',
+    src: '/images/Facebook.svg',
+    alt: 'facebook icon',
+  },
+  {
+    href: 'https://www.instagram.com/',
+    src: '/images/Instagram.svg',
+    alt: 'instagram icon',
+  },
+  {
+    href: 'https://www.twitter.com/',
+    src: '/images/Twitter.svg',
+    alt: 'twitter icon',
   },
 ];
