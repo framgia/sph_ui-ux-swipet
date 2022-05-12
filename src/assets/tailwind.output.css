@@ -15,10 +15,10 @@
 
 @layer base {
   html {
-    @apply font-nunito bg-orange-100;
+    @apply bg-orange-100 font-nunito;
   }
   h2 {
-    @apply text-5xl text-center font-semibold text-navy-900;
+    @apply text-center text-5xl font-semibold text-navy-900;
   }
   p {
     @apply text-base;
@@ -28,4 +28,4 @@
 /* Custom Components */
 @import './css/body-heading.css';
 @import './css/testimonials.css';
-@import './css/button.css'
+@import './css/button.css';

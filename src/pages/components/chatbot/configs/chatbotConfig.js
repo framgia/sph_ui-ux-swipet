@@ -13,7 +13,7 @@ const config = (closeChatBox) => {
         withAvatar: true,
         delay: 700,
         widget: 'options',
-      },
+      }
     ),
   ];
 
@@ -27,9 +27,9 @@ const config = (closeChatBox) => {
     initialMessages,
     customComponents: {
       header: () => (
-        <div className='h-16 w-100 flex justify-between items-center bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 rounded-t-lg px-3'>
+        <div className='w-100 flex h-16 items-center justify-between rounded-t-lg bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 px-3'>
           <img
-            className='rounded-full w-10'
+            className='w-10 rounded-full'
             src='/images/RoundOrangeLogo.svg'
             alt='logo'
           />
@@ -38,7 +38,7 @@ const config = (closeChatBox) => {
       ),
       botAvatar: () => (
         <img
-          className='border rounded-full w-10 h-10'
+          className='h-10 w-10 rounded-full border'
           src='/images/ChatbotAvatar.svg'
           alt='chatbot avatar'
         />
@@ -46,7 +46,7 @@ const config = (closeChatBox) => {
 
       userAvatar: () => (
         <img
-          className='border rounded-full w-10 h-10'
+          className='h-10 w-10 rounded-full border'
           src='/images/UserAvatar.svg'
           alt='user avatar'
         />

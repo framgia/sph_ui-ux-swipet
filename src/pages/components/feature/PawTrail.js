@@ -11,7 +11,7 @@ const PawTrail = () => {
           data-aos-delay='1500'
           data-aos-duration='0'
           className={`md:w-[40px] lg:w-[45px] xl:w-[65px] 2xl:w-[90px] ${
-            i % 2 !== 0 ? 'ml-[60px] xl:ml-[95px] 2xl:ml-[140px] my-3 ' : ''
+            i % 2 !== 0 ? 'my-3 ml-[60px] xl:ml-[95px] 2xl:ml-[140px] ' : ''
           }`}
           src='/images/PawTrail.svg'
           alt='paw trail'

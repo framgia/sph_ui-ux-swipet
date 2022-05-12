@@ -8,9 +8,9 @@ import {
 
 const FooterContent = () => {
   return (
-    <div className='flex flex-col px-[20px] sm:px-[20px] md:px-[55px] lg:px-[200px] text-brown-900'>
-      <div className='flex flex-col justify-between items-center md:flex-row sm:gap-12'>
-        <div className='flex flex-col justify-center items-center w-[300px] md:w-[250px] pb-6 md:pb-12 mt-7 md:mt-3 md:items-start'>
+    <div className='flex flex-col px-[20px] text-brown-900 sm:px-[20px] md:px-[55px] lg:px-[200px]'>
+      <div className='flex flex-col items-center justify-between sm:gap-12 md:flex-row'>
+        <div className='mt-7 flex w-[300px] flex-col items-center justify-center pb-6 md:mt-3 md:w-[250px] md:items-start md:pb-12'>
           <Link to='/'>
             <LazyLoadImage
               src='/images/LogoDarkFit.svg'
@@ -18,13 +18,13 @@ const FooterContent = () => {
               className='h-12 w-48'
             />
           </Link>
-          <p className='text-center md:text-left mt-8'>
+          <p className='mt-8 text-center md:text-left'>
             Swipet is a mobile application that makes pet adoption fun and
             easier.
           </p>
         </div>
-        <div className='flex py-8 flex-col justify-center items-center md:items-start w-[300px]sm:w-[148px] sm:pl-[30px] md:mt-[40px] xl:mt-[57px]'>
-          <div className='font-bold text-2xl'>Information</div>
+        <div className='w-[300px]sm:w-[148px] flex flex-col items-center justify-center py-8 sm:pl-[30px] md:mt-[40px] md:items-start xl:mt-[57px]'>
+          <div className='text-2xl font-bold'>Information</div>
           {informationLinks.map((item, i) => (
             <Link
               key={i}
@@ -38,16 +38,16 @@ const FooterContent = () => {
             </Link>
           ))}
         </div>
-        <div className='flex py-8 flex-col justify-center items-center md:items-start'>
-          <div className='font-bold text-2xl '>Contact</div>
+        <div className='flex flex-col items-center justify-center py-8 md:items-start'>
+          <div className='text-2xl font-bold '>Contact</div>
           <div className='mt-7'>+63-905-478-9285</div>
           <div className='mt-2 mb-2'>swipet.contact@sun-asterisk.com</div>
           <div>Don Gil Garcia St, Cebu City</div>
         </div>
       </div>
       <hr />
-      <div className='flex flex-col justify-between items-center gap-10 my-11 md:flex-row'>
-        <div className='w-80 flex justify-center gap-12 md:justify-start'>
+      <div className='my-11 flex flex-col items-center justify-between gap-10 md:flex-row'>
+        <div className='flex w-80 justify-center gap-12 md:justify-start'>
           {socialMediaLinks.map((item, i) => (
             <a
               key={i}

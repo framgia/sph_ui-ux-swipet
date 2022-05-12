@@ -59,13 +59,13 @@ const Testimonial = () => {
         </Slider>
         {/* Controls */}
         <button
-          className='group slider-control'
+          className='slider-control group'
           onClick={() => sliderRef.slickPrev()}
         >
           <PreviousIcon />
         </button>
         <button
-          className='group slider-control'
+          className='slider-control group'
           onClick={() => sliderRef.slickNext()}
         >
           <NextIcon />
