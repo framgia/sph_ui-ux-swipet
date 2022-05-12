@@ -17,7 +17,8 @@ const ContactUs = () => {
 
   const closeChatBox = () => setIsChatBoxOpen(false);
 
-  const validateInput = (input) => (input ? true : false);
+  const validateInput = (input) =>
+    !input || input.trim().length === 0 ? false : true;
 
   const loadMessages = () => {
     const messages = JSON.parse(localStorage.getItem('chat_messages'));
