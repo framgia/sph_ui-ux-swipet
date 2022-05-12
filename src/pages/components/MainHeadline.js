@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DownloadButton from './DownloadButton';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const MainHeadline = () => {
   return (
@@ -10,7 +11,7 @@ const MainHeadline = () => {
     >
       <div className='w-[165px] h-[39px] sm:m-auto lg:w-[192px] lg:h-[48px]'>
         <Link to='/'>
-          <img src='/images/LogoMix.svg' alt='swipet logo' />
+          <LazyLoadImage src='/images/LogoMix.svg' alt='swipet logo' />
         </Link>
       </div>
       <div className='flex flex-col relative items-center lg:items-start'>
@@ -50,9 +51,10 @@ const MainHeadline = () => {
           className='absolute w-[290px] h-[311px] top-[328px] sm:w-[408px] sm:h-[446px] 
             sm:top-[300px] lg:right-0 lg:top-[40px] lg:w-[430px] lg:h-[507px] xl:w-[464px]'
         >
-          <img
+          <LazyLoadImage
             className='origin-center rotate-12 lg:rotate-0'
-            src='./images/Hero.png' alt=' a dog on the app'
+            src='./images/Hero.webp'
+            alt=' a dog on the app'
           />
         </div>
       </div>

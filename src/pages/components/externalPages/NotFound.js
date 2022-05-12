@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import MetaDecorator from '../MetaDecorator';
 import { notFoundMetaData } from '../../../utilities/constants';
 
@@ -13,9 +14,9 @@ const NotFound = () => {
         content={notFoundMetaData.content}
       />
 
-      <img
+      <LazyLoadImage
         className='w-[350px] mb-12'
-        src='/images/Dog404.png'
+        src='/images/Dog404.webp'
         alt='dog holding paper in mouth'
       />
       <h3 className='text-center text-[40px] font-bold text-brown-900 mb-9'>

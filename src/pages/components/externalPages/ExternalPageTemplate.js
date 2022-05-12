@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import FooterContent from '../footerSection/FooterContent';
 import CookiePolicy from '../CookiePolicy';
 
@@ -11,7 +12,7 @@ const ExternalPageTemplate = ({ title, children }) => {
           to='/'
           className='w-[70px] h-[70px] ml-[20px] lg:ml-[100px] md:ml-[50px] xl:ml-[200px]'
         >
-          <img src='/images/LogoBrown.svg' alt='swipet logo brown' />
+          <LazyLoadImage src='/images/LogoBrown.svg' alt='swipet logo brown' />
         </Link>
       </header>
       <main

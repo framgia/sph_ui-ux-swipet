@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PawTrail from './PawTrail';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const FeatureCard = ({ item, index, length }) => {
   useEffect(() => {
@@ -35,12 +36,10 @@ const FeatureCard = ({ item, index, length }) => {
           } items-center justify-center gap-x-40 md:gap-x-10`}
         >
           {/* Image */}
-          <div
-            data-aos='fade-up'
-            className='flex flex-1 justify-center mb-[15px] sm:mb-0'
-          >
-            <img
+          <div className='flex flex-1 justify-center mb-[15px] sm:mb-0'>
+            <LazyLoadImage
               className='w-3/4 h-3/4 lg:w-5/6 lg:h-5/6 z-50'
+              data-aos='fade-up'
               src={item.src}
               alt={item.name}
             />
