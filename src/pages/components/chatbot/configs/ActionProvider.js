@@ -4,7 +4,7 @@ class ActionProvider {
     setStateFunc,
     createClientMessage,
     stateRef,
-    createCustomMessage,
+    createCustomMessage
   ) {
     this.createChatBotMessage = createChatBotMessage;
     this.setState = setStateFunc;
@@ -33,7 +33,7 @@ class ActionProvider {
         withAvatar: true,
         delay: 300,
         widget: 'options',
-      },
+      }
     );
 
     this.addMessageToStateAndSave(optionsMessage);
@@ -46,7 +46,7 @@ class ActionProvider {
         withAvatar: true,
         delay: 300,
         widget: 'options',
-      },
+      }
     );
 
     this.addMessageToStateAndSave(message);
@@ -65,7 +65,7 @@ class ActionProvider {
         loading: true,
         terminateLoading: true,
         withAvatar: true,
-      },
+      }
     );
 
     this.addMessageToStateAndSave(botMmessage1);
@@ -78,7 +78,7 @@ class ActionProvider {
         withAvatar: true,
         delay: 800,
         widget: 'process',
-      },
+      }
     );
 
     this.addMessageToStateAndSave(botMmessage2);
@@ -90,7 +90,7 @@ class ActionProvider {
         terminateLoading: true,
         withAvatar: true,
         delay: 800,
-      },
+      }
     );
 
     this.addMessageToStateAndSave(botMmessage3);
@@ -109,7 +109,7 @@ class ActionProvider {
         loading: true,
         terminateLoading: true,
         withAvatar: true,
-      },
+      }
     );
 
     this.addMessageToStateAndSave(botMmessage);
@@ -129,7 +129,7 @@ class ActionProvider {
         terminateLoading: true,
         withAvatar: true,
         widget: 'requirements',
-      },
+      }
     );
 
     this.addMessageToStateAndSave(botMmessage);
@@ -141,7 +141,7 @@ class ActionProvider {
         terminateLoading: true,
         delay: 700,
         withAvatar: true,
-      },
+      }
     );
 
     this.addMessageToStateAndSave(followUp);

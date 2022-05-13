@@ -1,13 +1,13 @@
 .react-chatbot-kit-chat-container {
-  @apply z-50 fixed bottom-0 right-0 mb-[5rem] mr-6 w-80 md:mb-[5.5rem] md:mr-[2rem] lg:mb-[7rem] border md:w-96 lg:w-96 rounded-lg shadow-md;
+  @apply fixed bottom-0 right-0 z-50 mb-[5rem] mr-6 w-80 rounded-lg border shadow-md md:mb-[5.5rem] md:mr-[2rem] md:w-96 lg:mb-[7rem] lg:w-96;
 }
 
 .react-chatbot-kit-chat-inner-container {
-  @apply h-full m-0;
+  @apply m-0 h-full;
 }
 
 .react-chatbot-kit-chat-btn-send {
-  @apply bg-stone-100 rounded-r-lg w-12 flex justify-center items-center;
+  @apply flex w-12 items-center justify-center rounded-r-lg bg-stone-100;
 }
 
 .react-chatbot-kit-chat-btn-send-icon {
@@ -15,11 +15,11 @@
 }
 
 .react-chatbot-kit-chat-input-container {
-  @apply bg-white relative border-t p-3 rounded-b-md;
+  @apply relative rounded-b-md border-t bg-white p-3;
 }
 
 .react-chatbot-kit-chat-input {
-  @apply border-none focus:outline-none w-full text-xs rounded-l-lg pr-0 bg-stone-100;
+  @apply w-full rounded-l-lg border-none bg-stone-100 pr-0 text-xs focus:outline-none;
 }
 
 .react-chatbot-kit-chat-bot-message {
@@ -32,7 +32,7 @@
 
 .react-chatbot-kit-chat-bot-message,
 .react-chatbot-kit-user-chat-message {
-  @apply p-3 w-auto rounded-lg max-w-[11.5rem] md:max-w-[15.5rem] text-base text-black break-words;
+  @apply w-auto max-w-[11.5rem] break-words rounded-lg p-3 text-base text-black md:max-w-[15.5rem];
 }
 
 .react-chatbot-kit-chat-bot-message-arrow,
@@ -46,7 +46,7 @@
 }
 
 .react-chatbot-kit-chat-message-container {
-  @apply overflow-y-auto overflow-x-hidden p-3 overscroll-contain;
+  @apply overflow-y-auto overflow-x-hidden overscroll-contain p-3;
 }
 
 ::-webkit-scrollbar {
@@ -58,7 +58,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-sky-900 rounded-lg;
+  @apply rounded-lg bg-sky-900;
 }
 
 ::-webkit-scrollbar-thumb:hover {

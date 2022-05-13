@@ -7,19 +7,19 @@ import CookiePolicy from '../CookiePolicy';
 const ExternalPageTemplate = ({ title, children }) => {
   return (
     <Fragment>
-      <header className='bg-orange-100 h-[100px] border-b border-brown-900 flex items-center sticky top-0'>
+      <header className='sticky top-0 flex h-[100px] items-center border-b border-brown-900 bg-orange-100'>
         <Link
           to='/'
-          className='w-[70px] h-[70px] ml-[20px] lg:ml-[100px] md:ml-[50px] xl:ml-[200px]'
+          className='ml-[20px] h-[70px] w-[70px] md:ml-[50px] lg:ml-[100px] xl:ml-[200px]'
         >
           <LazyLoadImage src='/images/LogoBrown.svg' alt='swipet logo brown' />
         </Link>
       </header>
       <main
-        className='px-[20px] lg:px-[100px] md:px-[50px] xl:px-[200px] text-lg text-brown-900 py-[32px] 
-          border-b border-brown-900'
+        className='border-b border-brown-900 px-[20px] py-[32px] text-lg text-brown-900 md:px-[50px] 
+          lg:px-[100px] xl:px-[200px]'
       >
-        <h1 className='text-[40px] font-bold mb-[30px] leading-10'>{title}</h1>
+        <h1 className='mb-[30px] text-[40px] font-bold leading-10'>{title}</h1>
         {children}
       </main>
       <FooterContent />

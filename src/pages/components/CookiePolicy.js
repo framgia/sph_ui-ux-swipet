@@ -22,7 +22,7 @@ const CookiePolicy = () => {
     <div
       className={`${
         isPopUp ? 'block' : 'hidden'
-      } sticky bottom-0 bg-white py-4 px-2 lg:py-10 md:px-12 lg:px-[200px] leading-6 border-t-2 z-20 text-justify`}
+      } sticky bottom-0 z-20 border-t-2 bg-white py-4 px-2 text-justify leading-6 md:px-12 lg:py-10 lg:px-[200px]`}
     >
       <p className='text-sm lg:text-base'>
         Swipet stores cookies on your computer. These cookies are used in order
@@ -37,12 +37,12 @@ const CookiePolicy = () => {
           Privacy Policy
         </Link>
       </p>
-      <div className='mt-6 block md:flex justify-start lg:justify-between items-center'>
+      <div className='mt-6 block items-center justify-start md:flex lg:justify-between'>
         <p className='text-sm lg:text-base'>
           By using our site you agree to our use of cookies.
         </p>
         <button
-          className='primary-button ml-0 md:ml-8 mt-4 md:mt-0'
+          className='primary-button ml-0 mt-4 md:ml-8 md:mt-0'
           onClick={onClickNoted}
         >
           Got it!

@@ -21,7 +21,7 @@ const AboutSwipet = () => {
           <div key={index}>
             {item.isPTag && <p className='pb-4 text-lg'>{item.text}</p>}
             {item.isH3Tag && (
-              <h3 className='text-2xl pb-4 font-medium'>{item.text}</h3>
+              <h3 className='pb-4 text-2xl font-medium'>{item.text}</h3>
             )}
             {item.isUlTag && (
               <ul className='list-disc pl-8 pb-4'>{listItems}</ul>

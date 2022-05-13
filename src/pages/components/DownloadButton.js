@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const DownloadButton = ({ src, alt, upperText, lowerText, link }) => {
   return (
     <button
-      className='bg-dark-ash text-white w-[165px] h-[48px] rounded p-2 font-bold desktop:mx-0'
+      className='h-[48px] w-[165px] rounded bg-dark-ash p-2 font-bold text-white'
       onClick={() => window.open(link, '_blank')}
     >
       <div className='flex items-center'>

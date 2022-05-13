@@ -3,7 +3,7 @@ import { requirements } from '../../../../utilities/constants';
 
 const Requirements = () => {
   return (
-    <div className='border-2 p-4 pl-9 mx-12 bg-sky-100 rounded-lg'>
+    <div className='mx-12 rounded-lg border-2 bg-sky-100 p-4 pl-9'>
       <ul className='list-disc'>
         {requirements.map((req) => {
           return (

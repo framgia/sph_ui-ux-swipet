@@ -8,18 +8,18 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='h-screen flex flex-col justify-center items-center px-5 md:px-[100px]'>
+    <div className='flex h-screen flex-col items-center justify-center px-5 md:px-[100px]'>
       <MetaDecorator
         title={notFoundMetaData.title}
         content={notFoundMetaData.content}
       />
 
       <LazyLoadImage
-        className='w-[350px] mb-12'
+        className='mb-12 w-[350px]'
         src='/images/Dog404.webp'
         alt='dog holding paper in mouth'
       />
-      <h3 className='text-center text-[40px] font-bold text-brown-900 mb-9'>
+      <h3 className='mb-9 text-center text-[40px] font-bold text-brown-900'>
         Wooofs! We can't sniff out the page you're looking for.
       </h3>
       <button
