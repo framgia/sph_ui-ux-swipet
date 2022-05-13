@@ -4,7 +4,7 @@ import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
-const config = (closeChatBox) => {
+const config = (closeChatBox, mode) => {
   let initialMessages = [
     createChatBotMessage("Hi, I'm Swipet Assistant"),
     createChatBotMessage(
@@ -13,7 +13,7 @@ const config = (closeChatBox) => {
         withAvatar: true,
         delay: 700,
         widget: 'options',
-      }
+      },
     ),
   ];
 
@@ -27,7 +27,13 @@ const config = (closeChatBox) => {
     initialMessages,
     customComponents: {
       header: () => (
-        <div className='w-100 flex h-16 items-center justify-between rounded-t-lg bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 px-3'>
+        <div
+          className={`w-100 flex h-16 items-center justify-between ${
+            mode === 'light'
+              ? 'bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500'
+              : 'bg-dark-ash-900'
+          } rounded-t-lg px-3`}
+        >
           <img
             className='w-10 rounded-full'
             src='/images/RoundOrangeLogo.svg'

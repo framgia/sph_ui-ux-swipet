@@ -4,10 +4,12 @@ import { features } from '../../../utilities/constants';
 
 const FeatureSection = () => {
   return (
-    <section>
+    <section className='dark:bg-dark-ash-800 pb-[70px]'>
       {/* Heading */}
       <div className='title-heading'>
-        <h2>Adopting a pet has never been easier</h2>
+        <h2 className='dark:text-orange-900'>
+          Adopting a pet has never been easier
+        </h2>
       </div>
       {/* Cards */}
       {features.map((item, index) => (

@@ -2,15 +2,32 @@ import React from 'react';
 import DownloadButton from '../DownloadButton';
 import FooterContent from './FooterContent';
 
-const FooterSection = () => {
+const FooterSection = ({ mode }) => {
   return (
     <div>
-      <div className='h-[420px] bg-gradient-to-t from-orange-900 via-orange-600 to-orange-500 lg:h-[420px]'>
-        <div className="flex h-full w-full flex-col items-center justify-center gap-20 bg-[url('/public/images/BottomBanner.svg')]">
+      <div
+        className={`${
+          mode === 'light'
+            ? 'bg-gradient-to-t from-orange-900 via-orange-600 to-orange-500'
+            : 'bg-dark-ash-800'
+        } h-[420px] lg:h-[420px]`}
+      >
+        <div
+          className={`${
+            mode === 'light'
+              ? 'bg-[url("/public/images/BottomBanner.svg")]'
+              : 'bg-[url("/public/images/BottomBannerDark.svg")]'
+          } flex h-full w-full flex-col items-center justify-center gap-20`}
+        >
           <div>
             <p className='text-center text-[44px] font-bold leading-[50px] text-white sm:text-5xl sm:leading-[65px]'>
-              Your <span className='text-yellow-900'>bestfriend</span> is <br />
-              waiting for <span className='text-yellow-900'>you</span>
+              Your{' '}
+              <span className='text-yellow-900 dark:text-orange-900'>
+                bestfriend
+              </span>{' '}
+              is <br />
+              waiting for{' '}
+              <span className='text-yellow-900 dark:text-orange-900'>you</span>
             </p>
           </div>
           <div className='flex justify-center space-x-3 lg:space-x-4'>
@@ -31,7 +48,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <FooterContent />
+      <FooterContent mode={mode} />
     </div>
   );
 };

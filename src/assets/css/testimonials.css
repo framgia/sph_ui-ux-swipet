@@ -1,5 +1,5 @@
 .slider-control {
-  @apply my-3 mr-5 h-[30px] w-[30px] rounded-full bg-navy-300 hover:bg-navy-500 focus:bg-navy-100 sm:mr-2;
+  @apply my-3 mr-5 h-[30px] w-[30px] rounded-full bg-navy-300 hover:bg-navy-500  focus:bg-navy-100 sm:mr-2;
 }
 
 .slick-track {
