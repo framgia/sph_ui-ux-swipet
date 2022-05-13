@@ -15,11 +15,11 @@ const FooterContent = ({ mode }) => {
             <LazyLoadImage
               src={`${
                 mode === 'light'
-                  ? '/images/LogoMix.svg'
+                  ? '/images/LogoDarkFit.svg'
                   : '/images/LogoDarkTheme.svg'
               }`}
               alt='LogoDark'
-              className={`${mode === 'light' ? 'h-12 w-48' : '-ml-8'}`}
+              className='h-12 w-48'
             />
           </Link>
           <p className='mt-8 text-center md:text-left'>
