@@ -13,7 +13,7 @@ const MainHeadline = ({ mode }) => {
       } h-[710px] px-[20px] 
         pt-[64px] sm:px-[55px] sm:pt-[38px] lg:h-[572px] lg:px-[100px] lg:pt-[51px] xl:px-[200px] 2xl:px-[339px]`}
     >
-      <div className='h-[80px] w-[165px] dark:-ml-8 dark:-mt-10 dark:h-[105px] dark:w-[300px] sm:m-auto dark:md:m-auto  dark:md:-mt-14 lg:h-[48px] lg:w-[192px]'>
+      <div className='h-[80px] w-[165px] sm:m-auto lg:h-[48px] lg:w-[192px] '>
         <Link to='/'>
           <LazyLoadImage
             src={`${
