@@ -4,7 +4,7 @@ import { features } from '../../../utilities/constants';
 
 const FeatureSection = () => {
   return (
-    <section className='dark:bg-dark-ash-800 pb-[70px]'>
+    <section className='pb-[70px] pt-24 dark:bg-dark-ash-800 sm:pt-16 lg:pt-0'>
       {/* Heading */}
       <div className='title-heading'>
         <h2 className='dark:text-orange-900'>
