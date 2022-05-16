@@ -7,6 +7,9 @@ import TwitterIcon from '../icons/TwitterIcon';
 import InstagramIcon from '../icons/InstagramIcon';
 
 const FooterContent = ({ mode }) => {
+  const setDarkColor = {
+    ...(mode === 'dark' && { color: '#d8782e' }),
+  };
   return (
     <div className='flex flex-col px-[20px] text-brown-900 dark:bg-dark-ash-700 sm:px-[20px] md:px-[55px] lg:px-[200px]'>
       <div className='flex flex-col items-center justify-between dark:text-white sm:gap-12 md:flex-row'>
@@ -57,21 +60,21 @@ const FooterContent = ({ mode }) => {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <FacebookIcon {...(mode === 'dark' && { color: '#d8782e' })} />
+            <FacebookIcon {...setDarkColor} />
           </a>
           <a
             href='https://www.instagram.com/'
             target='_blank'
             rel='noreferrer noopener'
           >
-            <TwitterIcon {...(mode === 'dark' && { color: '#d8782e' })} />
+            <TwitterIcon {...setDarkColor} />
           </a>
           <a
             href='https://www.twitter.com/'
             target='_blank'
             rel='noreferrer noopener'
           >
-            <InstagramIcon {...(mode === 'dark' && { color: '#d8782e' })} />
+            <InstagramIcon {...setDarkColor} />
           </a>
         </div>
         <p className='w-[365px] dark:text-white'>
