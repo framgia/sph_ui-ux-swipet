@@ -49,7 +49,7 @@ const FeatureCard = ({ item, index, length }) => {
             <h3 className='mb-0 text-center font-semibold text-navy-900 sm:text-left sm:text-[32px] md:mb-4'>
               {item.title}
             </h3>
-            <p className='text-justify text-brown-900 sm:text-xl md:w-full md:text-left'>
+            <p className='mb-12 text-justify text-brown-900 sm:text-xl md:w-full md:text-left'>
               {item.description}
             </p>
           </div>
