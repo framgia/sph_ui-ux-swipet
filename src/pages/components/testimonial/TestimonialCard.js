@@ -12,8 +12,10 @@ const TestimonialCard = ({ item }) => {
       />
       {/* Content */}
       <figcaption className='absolute left-0 right-0 bottom-5 mr-5 rounded-lg bg-gradient-to-t from-black pb-5 text-white'>
-        <p className='mx-5 mb-3 font-semibold'>{item.text}</p>
-        <p className='mx-5 font-allison text-[32px]'>{item.author}</p>
+        <p className='mx-4 mb-4 text-sm font-semibold xl:text-lg'>
+          {item.text}
+        </p>
+        <p className='mx-4 font-allison text-[32px]'>{item.author}</p>
       </figcaption>
     </figure>
   );

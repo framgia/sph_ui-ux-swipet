@@ -27,12 +27,12 @@ const FeatureCard = ({ item, index, length }) => {
   };
 
   return (
-    <div className='px-5 sm:px-14 lg:px-[200px]'>
+    <div className='px-5 sm:px-8 md:px-24 lg:px-14 xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
       {/* feature */}
       <div className='relative z-20 mt-[50px] sm:mt-24 lg:mt-[144px]'>
         <div
           className={`container flex flex-col ${
-            index % 2 !== 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'
+            index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'
           } items-center justify-center gap-x-40 md:gap-x-10`}
         >
           {/* Image */}
@@ -45,11 +45,11 @@ const FeatureCard = ({ item, index, length }) => {
             />
           </div>
           {/* Content */}
-          <div className='flex flex-1 flex-col items-center md:items-start'>
-            <h3 className='mb-0 text-center font-semibold text-navy-900 dark:text-orange-900 sm:text-left sm:text-[32px] md:mb-4'>
+          <div className='flex flex-1 flex-col items-center lg:items-start'>
+            <h3 className='mb-4 text-center text-2xl font-semibold text-navy-900 dark:text-orange-900 sm:text-3xl md:mb-4 lg:text-left lg:text-4xl'>
               {item.title}
             </h3>
-            <p className='text-justify text-brown-900 dark:text-white sm:text-xl md:w-full md:text-left'>
+            <p className='text-center text-sm text-brown-900 dark:text-white sm:text-base md:w-full md:text-left lg:text-lg'>
               {item.description}
             </p>
           </div>

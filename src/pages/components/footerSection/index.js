@@ -19,16 +19,18 @@ const FooterSection = ({ mode }) => {
               : 'bg-[url("/public/images/BottomBannerDark.svg")]'
           } flex h-full w-full flex-col items-center justify-center gap-20`}
         >
-          <div>
-            <p className='text-center text-[44px] font-bold leading-[50px] text-white sm:text-5xl sm:leading-[65px]'>
-              Your{' '}
+          <div className='text-center font-bold text-white'>
+            <h1 className='heading-size'>
+              Your
               <span className='text-yellow-900 dark:text-orange-900'>
                 bestfriend
-              </span>{' '}
-              is <br />
-              waiting for{' '}
+              </span>
+              is
+            </h1>
+            <h1 className='heading-size'>
+              waiting for
               <span className='text-yellow-900 dark:text-orange-900'>you</span>
-            </p>
+            </h1>
           </div>
           <div className='flex justify-center space-x-3 lg:space-x-4'>
             <DownloadButton
