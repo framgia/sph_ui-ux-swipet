@@ -57,21 +57,21 @@ const FooterContent = ({ mode }) => {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <FacebookIcon color='#d8782e' />
+            <FacebookIcon {...(mode === 'dark' && { color: '#d8782e' })} />
           </a>
           <a
             href='https://www.instagram.com/'
             target='_blank'
             rel='noreferrer noopener'
           >
-            <TwitterIcon color='#d8782e' />
+            <TwitterIcon {...(mode === 'dark' && { color: '#d8782e' })} />
           </a>
           <a
             href='https://www.twitter.com/'
             target='_blank'
             rel='noreferrer noopener'
           >
-            <InstagramIcon color='#d8782e' />
+            <InstagramIcon {...(mode === 'dark' && { color: '#d8782e' })} />
           </a>
         </div>
         <p className='w-[365px] dark:text-white'>

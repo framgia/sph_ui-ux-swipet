@@ -19,7 +19,7 @@
 }
 
 .react-chatbot-kit-chat-input {
-  @apply w-full rounded-l-lg border-none bg-stone-100 pr-0 text-xs focus:outline-none;
+  @apply w-full rounded-l-lg rounded-r-none border-none bg-stone-100 text-xs  focus:outline-none;
 }
 
 .react-chatbot-kit-chat-bot-message {
