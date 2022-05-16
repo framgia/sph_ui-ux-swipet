@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import '../../../assets/css/chatbot.css';
 
@@ -54,8 +55,7 @@ const ContactUs = ({ mode }) => {
           validator={validateInput}
         />
       )}
-
-      <img
+      <LazyLoadImage
         className='fixed bottom-0 right-0 z-50 mb-4 mr-6 w-[50px] cursor-pointer md:mb-7 md:mr-[2rem] lg:mb-7 lg:w-[4.5rem]'
         onClick={() => setIsChatBoxOpen(!isChatBoxOpen)}
         src={`${chatBoxIcon()}`}

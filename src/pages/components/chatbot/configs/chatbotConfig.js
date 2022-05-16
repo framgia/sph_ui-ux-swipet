@@ -1,4 +1,5 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CloseIcon from '../../../components/icons/CloseIcon';
 import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
@@ -34,7 +35,7 @@ const config = (closeChatBox, mode) => {
               : 'bg-dark-ash-900'
           } rounded-t-lg px-3`}
         >
-          <img
+          <LazyLoadImage
             className='w-10 rounded-full'
             src='/images/RoundOrangeLogo.svg'
             alt='logo'
@@ -43,7 +44,7 @@ const config = (closeChatBox, mode) => {
         </div>
       ),
       botAvatar: () => (
-        <img
+        <LazyLoadImage
           className='h-10 w-10 rounded-full border'
           src='/images/ChatbotAvatar.svg'
           alt='chatbot avatar'
@@ -51,7 +52,7 @@ const config = (closeChatBox, mode) => {
       ),
 
       userAvatar: () => (
-        <img
+        <LazyLoadImage
           className='h-10 w-10 rounded-full border'
           src='/images/UserAvatar.svg'
           alt='user avatar'
