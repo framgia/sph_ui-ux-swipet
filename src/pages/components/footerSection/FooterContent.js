@@ -77,7 +77,7 @@ const FooterContent = ({ mode }) => {
             <InstagramIcon {...setDarkColor} />
           </a>
         </div>
-        <p className='w-[365px] dark:text-white'>
+        <p className='text-sm dark:text-white sm:text-base'>
           Copyright © 2022 Swipet, Inc. All Rights Reserved
         </p>
       </div>
