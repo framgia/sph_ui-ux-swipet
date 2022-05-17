@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 
 const TestimonialCard = ({ item }) => {
@@ -7,7 +6,7 @@ const TestimonialCard = ({ item }) => {
     <figure className='relative pr-5 pb-5'>
       <Link to={`/swipet-journeys/${item.author}`} target='none'>
         {/* Image */}
-        <LazyLoadImage
+        <img
           className='w-full rounded-lg object-cover drop-shadow-md'
           src={item.src}
           alt={item.name}
