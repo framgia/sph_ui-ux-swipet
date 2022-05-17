@@ -21,15 +21,15 @@ const FooterSection = ({ mode }) => {
         >
           <div className='text-center font-bold text-white'>
             <h1 className='heading-size'>
-              Your
+              Your{' '}
               <span className='text-yellow-900 dark:text-orange-900'>
-                bestfriend
+                bestfriend{' '}
               </span>
               is
             </h1>
             <h1 className='heading-size'>
               waiting for
-              <span className='text-yellow-900 dark:text-orange-900'>you</span>
+              <span className='text-yellow-900 dark:text-orange-900'> you</span>
             </h1>
           </div>
           <div className='flex justify-center space-x-3 lg:space-x-4'>
