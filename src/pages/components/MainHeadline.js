@@ -63,7 +63,7 @@ const MainHeadline = ({ mode }) => {
         <div
           data-aos='fade-left'
           data-aos-duration='1000'
-          className='absolute top-[360px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px] 
+          className='absolute top-[400px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px] 
             md:top-[312px] lg:right-0 lg:top-[40px] lg:h-[507px] lg:w-[430px] xl:w-[464px]'
         >
           <LazyLoadImage
