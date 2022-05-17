@@ -6,7 +6,7 @@ import CookiePolicy from '../CookiePolicy';
 import useDarkMode from '../../../utilities/hooks/useDarkMode';
 
 const ExternalPageTemplate = ({ title, children }) => {
-  useDarkMode();
+  const mode = useDarkMode();
 
   return (
     <Fragment>
@@ -25,7 +25,7 @@ const ExternalPageTemplate = ({ title, children }) => {
         <h1 className='mb-[30px] text-[40px] font-bold leading-10'>{title}</h1>
         {children}
       </main>
-      <FooterContent />
+      <FooterContent mode={mode} />
       <CookiePolicy />
     </Fragment>
   );
