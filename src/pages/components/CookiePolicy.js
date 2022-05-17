@@ -22,7 +22,7 @@ const CookiePolicy = () => {
     <div
       className={`${
         isPopUp ? 'block' : 'hidden'
-      } sticky bottom-0 z-20 border-t-2 bg-white py-4 px-2 text-justify leading-6 md:px-12 lg:py-10 lg:px-[200px]`}
+      } fixed bottom-0 z-20 border-t-2 bg-white py-4 px-2 text-justify leading-6 md:px-12 lg:py-10 lg:px-[200px]`}
     >
       <p className='text-sm lg:text-base'>
         Swipet stores cookies on your computer. These cookies are used in order
