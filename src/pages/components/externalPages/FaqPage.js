@@ -10,8 +10,7 @@ import {
 import ExternalPageTemplate from './ExternalPageTemplate';
 import MetaDecorator from '../MetaDecorator';
 import CaretDown from '../icons/CaretDown';
-import { faqConstant } from '../../../utilities/constants';
-import { faqMetaData } from '../../../utilities/constants';
+import { faqConstant, faqMetaData } from '../../../utilities/constants';
 
 const FaqPage = () => {
   return (

@@ -1,8 +1,7 @@
 import React from 'react';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import MetaDecorator from '../MetaDecorator';
-import { aboutPageConstant } from '../../../utilities/constants';
-import { aboutMetaData } from '../../../utilities/constants';
+import { aboutPageConstant, aboutMetaData } from '../../../utilities/constants';
 
 const AboutSwipet = () => {
   const listItems = aboutPageConstant[5].text.map((list, index) => (
