@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        arial: ['Arial'],
         allison: ['Allison Regular'],
         nunito: ['Nunito'],
       },
@@ -85,6 +86,9 @@ module.exports = {
           800: '#424242',
           900: '#2D2D2D',
         },
+      },
+      screens: {
+        '3xl': '1720px',
       },
     },
   },

@@ -1,3 +1,7 @@
 .title-heading {
-  @apply mx-auto w-11/12 pt-[60px] sm:pt-[160px] sm:text-[40px] md:w-1/2 lg:w-2/5;
+  @apply mx-auto w-11/12 pt-32 sm:w-[576px] sm:pt-72 md:pt-56 lg:pt-40;
+}
+
+.heading-size {
+  @apply text-4xl sm:text-5xl 2xl:text-6xl;
 }
