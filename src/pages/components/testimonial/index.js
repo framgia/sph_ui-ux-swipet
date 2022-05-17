@@ -40,10 +40,10 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='bg-white pl-6 sm:px-0'>
+    <section className='bg-white dark:bg-dark-ash-700 pl-6 sm:px-0'>
       {/* Heading */}
       <div className='title-heading py-20'>
-        <h2>Start a life-changing journey</h2>
+        <h2 className='dark:text-orange-900'>Start a life-changing journey</h2>
       </div>
       {/* Carousel */}
       <div className='z-0 pb-20 sm:pl-14 lg:pl-[200px]'>

@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import '../../../assets/css/chatbot.css';
 
@@ -8,7 +9,7 @@ import chatbotConfig from './configs/chatbotConfig';
 import ActionProvider from './configs/ActionProvider';
 import MessageParser from './configs/MessageParser';
 
-const ContactUs = () => {
+const ContactUs = ({ mode }) => {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
 
   window.addEventListener('beforeunload', () => {
@@ -26,11 +27,27 @@ const ContactUs = () => {
     return messages;
   };
 
+  const chatBoxIcon = () => {
+    if (mode === 'light') {
+      if (isChatBoxOpen) {
+        return '/images/CloseFloatingButton.svg';
+      } else {
+        return '/images/ChatFloatingButton.svg';
+      }
+    } else {
+      if (isChatBoxOpen) {
+        return '/images/CloseFloatingButtonDark.svg';
+      } else {
+        return '/images/ChatFloatingButtonDark.svg';
+      }
+    }
+  };
+
   return (
     <Fragment>
       {isChatBoxOpen && (
         <Chatbot
-          config={chatbotConfig(closeChatBox)}
+          config={chatbotConfig(closeChatBox, mode)}
           actionProvider={ActionProvider}
           messageHistory={loadMessages()}
           messageParser={MessageParser}
@@ -38,15 +55,10 @@ const ContactUs = () => {
           validator={validateInput}
         />
       )}
-
-      <img
+      <LazyLoadImage
         className='fixed bottom-0 right-0 z-50 mb-4 mr-6 w-[50px] cursor-pointer md:mb-7 md:mr-[2rem] lg:mb-7 lg:w-[4.5rem]'
         onClick={() => setIsChatBoxOpen(!isChatBoxOpen)}
-        src={
-          isChatBoxOpen
-            ? '/images/CloseFloatingButton.svg'
-            : '/images/ChatFloatingButton.svg'
-        }
+        src={`${chatBoxIcon()}`}
         alt='chat floating button'
       />
     </Fragment>

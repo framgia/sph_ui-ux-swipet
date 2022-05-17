@@ -1,10 +1,11 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CloseIcon from '../../../components/icons/CloseIcon';
 import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
-const config = (closeChatBox) => {
+const config = (closeChatBox, mode) => {
   let initialMessages = [
     createChatBotMessage("Hi, I'm Swipet Assistant"),
     createChatBotMessage(
@@ -13,7 +14,7 @@ const config = (closeChatBox) => {
         withAvatar: true,
         delay: 700,
         widget: 'options',
-      }
+      },
     ),
   ];
 
@@ -27,8 +28,14 @@ const config = (closeChatBox) => {
     initialMessages,
     customComponents: {
       header: () => (
-        <div className='w-100 flex h-16 items-center justify-between rounded-t-lg bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 px-3'>
-          <img
+        <div
+          className={`w-100 flex h-16 items-center justify-between ${
+            mode === 'light'
+              ? 'bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500'
+              : 'bg-dark-ash-900'
+          } rounded-t-lg px-3`}
+        >
+          <LazyLoadImage
             className='w-10 rounded-full'
             src='/images/RoundOrangeLogo.svg'
             alt='logo'
@@ -37,7 +44,7 @@ const config = (closeChatBox) => {
         </div>
       ),
       botAvatar: () => (
-        <img
+        <LazyLoadImage
           className='h-10 w-10 rounded-full border'
           src='/images/ChatbotAvatar.svg'
           alt='chatbot avatar'
@@ -45,7 +52,7 @@ const config = (closeChatBox) => {
       ),
 
       userAvatar: () => (
-        <img
+        <LazyLoadImage
           className='h-10 w-10 rounded-full border'
           src='/images/UserAvatar.svg'
           alt='user avatar'

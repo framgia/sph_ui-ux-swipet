@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import {
-  informationLinks,
-  socialMediaLinks,
-} from '../../../utilities/constants';
+import { informationLinks } from '../../../utilities/constants';
+import FacebookIcon from '../icons/FacebookIcon';
+import TwitterIcon from '../icons/TwitterIcon';
+import InstagramIcon from '../icons/InstagramIcon';
 
-const FooterContent = () => {
+const FooterContent = ({ mode }) => {
+  const setDarkColor = {
+    ...(mode === 'dark' && { color: '#d8782e' }),
+  };
   return (
-    <div className='flex flex-col px-[20px] text-brown-900 sm:px-[20px] md:px-[55px] lg:px-[200px]'>
-      <div className='flex flex-col items-center justify-between sm:gap-12 md:flex-row'>
+    <div className='flex flex-col px-[20px] text-brown-900 dark:bg-dark-ash-700 sm:px-[20px] md:px-[55px] lg:px-[200px]'>
+      <div className='flex flex-col items-center justify-between dark:text-white sm:gap-12 md:flex-row'>
         <div className='mt-7 flex w-[300px] flex-col items-center justify-center pb-6 md:mt-3 md:w-[250px] md:items-start md:pb-12'>
           <Link to='/'>
             <LazyLoadImage
-              src='/images/LogoDarkFit.svg'
+              src={`${
+                mode === 'light'
+                  ? '/images/LogoDarkFit.svg'
+                  : '/images/LogoDarkTheme.svg'
+              }`}
               alt='LogoDark'
               className='h-12 w-48'
             />
@@ -48,22 +55,29 @@ const FooterContent = () => {
       <hr />
       <div className='my-11 flex flex-col items-center justify-between gap-10 md:flex-row'>
         <div className='flex w-80 justify-center gap-12 md:justify-start'>
-          {socialMediaLinks.map((item, i) => (
-            <a
-              key={i}
-              href={item.href}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              <LazyLoadImage
-                src={item.src}
-                className='h-6 hover:contrast-50'
-                alt={item.alt}
-              />
-            </a>
-          ))}
+          <a
+            href='https://www.facebook.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <FacebookIcon {...setDarkColor} />
+          </a>
+          <a
+            href='https://www.instagram.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <TwitterIcon {...setDarkColor} />
+          </a>
+          <a
+            href='https://www.twitter.com/'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <InstagramIcon {...setDarkColor} />
+          </a>
         </div>
-        <p className='w-[365px]'>
+        <p className='w-[365px] dark:text-white'>
           Copyright © 2022 Swipet, Inc. All Rights Reserved
         </p>
       </div>

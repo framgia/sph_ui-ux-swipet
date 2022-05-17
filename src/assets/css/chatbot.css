@@ -1,9 +1,9 @@
 .react-chatbot-kit-chat-container {
-  @apply fixed bottom-0 right-0 z-50 mb-[5rem] mr-6 w-80 rounded-lg border shadow-md md:mb-[5.5rem] md:mr-[2rem] md:w-96 lg:mb-[7rem] lg:w-96;
+  @apply fixed bottom-0 right-0 z-50 mb-[5rem] mr-6 w-80 rounded-lg border shadow-md dark:border-none md:mb-[5.5rem] md:mr-[2rem] md:w-96 lg:mb-[7rem] lg:w-96;
 }
 
 .react-chatbot-kit-chat-inner-container {
-  @apply m-0 h-full;
+  @apply m-0 h-full dark:bg-dark-ash-700;
 }
 
 .react-chatbot-kit-chat-btn-send {
@@ -15,19 +15,19 @@
 }
 
 .react-chatbot-kit-chat-input-container {
-  @apply relative rounded-b-md border-t bg-white p-3;
+  @apply relative rounded-b-md border-t bg-white p-3 dark:border-dark-ash-900 dark:bg-dark-ash-700;
 }
 
 .react-chatbot-kit-chat-input {
-  @apply w-full rounded-l-lg border-none bg-stone-100 pr-0 text-xs focus:outline-none;
+  @apply w-full rounded-l-lg rounded-r-none border-none bg-stone-100 text-xs  focus:outline-none;
 }
 
 .react-chatbot-kit-chat-bot-message {
-  @apply ml-3 bg-mocha-400;
+  @apply ml-3 bg-mocha-400 dark:bg-dark-ash-900 dark:text-white;
 }
 
 .react-chatbot-kit-user-chat-message {
-  @apply mr-3 bg-orange-300;
+  @apply mr-3 bg-orange-300 dark:bg-navy-600 dark:text-white;
 }
 
 .react-chatbot-kit-chat-bot-message,
