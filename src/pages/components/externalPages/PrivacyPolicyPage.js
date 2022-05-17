@@ -1,8 +1,10 @@
 import React from 'react';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import MetaDecorator from '../MetaDecorator';
-import { privacyPolicyConstant } from '../../../utilities/constants';
-import { policyMetaData } from '../../../utilities/constants';
+import {
+  privacyPolicyConstant,
+  policyMetaData,
+} from '../../../utilities/constants';
 
 const PrivacyPolicyPage = () => {
   const listItems = privacyPolicyConstant[11].text.map((list, index) => (

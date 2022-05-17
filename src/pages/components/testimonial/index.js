@@ -17,6 +17,7 @@ const Testimonial = () => {
     autoplay: false,
     speed: 500,
     slidesToShow: 3.5,
+    lazyLoad: true,
     responsive: [
       {
         breakpoint: 1280,

@@ -1,8 +1,10 @@
 import React from 'react';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import MetaDecorator from '../MetaDecorator';
-import { termsAndConditionsConstant } from '../../../utilities/constants';
-import { termServiceMetaData } from '../../../utilities/constants';
+import {
+  termsAndConditionsConstant,
+  termServiceMetaData,
+} from '../../../utilities/constants';
 
 const TermsAndConditionsPage = () => {
   const allUlTags = termsAndConditionsConstant.filter(
