@@ -15,7 +15,6 @@ const Testimonial = ({ testimonialCaption }) => {
   const { name } = useParams('name');
 
   const settings = {
-    className: 'hover:cursor-pointer',
     arrows: false,
     dots: false,
     infinite: false,
