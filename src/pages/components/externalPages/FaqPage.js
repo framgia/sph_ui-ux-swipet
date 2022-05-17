@@ -23,8 +23,8 @@ const FaqPage = () => {
           <AccordionItem
             key={i}
             className={` ${
-              i === 0 && 'border-t-2 border-t-orange-900 pt-7'
-            } border border-x-0 border-b-brown-900 py-3 last:mb-4`}
+              i === 0 ? 'border-t-2 border-t-orange-900 pt-7' : 'border-t-0'
+            } border border-x-0 border-b-brown-900 py-3 last:mb-4 dark:border-b-white`}
           >
             <AccordionItemHeading>
               <AccordionItemButton className='flex items-center justify-between md:h-[70px]'>
