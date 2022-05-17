@@ -11,6 +11,7 @@ import PrivacyPolicy from './pages/components/externalPages/PrivacyPolicyPage';
 import TermsAndConditions from './pages/components/externalPages/TermsAndConditionsPage';
 import NotFound from './pages/components/externalPages/NotFound';
 import reportWebVitals from './reportWebVitals';
+import TestimonialContent from './pages/components/externalPages/TestimonialExternalPages/TestimonialContent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
               path='/terms-and-conditions'
               element={<TermsAndConditions />}
             />
+            <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
           </Routes>
         </ScrollToTop>
       </Router>

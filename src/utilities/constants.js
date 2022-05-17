@@ -35,36 +35,467 @@ export const testimonials = [
     src: '/images/Test00.webp',
     text: 'This is the best thing that ever happened to me. Buddy is the most loving dog.',
     author: 'Therese',
+    posted: 'Posted on May 4, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'Buddy is the most loving dog I have',
+      },
+      {
+        isPTag: true,
+        text: 'When buddy came into my life, he gave the love that I deserve.',
+      },
+      {
+        isH1Tag: true,
+        text: 'My buddy Habits',
+      },
+      {
+        isPTag: true,
+        text: 'Buddy loves to do this things:',
+      },
+      {
+        isUlTag: true,
+        text: [
+          'He swim in the pool every morning.',
+          'He loves playing ball.',
+          'He will love to do crazy things that can make you happy.',
+          'He was too clingy and want to kiss you everyday.',
+          'Every morning he will poop at your shoes.',
+          
+        ],
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test00A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'The story between buddy and me',
+      },
+      {
+        isPTag: true,
+        text: '"I had been asking my parents to buy a dog," my mom said that the animals should not for sale it should be adopt or should be loved by a human. My mom said that we don’t need to have a dog because we have 3 cats',
+      },
+      {
+        isPTag: true,
+        text: '"we always had cats since they were easier to take care of and three kids was already a lot for my mom to handle. But, when my parents made us move—for the fourth time—my mom finally caved and said we could start fostering dogs to see how well we did with sharing responsibilities.'
+      },
+      {
+        isPTag: true,
+        text: '"I open up my google and look for a dog adoption. Then I found Swipet app I tried to open the app, then look for some dogs to adopt. but This didn`t work out too well because we fell so in love with the first dog we have before. but when I went to go back to Swipet and meet the person who handle the dog I got the love at first sight with the dog. but the owner said that someone had gotten there before us. Secretly, though, my mom knew this and she had seen Labrador puppies at the same site the Swipet app. So to "cheer me up," she said, "Let as just go pet some puppies and sign up for the next foster dog." We picked up a brown Labrador and never put her back down. We named her Buddy and brought home the best surprise for my dad. He had said he never wanted a dog but now he is the one who plays with her the most out of all of us."'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test00B.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Thanks to Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'Because of Swipet, I am not alone anymore. I have the best buddy in my life. Thanks to swipet to give me the chance to change my lifestyle.',
+      },
+      {
+        isPTag: true,
+        text: 'Before I’m alone in the park. When I discovered swipet app I was trying to open it hoping to find my buddy in life at the park. Then thanks a lot to this app because it has a lot of pets to be adopt and pets that will give you love.',
+      },
+      {
+        isPTag: true,
+        text: 'Thank to Swipet Becuase our familly getting more love and become more stronger. The dog feels how you feel, when you are stress, he will give you happiness, when you are sad he will give you joy.',
+      },
+      {
+        isH1Tag: true,
+        text: '5 start for Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'I will give 5 start rating for Swipet because it is not just only an app with adoptation feauture. But it has also swip that can motivate you to have more friends not only a human or a person but a friend for your pet. Maybe you can find forever for your pet here in Swipet or maybe you can break the record of having more friends maybe you can have 1 billion of pet lover here in earth with this app.'
+      },
+    ]
   },
   {
     name: 'Man hugging dog.',
     src: '/images/Test01.webp',
     text: 'Awesome app! I really like how it matched me with the pet that always wanted.',
     author: 'Egie',
+    posted: 'Posted on May 4, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'Roux matched me',
+      },
+      {
+        isPTag: true,
+        text: 'Hi! I wanted to reach out and give you all an update on sweet Roux. We adopted Roux in late April from the shelter after seeing him on the Swipet, specifically that he was the KPRC pet feature of the week. We already had a silver lab named Lam and had a special place in our hearts for silver labs. We had been wanting to add to our family for a bit but were waiting for the right time. Suddenly, one night as I am scrolling in Swipet app I saw Roux and instantly fell in love (and cried lol). Anyhow, once we got Roux home we fell even more in love. Roux and Jax quickly became the closest of brothers and share a special bond. Roux favorite things at home are booty rubs, bananas, long walks where he can stop and smell all the smells, swimming at the dog park and going on car rides. Roux is the sweetest boy and has brought infinite joy to our lives. He turned 10 in September but is still very much a puppy at heart. He is happy and healthy and we are forever grateful for the work that HHS does and is doing for dogs like Roux. He is our biggest blessings.',
+      },
+      {
+        isH1Tag: true,
+        text: 'Roux story',
+      },
+      {
+        isPTag: true,
+        text: 'Roux was an energetic dog he loves playing outside the house. While he was playing with his toy bone he did not notice that there is a car behind him. He was hit and run by a car. Roux was alone and his parent was trying to cure him but they don’t have enough money to rush roux in the pets hospital. So they agreed to each other to post Roux in the Swipet maybe there is one person who will get inlove with Roux and  help him with his wounds from accident.',
+      },
+      {
+        isPTag: true,
+        text: 'Thanks to Swipet because Roux has given a second chance to live and to cure with his wounds. He found his saviour through this app. Roux was rush in the hospital with his new parent and now he was live with me your Egie.'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test01A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'The daily routine story with my Roux',
+      },
+      {
+        isPTag: true,
+        text: 'Every morning Roux will snap my face to wake me up. He was so annoying. He will do it every works day but every weekend he will not wake me up. every time I will take a bath Roux will just playing around the house. Sometimes Roux will joinning me at the bathroom.'
+      },
+      {
+        isPTag: true,
+        text: 'Roux will always eat together with my family. He will bark so loud if he will not be given with a dog food. The funniest thing when we are eating every time we pray before we eat he will wait until he heard the word “Amen” after saying amen Roux will eat.'
+      },
+      {
+        isPTag: true,
+        text: 'Every weekend we will give time to each other we will play outside. We will go to the park, to beach and we will travell around the country. Roux and me loves travel.'
+      },
+      {
+        isPTag: true,
+        text: 'When I upset at work Roux will nap at my lap and he will make me happy and I can feel that he will confort me. Roux I the best friend I have. I will be sad if he will be in a car accedent again.'},
+      {
+        isImgTag: true,
+        src: '/images/Test01B.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Thanks to Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'Thanks to Swipet because Roux save me and also I save Roux. The time that I need a friend I need something that will match my needs, match my hobbies Swipet give what you want thats why Roux came into my life.',
+      },
+      {
+        isPTag: true,
+        text: 'Thanks to Swipet app because they give us oppurtunity to adopt to love and to get a friend in thier app. They give as chance to meet, to find best friend that really match with us. Not a person but a pet.'
+      },
+      {
+        isPTag: true,
+        text: 'Animals needs love, comfort and a shelter, because of Swipet they have give a chance to live with a loving parents to to recieve a love from their second parent.'
+      },
+      {
+        isH1Tag: true,
+        text: '5 start for Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'I will give 5 start rating for Swipet. I really recomend this app for you guys trust me you are not wasting your time here. Pets needs friends and a shelter. This app will help you and the other animals. I dont have any regret that I used this app. Untill now I am still using it so that Roux will find more friends.'
+      },
+    ]
   },
   {
     name: 'Child kissing dog.',
     src: '/images/Test02.webp',
     text: "Never thought I'd get interested in an app like this. I love Swipet.",
     author: 'Joash',
+    posted: 'Posted on May 6, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'Barkly from Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'I never thought I’d get interested with an app like this. Before I am one of the kid who will always look for a game sites, I love to search some new games, I will always read the testimonials for other people. I will always review their review from the app.',
+      },
+      {
+        isPTag: true,
+        text: 'I have no other installed app in my phone but only games. I love to install a lot of games so that I can enjoy in my room.  but when the adds pop introducing the Swipet app I accendtally click the install button but I really dont care I continue my games. later on I remember that the Swipet app was install in my phone. Out of curousity I try to open the app and read some testimonials and review. Then I was convienced with there testimonials so I tried to create an account just for fun I never thought that this app is really a good app.'},
+      {
+        isH1Tag: true,
+        text: 'Things I love this app ',
+      },
+      {
+        isUlTag: true,
+        text: [
+          'I can communicate others for giving me an advice on how to train my dog.',
+          'Before I was alone in my room but because of this app I have now Barkly.',
+          'I am very focused in media games but Swipet give me the chance to change my behavior and engage with the real world.',
+          'I can now enjoy with the real things not in vertual reality.',
+          'I engaged with a lot of friends its because of this app.',
+          
+        ],
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test02A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Barkly smash my heart',
+      },
+      {
+        isPTag: true,
+        text: 'Barkly smash my heart, He gave happiness that cann’t find in mobile games app. Barkly is more powerful than my heros in mobile games. He is more smarter than my enemy in games. He is not just a dog but he is more thank a friend. Barkly can play with me all day. He can manage to play and enjoyed with me 24 hours. Because of this dog my health, my vision my bone are getting more stronger and healthier because we are playing in the real world. Before I just only lying in the bed or sitting ing my gaming chair and playing some boring games but now when Barkly came into my life I can now run, walk and laughing and the best is in the park not in my dark room.'
+      },
+      {
+        isPTag: true,
+        text: 'Barkly is my main hero and I am his best friend enemy when we are playing. He can also act like a hero. in the park we love eating running walking. My mom was very happy that I found barkly because I am now very friendly and good in terms of socialzing with other people.'
+      },
+      {
+        isPTag: true,
+        text: 'Thank a lot Swipet my manners and characteristic are improving everyday.'},
+      {
+        isImgTag: true,
+        src: '/images/Test02B.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Thanks to Swipet',
+      },
+      {
+        isUlTag: true,
+        text: [
+          'Thanks to Swipet because my mobile game addiction was gone.',
+          'Thank you Swipet you change a lot of people here by displaying a good friend.',
+          'Thank you Swipet I was given a chance to adopt a dog that can help to improve my real life here in the real world.',
+          'Thanks to Swipet because there is a lot of persons and pets that meets their needs.',
+        ],
+      },
+    ]
   },
   {
     name: 'Woman with cat.',
     src: '/images/Test03.webp',
     text: 'I really find my happiness here.',
     author: 'Rose',
+    posted: 'Posted on May 6, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'Just watching my cats can make me happy',
+      },
+      {
+        isPTag: true,
+        text: 'The purpose of our lives is to be happy. To be with Lambo can make me happy. Lambo is my cute cat. Just watching him playing around sleeping hangging around can make me happy. I am a person who love pets especially cats. For me cats is unique cats has a different knowledge with the dog. Also cats has a mysterios face reaction.  cats can do more than just make me laugh. Sometimes he will ignore me just to make me happy.',
+      },
+      {
+        isPTag: true,
+        text: 'Lambo is very playful and energetic. Sometimes he expel all that energy by darting from room to room, jumping up and down on the furniture, and going a little crazy. Lambo will always be a lambo in my life, He will always be my happiest pet I love. He can make me happy all day.'
+      },
+      {
+        isPTag: true,
+        text: 'He will eat your lizard and distroy your plates but still I am happy to be with lambo.'
+      },
+      {
+        isH1Tag: true,
+        text: 'Funny Weird behavior with lambo',
+      },
+      {
+        isH4Tag: true,
+        text: 'Head Bumping',
+      },
+      {
+        isH4PTag: true,
+        text: 'Lambo bop, bop, bops me with his head, I know that he say, “I love you!”.',
+      },
+      {
+        isH4Tag: true,
+        text: 'Napping in Tight Places',
+      },
+      {
+        isH4PTag: true,
+        text: 'Lambo loves to slip into small spaces like boxes, dresser drawers, or closet corners where they feel cozy and secure. He may even prefer these places to a comfy pet bed.',
+      },
+      {
+        isH4Tag: true,
+        text: 'Ignoring me',
+      },
+      {
+        isH4PTag: true,
+        text: 'Lambo will ignor me, it’s probably not because of anything I did. Our notoriously independent Lambo sometimes need a little time to themselves now and then.'
+      },
+      {
+        isH4Tag: true,
+        text: 'Sleeping on Your Laptop',
+      },
+      {
+        isH4PTag: true,
+        text: 'With so many soft and comfy places to rest, why does Lambo plunk down on my hard laptop? because it is nice and warm after I have used it for awhile. and also Lambo figured out this is a good way to get my attention.'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test03A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Lambo steal my sadness',
+      },
+      {
+        isPTag: true,
+        text: 'Lambo exchange smile face to me. Now, I wear the happy and smiling face while Lambo wear the sad face. He’s face was so mysterious I dont even see him smiling, but I know inside his heart and mind he was happy to be with me. I know lambo can’t smile but his heart are smiling and he was happy. Before I have a boyfriend we are dating everywhere but I can’t give him happiness and he cant give me happiness also. So we decided to break.'
+      },
+      {
+        isPTag: true,
+        text: 'After break I was alone and still I can’t find my happiness on my own but when I discover the Swipet app I see Lambo with sad face also. I try to read the content and I discover that he is homeless and nothing to eat and dont have anyfriends so I try to reach the person who posted lambo and I adopt lambo.'
+      },
+      {
+        isPTag: true,
+        text: 'After 1 week lambo can share his feeling to me, lambo will play around and joinning you in bed and I fall inlove with lambo. Lambo can give happiness to him, and I can give good shelter to him.'
+      },
+      {
+        isPTag: true,
+        text: 'I will be sad if Lambo will gone.'},
+      {
+        isImgTag: true,
+        src: '/images/Test03B.webp',
+      },
+    ]
   },
   {
     name: 'Cat love cat.',
     src: '/images/Test04.webp',
     text: 'My pet found his spouse. So sweet',
-    author: 'Charlote',
+    author: 'Charlotte',
+    posted: 'Posted on May 6, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'Snake matched me',
+      },
+      {
+        isPTag: true,
+        text: 'I found a husband for my Monkey, whose name is Snake, and they are so sweet to each other that Monkey gets irritated when I try to get Snake to snuggle. Their favorite spot in the house is on the couch, where they snuggle each other, which makes me envious of Snake because Monkey does not pay attention to me. While looking through this app, I came into Snake. I saw a cat named Fluppy while scrolling through the adoptable cats, but I kept going, hoping to find an older cat who had been ignored. I came across Snake photo looking up at the camera with his wonderful large green eyes, I stated, not realizing he was the one'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test04A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Daily routine of Monkey and Snake',
+      },
+      {
+        isPTag: true,
+        text: "Monkey is even beginning to embrace his new role as a wife. Snake is welcome to snuggle up to him. They settle down together at bedtime, drawn in by his soothing warmth. It's not just the four-legged husband and wife who are loving their new family, as I have indicated. 'My sons adore them both and get giddy if one of them chooses to sleep in their bed or sit with them while they do schoolwork."
+      },
+      {
+        isPTag: true,
+        text: "Monkey has always desired to be the center of attention and to be showered with love. It's the icing on top that his specific gravity of cuteness has brought him together with a new family."
+      },
+      {
+        isPTag: true,
+        text: 'No matter the size, it’s easy to get pulled in by the right pet. There’s one out there just waiting for you.'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test04B.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Thanks to Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'Thanks to Swipet, I was able to find the ideal husband for my Monkey. Snake is a sweet, lovable, and loyal companion to my Monkey.'
+      },
+      {
+        isPTag: true,
+        text: 'Thanks to the Swipet app for providing us with the option to adopt and find a wonderful spouse for our pet. They provide us with the opportunity to meet a new pet and a companion for our current pet.'
+      },
+      {
+        isH1Tag: true,
+        text: '5 start for Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'Just use this app no more explaination you can really injoy and love this app trust me.'
+      },
+    ]
   },
   {
     name: 'Child hugging dog.',
     src: '/images/Test05.webp',
     text: 'My new pet is my new bestfriend, thank you Swipet.',
     author: 'Fumihito',
+    posted: 'Posted on May 6, 2022',
+    description: [
+      {
+        isH1Tag: true,
+        text: 'My bestfriend',
+      },
+      {
+        isPTag: true,
+        text: 'Friendship is another word for love. A friend is what the heart needs all the time. The greatest gift of life is friendship, and I have received it. Sometimes you meet a person and you just click—you’re comfortable with them, like you’ve known them your whole life, and you don’t have to pretend to be anyone or anything. Some people arrive and make such a beautiful impact on your life, you can barely remember what life was like without them.'
+      },
+      {
+        isPTag: true,
+        text: 'In my life I have a bestfriend, not a person, not my classmate not my cousin but a dog a bulldog. His name is Metal. Metal is my bestfriend. He can cary me and he can scare person who attempt to bully me. He let bullies scream and run. Metal is my gaurd he also the responsible of our house. Metal loves to eat more and more and more.',
+      },
+      {
+        isPTag: true,
+        text: 'I have a stroy why metal is my new bestfriend.',
+      },
+      {
+        isH1Tag: true,
+        text: 'Before Metal came into my life',
+      },
+      {
+        isPTag: true,
+        text: 'I have a friend before a human friend, We always hang out outside our home. We will go to the park and playing at the park. We share our though we share our lunch foods. Yes a very close friend. But one day I went to their home and look for my friend but no one shows. I should and know the door. I saw the door is opening and thought that it was my friend who open the door but his grandfather who open it. “Hello good morning where is my friend”. he answered “your friend is not here. your friend is going to other counter to live with his mom. He will never comming back.'
+      },
+      {
+        isPTag: true,
+        text: 'I was so broke that time because my friend left me without anywords. I was alone at the park and I dont have any friends. So I try to contact him when I open my data there is an adds that telling me like this. “Are you alone? do you have any friends? Do you want new friends?  install swipet now and meet your new friend. Adopt a dog or a cat then you can difine the true meaning of friendship”. So I try to install Swipet and explore it.'
+      },
+      {
+        isPTag: true,
+        text: '1 week of scrolling the app I get more interest and I find Bulldog. I try to adopt him get contract with the owner. When the bulldog is in our home we named it  Metal. After a week Metal and I getting more close and Metal show the real meaning of friendship. He will never leave me and he will never tired of me.'
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test05A.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Metal my true friend',
+      },
+      {
+        isUlTag: true,
+        text: [
+          'Metal is my true friend. Today I’m turning 35 and I have a kid now. still Metal is my dog. He will take care of my son and he can be a babysitter.',
+          'He became the best buddy of my son.',
+          'He will remove my stress from work.',
+          'He will love to watch cocomelon with my son.',
+          'I learned a lot from Metal for being a friend. He tought me how to be a real friend. Metal is a good dog He will guide you to become a better person. When Metal die I will give thanks to him because he mold me and save me from sadnes.'
+        ],
+      },
+      {
+        isImgTag: true,
+        src: '/images/Test05B.webp',
+      },
+      {
+        isH1Tag: true,
+        text: 'Thanks to Swipet',
+      },
+      {
+        isUlTag: true,
+        text: [
+          'Reason why I should thanks to Swipet app.',
+          'Swipet gave me a more than enough friend.',
+          'Swipet allow other pets to have a better shelter.',
+          'Swipet allows you to get more and more friends.',
+        ],
+      },
+      {
+        isH1Tag: true,
+        text: '5 start for Swipet',
+      },
+      {
+        isPTag: true,
+        text: 'I really recomend this app guys. Trust me'},
+    ]
   },
 ];
 

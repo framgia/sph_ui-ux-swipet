@@ -6,10 +6,14 @@ import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
 import { testimonials } from '../../../utilities/constants';
+import { useParams } from 'react-router-dom';
 
-const Testimonial = () => {
+const Testimonial = ({ testimonialCaption }) => {
   // eslint-disable-next-line
   let sliderRef = useRef < Slider > null;
+
+  const { name } = useParams('name');
+
   const settings = {
     arrows: false,
     dots: false,
@@ -45,7 +49,7 @@ const Testimonial = () => {
       {/* Heading */}
       <div className='title-heading ml-0 mr-5 py-20 sm:mx-auto sm:w-[452px] xl:w-[600px]'>
         <h2 className='heading-size dark:text-orange-900'>
-          Start a life-changing journey
+          {testimonialCaption || 'Start a life-changing journey'}
         </h2>
       </div>
       {/* Carousel */}
@@ -56,9 +60,12 @@ const Testimonial = () => {
           }}
           {...settings}
         >
-          {testimonials.map((item, index) => (
-            <TestimonialCard key={index} item={item} />
-          ))}
+          {testimonials.map(
+            (item, index) =>
+              name !== item.author && (
+                <TestimonialCard key={index} item={item} />
+              )
+          )}
         </Slider>
         {/* Controls */}
         <button
