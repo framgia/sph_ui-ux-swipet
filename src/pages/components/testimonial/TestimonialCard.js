@@ -1,11 +1,10 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const TestimonialCard = ({ item }) => {
   return (
     <figure className='relative pr-5 pb-5'>
       {/* Image */}
-      <LazyLoadImage
+      <img
         className='w-full rounded-lg object-cover drop-shadow-md'
         src={item.src}
         alt={item.name}
