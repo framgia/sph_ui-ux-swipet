@@ -19,7 +19,7 @@ const ExternalPageTemplate = ({ title, children }) => {
         </Link>
       </header>
       <main
-        className='border-b border-brown-900 px-[20px] py-[32px] text-lg text-brown-900 dark:border-white dark:bg-dark-ash-700 
+        className='border-b border-brown-900 px-[20px] py-[32px] text-lg text-brown-900 dark:border-white dark:bg-dark-ash-700
           dark:text-white md:px-[50px] lg:px-[100px] xl:px-[200px]'
       >
         <h1 className='mb-[30px] text-[40px] font-bold leading-10'>{title}</h1>

@@ -1,7 +1,7 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { testimonials } from '../../../../utilities/constants';
 import TestimonialHeaderContent from './TestimonialHeaderContent';
-import { useParams } from 'react-router-dom';
 import TestimonialContentTemplate from './TestimonialContentTemplate';
 import Testimonial from '../../testimonial';
 import FooterContent from '../../footerSection/FooterContent';
@@ -17,7 +17,7 @@ const TestimonialContent = () => {
       <ContactUs />
       <TestimonialHeaderContent item={authorData} />
       <TestimonialContentTemplate description={authorData} />
-      <Testimonial testimonialCaption='You may also like'/>
+      <Testimonial testimonialCaption='You may also like' />
       <FooterContent />
       <CookiePolicy />
     </div>

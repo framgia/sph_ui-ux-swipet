@@ -10,15 +10,13 @@ export const features = [
     name: 'match',
     title: 'Match with your perfect buddy',
     src: '/images/FeatureMatch.webp',
-    description:
-      'Swipe to the right for the pet you like until you get your match.',
+    description: 'Swipe to the right for the pet you like until you get your match.',
   },
   {
     name: 'chat',
     title: ' Get to know them',
     src: '/images/FeatureChat.webp',
-    description:
-      'Chat with the keeper of your match pet, and learn more about them.',
+    description: 'Chat with the keeper of your match pet, and learn more about them.',
   },
   {
     name: 'adopt',
@@ -61,7 +59,6 @@ export const testimonials = [
           'He will love to do crazy things that can make you happy.',
           'He was too clingy and want to kiss you everyday.',
           'Every morning he will poop at your shoes.',
-          
         ],
       },
       {
@@ -78,11 +75,11 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: '"we always had cats since they were easier to take care of and three kids was already a lot for my mom to handle. But, when my parents made us move—for the fourth time—my mom finally caved and said we could start fostering dogs to see how well we did with sharing responsibilities.'
+        text: '"we always had cats since they were easier to take care of and three kids was already a lot for my mom to handle. But, when my parents made us move—for the fourth time—my mom finally caved and said we could start fostering dogs to see how well we did with sharing responsibilities.',
       },
       {
         isPTag: true,
-        text: '"I open up my google and look for a dog adoption. Then I found Swipet app I tried to open the app, then look for some dogs to adopt. but This didn`t work out too well because we fell so in love with the first dog we have before. but when I went to go back to Swipet and meet the person who handle the dog I got the love at first sight with the dog. but the owner said that someone had gotten there before us. Secretly, though, my mom knew this and she had seen Labrador puppies at the same site the Swipet app. So to "cheer me up," she said, "Let as just go pet some puppies and sign up for the next foster dog." We picked up a brown Labrador and never put her back down. We named her Buddy and brought home the best surprise for my dad. He had said he never wanted a dog but now he is the one who plays with her the most out of all of us."'
+        text: '"I open up my google and look for a dog adoption. Then I found Swipet app I tried to open the app, then look for some dogs to adopt. but This didn`t work out too well because we fell so in love with the first dog we have before. but when I went to go back to Swipet and meet the person who handle the dog I got the love at first sight with the dog. but the owner said that someone had gotten there before us. Secretly, though, my mom knew this and she had seen Labrador puppies at the same site the Swipet app. So to "cheer me up," she said, "Let as just go pet some puppies and sign up for the next foster dog." We picked up a brown Labrador and never put her back down. We named her Buddy and brought home the best surprise for my dad. He had said he never wanted a dog but now he is the one who plays with her the most out of all of us."',
       },
       {
         isImgTag: true,
@@ -110,9 +107,9 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I will give 5 start rating for Swipet because it is not just only an app with adoptation feauture. But it has also swip that can motivate you to have more friends not only a human or a person but a friend for your pet. Maybe you can find forever for your pet here in Swipet or maybe you can break the record of having more friends maybe you can have 1 billion of pet lover here in earth with this app.'
+        text: 'I will give 5 start rating for Swipet because it is not just only an app with adoptation feauture. But it has also swip that can motivate you to have more friends not only a human or a person but a friend for your pet. Maybe you can find forever for your pet here in Swipet or maybe you can break the record of having more friends maybe you can have 1 billion of pet lover here in earth with this app.',
       },
-    ]
+    ],
   },
   {
     name: 'Man hugging dog.',
@@ -139,7 +136,7 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Thanks to Swipet because Roux has given a second chance to live and to cure with his wounds. He found his saviour through this app. Roux was rush in the hospital with his new parent and now he was live with me your Egie.'
+        text: 'Thanks to Swipet because Roux has given a second chance to live and to cure with his wounds. He found his saviour through this app. Roux was rush in the hospital with his new parent and now he was live with me your Egie.',
       },
       {
         isImgTag: true,
@@ -151,19 +148,20 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Every morning Roux will snap my face to wake me up. He was so annoying. He will do it every works day but every weekend he will not wake me up. every time I will take a bath Roux will just playing around the house. Sometimes Roux will joinning me at the bathroom.'
+        text: 'Every morning Roux will snap my face to wake me up. He was so annoying. He will do it every works day but every weekend he will not wake me up. every time I will take a bath Roux will just playing around the house. Sometimes Roux will joinning me at the bathroom.',
       },
       {
         isPTag: true,
-        text: 'Roux will always eat together with my family. He will bark so loud if he will not be given with a dog food. The funniest thing when we are eating every time we pray before we eat he will wait until he heard the word “Amen” after saying amen Roux will eat.'
+        text: 'Roux will always eat together with my family. He will bark so loud if he will not be given with a dog food. The funniest thing when we are eating every time we pray before we eat he will wait until he heard the word “Amen” after saying amen Roux will eat.',
       },
       {
         isPTag: true,
-        text: 'Every weekend we will give time to each other we will play outside. We will go to the park, to beach and we will travell around the country. Roux and me loves travel.'
+        text: 'Every weekend we will give time to each other we will play outside. We will go to the park, to beach and we will travell around the country. Roux and me loves travel.',
       },
       {
         isPTag: true,
-        text: 'When I upset at work Roux will nap at my lap and he will make me happy and I can feel that he will confort me. Roux I the best friend I have. I will be sad if he will be in a car accedent again.'},
+        text: 'When I upset at work Roux will nap at my lap and he will make me happy and I can feel that he will confort me. Roux I the best friend I have. I will be sad if he will be in a car accedent again.',
+      },
       {
         isImgTag: true,
         src: '/images/Test01B.webp',
@@ -178,11 +176,11 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Thanks to Swipet app because they give us oppurtunity to adopt to love and to get a friend in thier app. They give as chance to meet, to find best friend that really match with us. Not a person but a pet.'
+        text: 'Thanks to Swipet app because they give us oppurtunity to adopt to love and to get a friend in thier app. They give as chance to meet, to find best friend that really match with us. Not a person but a pet.',
       },
       {
         isPTag: true,
-        text: 'Animals needs love, comfort and a shelter, because of Swipet they have give a chance to live with a loving parents to to recieve a love from their second parent.'
+        text: 'Animals needs love, comfort and a shelter, because of Swipet they have give a chance to live with a loving parents to to recieve a love from their second parent.',
       },
       {
         isH1Tag: true,
@@ -190,9 +188,9 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I will give 5 start rating for Swipet. I really recomend this app for you guys trust me you are not wasting your time here. Pets needs friends and a shelter. This app will help you and the other animals. I dont have any regret that I used this app. Untill now I am still using it so that Roux will find more friends.'
+        text: 'I will give 5 start rating for Swipet. I really recomend this app for you guys trust me you are not wasting your time here. Pets needs friends and a shelter. This app will help you and the other animals. I dont have any regret that I used this app. Untill now I am still using it so that Roux will find more friends.',
       },
-    ]
+    ],
   },
   {
     name: 'Child kissing dog.',
@@ -211,7 +209,8 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I have no other installed app in my phone but only games. I love to install a lot of games so that I can enjoy in my room.  but when the adds pop introducing the Swipet app I accendtally click the install button but I really dont care I continue my games. later on I remember that the Swipet app was install in my phone. Out of curousity I try to open the app and read some testimonials and review. Then I was convienced with there testimonials so I tried to create an account just for fun I never thought that this app is really a good app.'},
+        text: 'I have no other installed app in my phone but only games. I love to install a lot of games so that I can enjoy in my room.  but when the adds pop introducing the Swipet app I accendtally click the install button but I really dont care I continue my games. later on I remember that the Swipet app was install in my phone. Out of curousity I try to open the app and read some testimonials and review. Then I was convienced with there testimonials so I tried to create an account just for fun I never thought that this app is really a good app.',
+      },
       {
         isH1Tag: true,
         text: 'Things I love this app ',
@@ -224,7 +223,6 @@ export const testimonials = [
           'I am very focused in media games but Swipet give me the chance to change my behavior and engage with the real world.',
           'I can now enjoy with the real things not in vertual reality.',
           'I engaged with a lot of friends its because of this app.',
-          
         ],
       },
       {
@@ -237,15 +235,16 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Barkly smash my heart, He gave happiness that cann’t find in mobile games app. Barkly is more powerful than my heros in mobile games. He is more smarter than my enemy in games. He is not just a dog but he is more thank a friend. Barkly can play with me all day. He can manage to play and enjoyed with me 24 hours. Because of this dog my health, my vision my bone are getting more stronger and healthier because we are playing in the real world. Before I just only lying in the bed or sitting ing my gaming chair and playing some boring games but now when Barkly came into my life I can now run, walk and laughing and the best is in the park not in my dark room.'
+        text: 'Barkly smash my heart, He gave happiness that cann’t find in mobile games app. Barkly is more powerful than my heros in mobile games. He is more smarter than my enemy in games. He is not just a dog but he is more thank a friend. Barkly can play with me all day. He can manage to play and enjoyed with me 24 hours. Because of this dog my health, my vision my bone are getting more stronger and healthier because we are playing in the real world. Before I just only lying in the bed or sitting ing my gaming chair and playing some boring games but now when Barkly came into my life I can now run, walk and laughing and the best is in the park not in my dark room.',
       },
       {
         isPTag: true,
-        text: 'Barkly is my main hero and I am his best friend enemy when we are playing. He can also act like a hero. in the park we love eating running walking. My mom was very happy that I found barkly because I am now very friendly and good in terms of socialzing with other people.'
+        text: 'Barkly is my main hero and I am his best friend enemy when we are playing. He can also act like a hero. in the park we love eating running walking. My mom was very happy that I found barkly because I am now very friendly and good in terms of socialzing with other people.',
       },
       {
         isPTag: true,
-        text: 'Thank a lot Swipet my manners and characteristic are improving everyday.'},
+        text: 'Thank a lot Swipet my manners and characteristic are improving everyday.',
+      },
       {
         isImgTag: true,
         src: '/images/Test02B.webp',
@@ -263,7 +262,7 @@ export const testimonials = [
           'Thanks to Swipet because there is a lot of persons and pets that meets their needs.',
         ],
       },
-    ]
+    ],
   },
   {
     name: 'Woman with cat.',
@@ -282,11 +281,11 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Lambo is very playful and energetic. Sometimes he expel all that energy by darting from room to room, jumping up and down on the furniture, and going a little crazy. Lambo will always be a lambo in my life, He will always be my happiest pet I love. He can make me happy all day.'
+        text: 'Lambo is very playful and energetic. Sometimes he expel all that energy by darting from room to room, jumping up and down on the furniture, and going a little crazy. Lambo will always be a lambo in my life, He will always be my happiest pet I love. He can make me happy all day.',
       },
       {
         isPTag: true,
-        text: 'He will eat your lizard and distroy your plates but still I am happy to be with lambo.'
+        text: 'He will eat your lizard and distroy your plates but still I am happy to be with lambo.',
       },
       {
         isH1Tag: true,
@@ -314,7 +313,7 @@ export const testimonials = [
       },
       {
         isH4PTag: true,
-        text: 'Lambo will ignor me, it’s probably not because of anything I did. Our notoriously independent Lambo sometimes need a little time to themselves now and then.'
+        text: 'Lambo will ignor me, it’s probably not because of anything I did. Our notoriously independent Lambo sometimes need a little time to themselves now and then.',
       },
       {
         isH4Tag: true,
@@ -322,7 +321,7 @@ export const testimonials = [
       },
       {
         isH4PTag: true,
-        text: 'With so many soft and comfy places to rest, why does Lambo plunk down on my hard laptop? because it is nice and warm after I have used it for awhile. and also Lambo figured out this is a good way to get my attention.'
+        text: 'With so many soft and comfy places to rest, why does Lambo plunk down on my hard laptop? because it is nice and warm after I have used it for awhile. and also Lambo figured out this is a good way to get my attention.',
       },
       {
         isImgTag: true,
@@ -334,24 +333,25 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Lambo exchange smile face to me. Now, I wear the happy and smiling face while Lambo wear the sad face. He’s face was so mysterious I dont even see him smiling, but I know inside his heart and mind he was happy to be with me. I know lambo can’t smile but his heart are smiling and he was happy. Before I have a boyfriend we are dating everywhere but I can’t give him happiness and he cant give me happiness also. So we decided to break.'
+        text: 'Lambo exchange smile face to me. Now, I wear the happy and smiling face while Lambo wear the sad face. He’s face was so mysterious I dont even see him smiling, but I know inside his heart and mind he was happy to be with me. I know lambo can’t smile but his heart are smiling and he was happy. Before I have a boyfriend we are dating everywhere but I can’t give him happiness and he cant give me happiness also. So we decided to break.',
       },
       {
         isPTag: true,
-        text: 'After break I was alone and still I can’t find my happiness on my own but when I discover the Swipet app I see Lambo with sad face also. I try to read the content and I discover that he is homeless and nothing to eat and dont have anyfriends so I try to reach the person who posted lambo and I adopt lambo.'
+        text: 'After break I was alone and still I can’t find my happiness on my own but when I discover the Swipet app I see Lambo with sad face also. I try to read the content and I discover that he is homeless and nothing to eat and dont have anyfriends so I try to reach the person who posted lambo and I adopt lambo.',
       },
       {
         isPTag: true,
-        text: 'After 1 week lambo can share his feeling to me, lambo will play around and joinning you in bed and I fall inlove with lambo. Lambo can give happiness to him, and I can give good shelter to him.'
+        text: 'After 1 week lambo can share his feeling to me, lambo will play around and joinning you in bed and I fall inlove with lambo. Lambo can give happiness to him, and I can give good shelter to him.',
       },
       {
         isPTag: true,
-        text: 'I will be sad if Lambo will gone.'},
+        text: 'I will be sad if Lambo will gone.',
+      },
       {
         isImgTag: true,
         src: '/images/Test03B.webp',
       },
-    ]
+    ],
   },
   {
     name: 'Cat love cat.',
@@ -366,7 +366,7 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I found a husband for my Monkey, whose name is Snake, and they are so sweet to each other that Monkey gets irritated when I try to get Snake to snuggle. Their favorite spot in the house is on the couch, where they snuggle each other, which makes me envious of Snake because Monkey does not pay attention to me. While looking through this app, I came into Snake. I saw a cat named Fluppy while scrolling through the adoptable cats, but I kept going, hoping to find an older cat who had been ignored. I came across Snake photo looking up at the camera with his wonderful large green eyes, I stated, not realizing he was the one'
+        text: 'I found a husband for my Monkey, whose name is Snake, and they are so sweet to each other that Monkey gets irritated when I try to get Snake to snuggle. Their favorite spot in the house is on the couch, where they snuggle each other, which makes me envious of Snake because Monkey does not pay attention to me. While looking through this app, I came into Snake. I saw a cat named Fluppy while scrolling through the adoptable cats, but I kept going, hoping to find an older cat who had been ignored. I came across Snake photo looking up at the camera with his wonderful large green eyes, I stated, not realizing he was the one',
       },
       {
         isImgTag: true,
@@ -378,15 +378,15 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: "Monkey is even beginning to embrace his new role as a wife. Snake is welcome to snuggle up to him. They settle down together at bedtime, drawn in by his soothing warmth. It's not just the four-legged husband and wife who are loving their new family, as I have indicated. 'My sons adore them both and get giddy if one of them chooses to sleep in their bed or sit with them while they do schoolwork."
+        text: "Monkey is even beginning to embrace his new role as a wife. Snake is welcome to snuggle up to him. They settle down together at bedtime, drawn in by his soothing warmth. It's not just the four-legged husband and wife who are loving their new family, as I have indicated. 'My sons adore them both and get giddy if one of them chooses to sleep in their bed or sit with them while they do schoolwork.",
       },
       {
         isPTag: true,
-        text: "Monkey has always desired to be the center of attention and to be showered with love. It's the icing on top that his specific gravity of cuteness has brought him together with a new family."
+        text: "Monkey has always desired to be the center of attention and to be showered with love. It's the icing on top that his specific gravity of cuteness has brought him together with a new family.",
       },
       {
         isPTag: true,
-        text: 'No matter the size, it’s easy to get pulled in by the right pet. There’s one out there just waiting for you.'
+        text: 'No matter the size, it’s easy to get pulled in by the right pet. There’s one out there just waiting for you.',
       },
       {
         isImgTag: true,
@@ -398,11 +398,11 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Thanks to Swipet, I was able to find the ideal husband for my Monkey. Snake is a sweet, lovable, and loyal companion to my Monkey.'
+        text: 'Thanks to Swipet, I was able to find the ideal husband for my Monkey. Snake is a sweet, lovable, and loyal companion to my Monkey.',
       },
       {
         isPTag: true,
-        text: 'Thanks to the Swipet app for providing us with the option to adopt and find a wonderful spouse for our pet. They provide us with the opportunity to meet a new pet and a companion for our current pet.'
+        text: 'Thanks to the Swipet app for providing us with the option to adopt and find a wonderful spouse for our pet. They provide us with the opportunity to meet a new pet and a companion for our current pet.',
       },
       {
         isH1Tag: true,
@@ -410,9 +410,9 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Just use this app no more explaination you can really injoy and love this app trust me.'
+        text: 'Just use this app no more explaination you can really injoy and love this app trust me.',
       },
-    ]
+    ],
   },
   {
     name: 'Child hugging dog.',
@@ -427,7 +427,7 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'Friendship is another word for love. A friend is what the heart needs all the time. The greatest gift of life is friendship, and I have received it. Sometimes you meet a person and you just click—you’re comfortable with them, like you’ve known them your whole life, and you don’t have to pretend to be anyone or anything. Some people arrive and make such a beautiful impact on your life, you can barely remember what life was like without them.'
+        text: 'Friendship is another word for love. A friend is what the heart needs all the time. The greatest gift of life is friendship, and I have received it. Sometimes you meet a person and you just click—you’re comfortable with them, like you’ve known them your whole life, and you don’t have to pretend to be anyone or anything. Some people arrive and make such a beautiful impact on your life, you can barely remember what life was like without them.',
       },
       {
         isPTag: true,
@@ -443,15 +443,15 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I have a friend before a human friend, We always hang out outside our home. We will go to the park and playing at the park. We share our though we share our lunch foods. Yes a very close friend. But one day I went to their home and look for my friend but no one shows. I should and know the door. I saw the door is opening and thought that it was my friend who open the door but his grandfather who open it. “Hello good morning where is my friend”. he answered “your friend is not here. your friend is going to other counter to live with his mom. He will never comming back.'
+        text: 'I have a friend before a human friend, We always hang out outside our home. We will go to the park and playing at the park. We share our though we share our lunch foods. Yes a very close friend. But one day I went to their home and look for my friend but no one shows. I should and know the door. I saw the door is opening and thought that it was my friend who open the door but his grandfather who open it. “Hello good morning where is my friend”. he answered “your friend is not here. your friend is going to other counter to live with his mom. He will never comming back.',
       },
       {
         isPTag: true,
-        text: 'I was so broke that time because my friend left me without anywords. I was alone at the park and I dont have any friends. So I try to contact him when I open my data there is an adds that telling me like this. “Are you alone? do you have any friends? Do you want new friends?  install swipet now and meet your new friend. Adopt a dog or a cat then you can difine the true meaning of friendship”. So I try to install Swipet and explore it.'
+        text: 'I was so broke that time because my friend left me without anywords. I was alone at the park and I dont have any friends. So I try to contact him when I open my data there is an adds that telling me like this. “Are you alone? do you have any friends? Do you want new friends?  install swipet now and meet your new friend. Adopt a dog or a cat then you can difine the true meaning of friendship”. So I try to install Swipet and explore it.',
       },
       {
         isPTag: true,
-        text: '1 week of scrolling the app I get more interest and I find Bulldog. I try to adopt him get contract with the owner. When the bulldog is in our home we named it  Metal. After a week Metal and I getting more close and Metal show the real meaning of friendship. He will never leave me and he will never tired of me.'
+        text: '1 week of scrolling the app I get more interest and I find Bulldog. I try to adopt him get contract with the owner. When the bulldog is in our home we named it  Metal. After a week Metal and I getting more close and Metal show the real meaning of friendship. He will never leave me and he will never tired of me.',
       },
       {
         isImgTag: true,
@@ -468,7 +468,7 @@ export const testimonials = [
           'He became the best buddy of my son.',
           'He will remove my stress from work.',
           'He will love to watch cocomelon with my son.',
-          'I learned a lot from Metal for being a friend. He tought me how to be a real friend. Metal is a good dog He will guide you to become a better person. When Metal die I will give thanks to him because he mold me and save me from sadnes.'
+          'I learned a lot from Metal for being a friend. He tought me how to be a real friend. Metal is a good dog He will guide you to become a better person. When Metal die I will give thanks to him because he mold me and save me from sadnes.',
         ],
       },
       {
@@ -494,8 +494,9 @@ export const testimonials = [
       },
       {
         isPTag: true,
-        text: 'I really recomend this app guys. Trust me'},
-    ]
+        text: 'I really recomend this app guys. Trust me',
+      },
+    ],
   },
 ];
 
@@ -563,8 +564,7 @@ export const faqConstant = [
       'The biggest difference is that most shelters keep their available pets in a single facility, while most rescue groups keep theirs in the homes of volunteers. Also, shelters usually have paid staff as well as volunteers, while rescue groups are typically volunteer-run efforts.',
   },
   {
-    title:
-      "The pet I'm interested in is at a shelter; what will it be like when I go to see her?",
+    title: "The pet I'm interested in is at a shelter; what will it be like when I go to see her?",
     content: `Shelters come in all varieties. Some are modern and beautiful, while others are old-fashioned. Some are run by private charities (and usually have terms like “SPCA” or “Humane Society” in their names) and others are government facilities and may be what you'd call “no-frills.” 
     After you've selected a pet who seems right for you, most private shelters will let you visit with him or her in their own “dog apartments” or “kitty condos,” or will invite you to spend time with the pet in a special room or fenced outdoor area set aside for pets and adopters to get acquainted.
     If you are interested in a dog and already have a dog at home, many private shelters will require you to bring in your resident dog to meet the prospective new family member. This is to make sure there will be no future dog-to-dog conflicts.
@@ -572,16 +572,14 @@ export const faqConstant = [
     `,
   },
   {
-    title:
-      'What kind of paperwork will I have to fill out at a private or municipal shelter?',
+    title: 'What kind of paperwork will I have to fill out at a private or municipal shelter?',
     content: `All private shelters will ask you to fill out an adoption application. Sometimes they do this before you've met any pets, and other times, they dontt have you do it until you've selected a pet you'd like to adopt.
     Sometimes, the questionnaire is mostly about practical things like your experience with pets, landlord information, and references. Other times, it's part of the process by which the shelter staff help steer you toward the pet who is right for your lifestyle.
     Municipal shelters sometimes have the same paperwork requirements as private shelters, but usually it's far more streamlined.
     `,
   },
   {
-    title:
-      'Should I choose a private or municipal shelter? Is one better than the other?',
+    title: 'Should I choose a private or municipal shelter? Is one better than the other?',
     content: `However un-fancy the facility or minimal the staff, pets in animal control agencies and municipal shelters are just as wonderful as pets in other types of organizations. 
     The adoption experience might be more pleasant at a private shelter, and the adoption fee is frequently much lower at a municipal shelter, but in the end, it's about finding your special pet, wherever they are!`,
   },
@@ -600,8 +598,7 @@ export const faqConstant = [
   },
   {
     title: 'Will I be able to take my pet home immediately?',
-    content:
-      "Usually, yes. Sometimes you'll have to wait for the pet to be spayed or neutered.",
+    content: "Usually, yes. Sometimes you'll have to wait for the pet to be spayed or neutered.",
   },
   {
     title: 'How much will it cost?',
@@ -615,8 +612,7 @@ export const faqConstant = [
     `,
   },
   {
-    title:
-      "After my pet has settled in and we're loving each other - what do I do next?",
+    title: "After my pet has settled in and we're loving each other - what do I do next?",
     content:
       'Studies have shown that people are three times more likely to go to a shelter or rescue group if they talk to someone else who has. So your next step is to tell the world about your wonderful pet, and where you found him or her! And, of course, to live happily ever after!',
   },

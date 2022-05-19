@@ -68,16 +68,10 @@ const Testimonial = ({ testimonialCaption }) => {
           )}
         </Slider>
         {/* Controls */}
-        <button
-          className='slider-control group'
-          onClick={() => sliderRef.slickPrev()}
-        >
+        <button className='slider-control group' onClick={() => sliderRef.slickPrev()}>
           <PreviousIcon />
         </button>
-        <button
-          className='slider-control group'
-          onClick={() => sliderRef.slickNext()}
-        >
+        <button className='slider-control group' onClick={() => sliderRef.slickNext()}>
           <NextIcon />
         </button>
       </div>

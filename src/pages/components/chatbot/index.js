@@ -18,8 +18,7 @@ const ContactUs = ({ mode }) => {
 
   const closeChatBox = () => setIsChatBoxOpen(false);
 
-  const validateInput = (input) =>
-    !input || input.trim().length === 0 ? false : true;
+  const validateInput = (input) => !(!input || input.trim().length === 0);
 
   const loadMessages = () => {
     const messages = JSON.parse(localStorage.getItem('chat_messages'));
@@ -31,16 +30,13 @@ const ContactUs = ({ mode }) => {
     if (mode === 'light') {
       if (isChatBoxOpen) {
         return '/images/CloseFloatingButton.svg';
-      } else {
-        return '/images/ChatFloatingButton.svg';
       }
-    } else {
-      if (isChatBoxOpen) {
-        return '/images/CloseFloatingButtonDark.svg';
-      } else {
-        return '/images/ChatFloatingButtonDark.svg';
-      }
+      return '/images/ChatFloatingButton.svg';
     }
+    if (isChatBoxOpen) {
+      return '/images/CloseFloatingButtonDark.svg';
+    }
+    return '/images/ChatFloatingButtonDark.svg';
   };
 
   return (

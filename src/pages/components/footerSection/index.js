@@ -2,15 +2,21 @@ import React from 'react';
 import DownloadButton from '../DownloadButton';
 import FooterContent from './FooterContent';
 
-const FooterSection = ({ mode }) => {
-  return (
-    <div>
+const FooterSection = ({ mode }) => (
+  <div>
+    <div
+      className={`${
+        mode === 'light'
+          ? 'bg-gradient-to-t from-orange-900 via-orange-600 to-orange-500'
+          : 'bg-dark-ash-800'
+      } h-[420px] lg:h-[420px]`}
+    >
       <div
         className={`${
           mode === 'light'
-            ? 'bg-gradient-to-t from-orange-900 via-orange-600 to-orange-500'
-            : 'bg-dark-ash-800'
-        } h-[420px] lg:h-[420px]`}
+            ? 'bg-[url("/public/images/BottomBanner.svg")]'
+            : 'bg-[url("/public/images/BottomBannerDark.svg")]'
+        } flex h-full w-full flex-col items-center justify-center gap-20`}
       >
         <div
           className={`${
@@ -50,9 +56,9 @@ const FooterSection = ({ mode }) => {
           </div>
         </div>
       </div>
-      <FooterContent mode={mode} />
     </div>
-  );
-};
+    <FooterContent mode={mode} />
+  </div>
+);
 
 export default FooterSection;
