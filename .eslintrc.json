@@ -28,6 +28,7 @@
     "react/no-array-index-key": "off",
     "operator-linebreak": "off",
     "no-plusplus": [1, { "allowForLoopAfterthoughts": true }],
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "react/no-unescaped-entities": "off"
   }
 }

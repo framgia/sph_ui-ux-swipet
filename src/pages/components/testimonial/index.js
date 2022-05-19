@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useParams } from 'react-router-dom';
 import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
 import { testimonials } from '../../../utilities/constants';
-import { useParams } from 'react-router-dom';
 
 const Testimonial = ({ testimonialCaption }) => {
   // eslint-disable-next-line
@@ -61,10 +61,7 @@ const Testimonial = ({ testimonialCaption }) => {
           {...settings}
         >
           {testimonials.map(
-            (item, index) =>
-              name !== item.author && (
-                <TestimonialCard key={index} item={item} />
-              )
+            (item, index) => name !== item.author && <TestimonialCard key={index} item={item} />,
           )}
         </Slider>
         {/* Controls */}

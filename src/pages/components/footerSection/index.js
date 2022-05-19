@@ -27,10 +27,8 @@ const FooterSection = ({ mode }) => (
         >
           <div className='text-center font-bold text-white'>
             <h1 className='heading-size'>
-              Your{' '}
-              <span className='text-yellow-900 dark:text-orange-900'>
-                bestfriend{' '}
-              </span>
+              Your&nbsp;
+              <span className='text-yellow-900 dark:text-orange-900'>bestfriend </span>
               is
             </h1>
             <h1 className='heading-size'>
