@@ -8,6 +8,7 @@ import FooterContent from '../../footerSection/FooterContent';
 import CookiePolicy from '../../CookiePolicy';
 import ContactUs from '../../chatbot';
 import useDarkMode from '../../../../utilities/hooks/useDarkMode';
+import NotFound from '../NotFound';
 
 const TestimonialContent = () => {
   const { name } = useParams('name');
@@ -22,6 +23,19 @@ const TestimonialContent = () => {
       <Testimonial testimonialCaption='You may also like' />
       <FooterContent mode={mode} />
       <CookiePolicy />
+    <div>
+      {authorData === undefined ? (
+        <NotFound />
+      ) : (
+        <>
+          <ContactUs />
+          <TestimonialHeaderContent item={authorData} />
+          <TestimonialContentTemplate description={authorData} />
+          <Testimonial testimonialCaption='You may also like' />
+          <FooterContent />
+          <CookiePolicy />
+        </>
+      )}
     </div>
   );
 };
