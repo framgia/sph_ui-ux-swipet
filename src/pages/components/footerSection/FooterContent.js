@@ -12,7 +12,7 @@ const FooterContent = ({ mode }) => {
   };
 
   return (
-    <div className='flex flex-col px-[20px] text-brown-900 dark:bg-dark-ash-700 sm:px-[20px] lg:px-14 xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
+    <div className='flex flex-col px-[20px] text-brown-900 dark:bg-dark-ash-800 sm:px-[20px] lg:px-14 xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
       <div className='mb-12 flex flex-col items-center justify-between space-y-12 dark:text-white lg:flex-row lg:items-start'>
         <div className='mt-12 flex w-[300px] flex-col items-center justify-center md:w-[250px] lg:items-start lg:pb-12'>
           <Link to='/'>

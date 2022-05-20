@@ -2,18 +2,21 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from '../../DownloadButton';
 
-const TestimonialHeaderContent = ({ item }) => (
+const TestimonialHeaderContent = ({ mode, item }) => (
   <figure className='relative h-[572px] pb-5 sm:h-[450px] md:h-[550] lg:h-[572px] xl:h-[595px]'>
     <LazyLoadImage
       src={item.src}
       className='h-full w-full object-cover md:object-top lg:object-[center_-400px]'
       alt={item.name}
     />
-    <figcaption className='absolute left-0 right-0 bottom-5 h-full bg-gradient-to-r from-orange-900'>
+    <figcaption className='absolute left-0 right-0 bottom-5 h-full bg-gradient-to-r from-orange-900 dark:from-dark-ash-900'>
       <div className='px-[20px] pt-[64px] sm:px-[55px] sm:pt-[38px] lg:h-[572px] lg:px-[100px] lg:pt-[51px] xl:px-[200px] 2xl:px-[339px]'>
         <Link to='/'>
           <div className='h-[39px] w-[165px] hover:cursor-pointer sm:m-auto lg:h-[48px] lg:w-[192px]'>
-            <LazyLoadImage src='/images/LogoMix.svg' alt='swipet logo' />
+            <LazyLoadImage
+              src={`${mode === 'light' ? '/images/LogoMix.svg' : '/images/LogoDarkTheme.svg'}`}
+              alt='swipet logo'
+            />
           </div>
         </Link>
         <div className='relative flex flex-col items-start'>
@@ -24,7 +27,7 @@ const TestimonialHeaderContent = ({ item }) => (
             {item.text}
           </h1>
           <h3
-            className='py-11 font-allison text-[64px] leading-7 text-yellow-900
+            className='py-11 font-allison text-[64px] leading-7 text-yellow-900 dark:text-white
                       sm:py-[35px] sm:text-center lg:w-[400px] lg:pb-12 lg:text-left xl:w-[545px] xl:text-[64px] 2xl:w-[580px]'
           >
             {item.author}

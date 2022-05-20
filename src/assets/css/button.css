@@ -1,3 +1,7 @@
 .primary-button {
   @apply rounded-lg bg-orange-900 px-8 py-2 text-center font-semibold text-white;
 }
+
+.primary-button-dark {
+  @apply rounded-lg bg-orange-800 px-8 py-2 text-center font-semibold text-gray-200;
+}

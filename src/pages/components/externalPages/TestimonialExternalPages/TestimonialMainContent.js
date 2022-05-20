@@ -10,7 +10,7 @@ const TestimonialMainContent = ({ description, altImage }) => {
     listItem = allListText[i].map((list, index) => <li key={index}>{list}</li>);
   }
   return (
-    <main className='pb-[51px] text-brown-900'>
+    <main className='pb-[51px] text-brown-900 dark:text-white'>
       {description.map((item, index) => (
         <div key={index}>
           {item.isH1Tag && <h1 className='py-4 text-[40px] font-bold leading-none'>{item.text}</h1>}
