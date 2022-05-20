@@ -2,7 +2,7 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PawTrail = () => {
-  let pawTrails = [];
+  const pawTrails = [];
   for (let i = 0; i < 6; i++) {
     pawTrails.push(
       <div key={i} className='-z-50'>
@@ -16,7 +16,7 @@ const PawTrail = () => {
           src='/images/PawTrail.svg'
           alt='paw trail'
         />
-      </div>
+      </div>,
     );
   }
 

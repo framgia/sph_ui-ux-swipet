@@ -5,17 +5,17 @@ class MessageParser {
   }
 
   parse(message) {
-    const messages = this.state.messages;
+    let userMessages = this.state.messages;
 
-    messages.push({
+    userMessages.push({
       id: Math.floor(Math.random() * 100),
       message,
       type: 'user',
     });
 
-    message = message.toLowerCase();
+    userMessages = message.toLowerCase();
 
-    localStorage.setItem('chat_messages', JSON.stringify(messages));
+    localStorage.setItem('chat_messages', JSON.stringify(userMessages));
 
     if (
       message.includes('options') ||

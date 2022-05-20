@@ -34,7 +34,7 @@ root.render(
         </ScrollToTop>
       </Router>
     </React.StrictMode>
-  </HelmetProvider>
+  </HelmetProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function

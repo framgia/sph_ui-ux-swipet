@@ -10,17 +10,14 @@ const FooterContent = ({ mode }) => {
   const setDarkColor = {
     ...(mode === 'dark' && { color: '#d8782e' }),
   };
+
   return (
     <div className='flex flex-col px-[20px] text-brown-900 dark:bg-dark-ash-700 sm:px-[20px] lg:px-14 xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
       <div className='mb-12 flex flex-col items-center justify-between space-y-12 dark:text-white lg:flex-row lg:items-start'>
         <div className='mt-12 flex w-[300px] flex-col items-center justify-center md:w-[250px] lg:items-start lg:pb-12'>
           <Link to='/'>
             <LazyLoadImage
-              src={`${
-                mode === 'light'
-                  ? '/images/LogoDarkFit.svg'
-                  : '/images/LogoDarkTheme.svg'
-              }`}
+              src={`${mode === 'light' ? '/images/LogoDarkFit.svg' : '/images/LogoDarkTheme.svg'}`}
               alt='LogoDark'
               className='h-12 w-48'
             />
@@ -35,9 +32,7 @@ const FooterContent = ({ mode }) => {
           {informationLinks.map((item, i) => (
             <Link
               key={i}
-              className={`${
-                i === 0 ? 'mt-7' : 'mt-2'
-              }  mb-2 hover:text-orange-700`}
+              className={`${i === 0 ? 'mt-7' : 'mt-2'}  mb-2 hover:text-orange-700`}
               to={item.to}
               target='_blank'
             >
@@ -62,18 +57,10 @@ const FooterContent = ({ mode }) => {
           >
             <FacebookIcon {...setDarkColor} />
           </a>
-          <a
-            href='https://www.instagram.com/'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
+          <a href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'>
             <TwitterIcon {...setDarkColor} />
           </a>
-          <a
-            href='https://www.twitter.com/'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
+          <a href='https://www.twitter.com/' target='_blank' rel='noreferrer noopener'>
             <InstagramIcon {...setDarkColor} />
           </a>
         </div>

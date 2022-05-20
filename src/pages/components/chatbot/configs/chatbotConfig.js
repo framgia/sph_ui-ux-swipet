@@ -1,21 +1,18 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import CloseIcon from '../../../components/icons/CloseIcon';
+import CloseIcon from '../../icons/CloseIcon';
 import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
 const config = (closeChatBox, mode) => {
-  let initialMessages = [
+  const initialMessages = [
     createChatBotMessage("Hi, I'm Swipet Assistant"),
-    createChatBotMessage(
-      'How may I help you? Below list are the topics I can help you with.',
-      {
-        withAvatar: true,
-        delay: 700,
-        widget: 'options',
-      },
-    ),
+    createChatBotMessage('How may I help you? Below list are the topics I can help you with.', {
+      withAvatar: true,
+      delay: 700,
+      widget: 'options',
+    }),
   ];
 
   const messages = JSON.parse(localStorage.getItem('chat_messages'));

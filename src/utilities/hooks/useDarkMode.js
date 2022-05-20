@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 const useDarkMode = () => {
   const [mode, setMode] = useState('light');
 
-  const onSelectMode = (mode) => {
-    setMode(mode);
-    if (mode === 'dark') {
+  const onSelectMode = (seletedMode) => {
+    setMode(seletedMode);
+    if (seletedMode === 'dark') {
       document.body.classList.add('dark');
     } else {
       document.body.classList.remove('dark');
@@ -18,24 +18,16 @@ const useDarkMode = () => {
 
   useEffect(() => {
     // Add listener to update styles
-    window
-      .matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', (e) =>
-        onSelectMode(e.matches ? 'dark' : 'light'),
-      );
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      onSelectMode(e.matches ? 'dark' : 'light');
+    });
 
     // Setup dark/light mode for the first time
-    onSelectMode(
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light',
-    );
+    onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
     // Remove listener
     return () => {
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', () => {});
+      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {});
     };
   }, []);
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import PawTrail from './PawTrail';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PawTrail from './PawTrail';
 
 const FeatureCard = ({ item, index, length }) => {
   useEffect(() => {
@@ -24,6 +24,8 @@ const FeatureCard = ({ item, index, length }) => {
         </div>
       );
     }
+
+    return null;
   };
 
   return (
