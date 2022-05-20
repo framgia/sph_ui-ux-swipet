@@ -17,22 +17,15 @@ const TestimonialContent = () => {
 
   return (
     <div className='dark:bg-dark-ash-800'>
-      <ContactUs />
-      <TestimonialHeaderContent item={authorData} mode={mode} />
-      <TestimonialContentTemplate description={authorData} mode={mode} />
-      <Testimonial testimonialCaption='You may also like' />
-      <FooterContent mode={mode} />
-      <CookiePolicy />
-    <div>
       {authorData === undefined ? (
         <NotFound />
       ) : (
         <>
           <ContactUs />
-          <TestimonialHeaderContent item={authorData} />
-          <TestimonialContentTemplate description={authorData} />
+          <TestimonialHeaderContent item={authorData} mode={mode} />
+          <TestimonialContentTemplate description={authorData} mode={mode} />
           <Testimonial testimonialCaption='You may also like' />
-          <FooterContent />
+          <FooterContent mode={mode} />
           <CookiePolicy />
         </>
       )}
