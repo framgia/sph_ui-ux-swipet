@@ -15,7 +15,7 @@ const TestimonialContent = () => {
   const mode = useDarkMode();
 
   return (
-    <div>
+    <div className='dark:bg-dark-ash-800'>
       <ContactUs />
       <TestimonialHeaderContent item={authorData} mode={mode} />
       <TestimonialContentTemplate description={authorData} mode={mode} />
