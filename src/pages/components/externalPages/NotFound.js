@@ -18,7 +18,7 @@ const NotFound = () => {
         src='/images/Dog404.webp'
         alt='dog holding paper in mouth'
       />
-      <h3 className='mb-9 text-center text-[40px] font-bold text-brown-900'>
+      <h3 className='mb-9 text-center text-[40px] font-bold text-brown-900 dark:text-white  '>
         Wooofs! We can't sniff out the page you're looking for.
       </h3>
       <button
