@@ -88,6 +88,7 @@ module.exports = {
         },
       },
       screens: {
+        md: '920px',
         '3xl': '1720px',
       },
     },
