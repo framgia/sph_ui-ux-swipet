@@ -17,7 +17,7 @@ const FeatureCard = ({ item, index, length }) => {
       return (
         <div
           className={`absolute top-[155px] -z-10 hidden md:top-[286px] md:left-[369px] lg:left-[401px] 
-            lg:block xl:left-[355px] xl:top-[231px] 2xl:left-[457px] 2xl:top-[307px]
+            lg:block xl:left-[411px] xl:top-[282px] 2xl:left-[457px] 2xl:top-[307px]
             ${index % 2 !== 0 ? 'rotate-[50deg]' : 'rotate-[-50deg]'}`}
         >
           <PawTrail />
