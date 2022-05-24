@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TestimonialCard = ({ item }) => (
-  <figure className='relative pr-5 pb-5'>
+  <figure className='relative py-5 pr-5 pb-5 duration-700 hover:scale-105'>
     <Link to={`/swipet-journeys/${item.author}`} target='none'>
       {/* Image */}
       <img

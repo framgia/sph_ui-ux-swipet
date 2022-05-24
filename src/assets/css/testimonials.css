@@ -3,5 +3,59 @@
 }
 
 .slick-track {
-  @apply ml-0 !important;
+  @apply ml-0 animate-spin-slow !important;
+}
+
+@keyframes spin {
+  100% {
+    transform: translateX(calc(-517px * 9));
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-432px * 9));
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-403px * 9));
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-326px * 9));
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-269px * 9));
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-269px * 9));
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  @keyframes spin {
+    100% {
+      transform: translateX(calc(-206px * 9));
+    }
+  }
 }

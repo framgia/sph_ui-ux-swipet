@@ -15,13 +15,14 @@ const Testimonial = ({ testimonialCaption }) => {
   const { name } = useParams('name');
 
   const settings = {
+    className: 'hover:scale-95 py-5 duration-700',
     arrows: false,
     dots: false,
-    infinite: false,
+    infinite: true,
     autoplay: false,
     speed: 500,
     slidesToShow: 3.5,
-    lazyLoad: true,
+    lazyLoad: false,
     responsive: [
       {
         breakpoint: 1280,
