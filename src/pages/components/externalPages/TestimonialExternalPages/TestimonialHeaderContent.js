@@ -10,7 +10,7 @@ const TestimonialHeaderContent = ({ mode, item }) => (
       alt={item.name}
     />
     <figcaption className='absolute left-0 right-0 bottom-5 h-full bg-gradient-to-r from-orange-900 dark:from-dark-ash-900'>
-      <div className='px-[20px] pt-[64px] sm:px-[55px] sm:pt-[38px] lg:h-[572px] lg:px-[100px] lg:pt-[51px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
+      <div className='h-[710px] px-5 pt-[4.8rem] sm:px-8 md:px-14 lg:h-[572px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
         <Link to='/'>
           <div className='h-[39px] w-[165px] hover:cursor-pointer sm:m-auto lg:h-[48px] lg:w-[192px]'>
             <LazyLoadImage

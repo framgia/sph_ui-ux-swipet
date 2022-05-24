@@ -7,8 +7,7 @@ const MainHeadline = ({ mode }) => (
   <header
     className={`${
       mode === 'light' ? 'bg-gradient-to-b from-orange-900 to-mocha-900' : 'bg-dark-ash-900'
-    } h-[710px] px-5 
-      pt-14 sm:px-8 md:px-14 lg:h-[572px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]`}
+    } h-[710px] px-5 pt-14 sm:px-8 md:px-14 lg:h-[572px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]`}
   >
     <div className='h-[39px] w-[165px] md:m-auto lg:h-[48px] lg:w-[192px]'>
       <Link to='/'>
