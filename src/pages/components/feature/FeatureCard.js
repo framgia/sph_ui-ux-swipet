@@ -16,8 +16,8 @@ const FeatureCard = ({ item, index, length }) => {
     if (index < length - 1) {
       return (
         <div
-          className={`absolute top-[155px] -z-10 hidden md:left-[270px] md:block 
-            lg:left-[245px] xl:left-[400px] xl:top-[270px] 2xl:left-[575px] 2xl:top-[380px]
+          className={`absolute top-[155px] -z-10 hidden md:top-[286px] md:left-[369px] lg:left-[401px] 
+            lg:block xl:left-[411px] xl:top-[282px] 2xl:left-[457px] 2xl:top-[307px]
             ${index % 2 !== 0 ? 'rotate-[50deg]' : 'rotate-[-50deg]'}`}
         >
           <PawTrail />
@@ -33,7 +33,7 @@ const FeatureCard = ({ item, index, length }) => {
       {/* feature */}
       <div className='relative z-20 mt-[50px] sm:mt-24 lg:mt-[144px]'>
         <div
-          className={`container flex flex-col ${
+          className={`flex flex-col ${
             index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'
           } items-center justify-center gap-x-40 md:gap-x-10`}
         >
