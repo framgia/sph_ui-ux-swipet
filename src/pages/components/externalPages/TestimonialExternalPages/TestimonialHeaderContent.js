@@ -22,7 +22,7 @@ const TestimonialHeaderContent = ({ mode, item }) => (
         <div className='relative flex flex-col items-start'>
           <h1
             className='mt-[30px] flex flex-col self-start pb-5 text-[40px] font-bold leading-[40px]
-                      text-white sm:flex-row sm:self-auto lg:mt-[77px] lg:flex-col lg:pb-4 lg:text-5xl 2xl:text-[54px]'
+                      text-white sm:flex-row sm:self-auto lg:mt-[45px] lg:flex-col lg:pb-4 lg:text-5xl xl:mt-[77px] 2xl:text-[54px]'
           >
             {item.text}
           </h1>
