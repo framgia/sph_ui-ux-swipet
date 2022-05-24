@@ -10,7 +10,7 @@ const TestimonialHeaderContent = ({ mode, item }) => (
       alt={item.name}
     />
     <figcaption className='absolute left-0 right-0 bottom-5 h-full bg-gradient-to-r from-orange-900 dark:from-dark-ash-900'>
-      <div className='px-[20px] pt-[64px] sm:px-[55px] sm:pt-[38px] lg:h-[572px] lg:px-[100px] lg:pt-[51px] xl:px-[200px] 2xl:px-[339px]'>
+      <div className='h-[710px] px-5 pt-[4.8rem] sm:px-8 md:px-14 lg:h-[572px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
         <Link to='/'>
           <div className='h-[39px] w-[165px] hover:cursor-pointer sm:m-auto lg:h-[48px] lg:w-[192px]'>
             <LazyLoadImage
@@ -22,7 +22,7 @@ const TestimonialHeaderContent = ({ mode, item }) => (
         <div className='relative flex flex-col items-start'>
           <h1
             className='mt-[30px] flex flex-col self-start pb-5 text-[40px] font-bold leading-[40px]
-                      text-white sm:flex-row sm:self-auto lg:mt-[77px] lg:flex-col lg:pb-4 lg:text-5xl 2xl:text-[54px]'
+                      text-white sm:flex-row sm:self-auto lg:mt-[45px] lg:flex-col lg:pb-4 lg:text-5xl xl:mt-[77px] 2xl:text-[54px]'
           >
             {item.text}
           </h1>
