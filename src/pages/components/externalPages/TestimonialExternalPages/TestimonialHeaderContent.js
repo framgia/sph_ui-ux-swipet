@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from '../../DownloadButton';
+import ThemeSelect from '../../ThemeSelect';
 
-const TestimonialHeaderContent = ({ mode, item }) => (
+const TestimonialHeaderContent = ({ item, colorScheme }) => (
   <figure className='relative h-[572px] pb-5 sm:h-[450px] md:h-[550] lg:h-[572px] xl:h-[595px]'>
     <LazyLoadImage
       src={item.src}
@@ -11,14 +12,19 @@ const TestimonialHeaderContent = ({ mode, item }) => (
     />
     <figcaption className='absolute left-0 right-0 bottom-5 h-full bg-gradient-to-r from-orange-900 dark:from-dark-ash-900'>
       <div className='h-[710px] px-5 pt-[4.8rem] sm:px-8 md:px-14 lg:h-[572px] xl:px-[200px] 2xl:px-[240px] 3xl:px-[320px]'>
-        <Link to='/'>
-          <div className='h-[39px] w-[165px] hover:cursor-pointer sm:m-auto lg:h-[48px] lg:w-[192px]'>
-            <LazyLoadImage
-              src={`${mode === 'light' ? '/images/LogoMix.svg' : '/images/LogoDarkTheme.svg'}`}
-              alt='swipet logo'
-            />
-          </div>
-        </Link>
+        <div className='flex items-center justify-between'>
+          <Link to='/'>
+            <div className='h-[39px] w-[165px] hover:cursor-pointer lg:h-[48px] lg:w-[192px]'>
+              <LazyLoadImage
+                src={`${
+                  colorScheme === 'light' ? '/images/LogoMix.svg' : '/images/LogoDarkTheme.svg'
+                }`}
+                alt='swipet logo'
+              />
+            </div>
+          </Link>
+          <ThemeSelect />
+        </div>
         <div className='relative flex flex-col items-start'>
           <h1
             className='mt-[30px] flex flex-col self-start pb-5 text-[40px] font-bold leading-[40px]

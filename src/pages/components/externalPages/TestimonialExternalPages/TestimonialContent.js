@@ -7,13 +7,13 @@ import Testimonial from '../../testimonial';
 import FooterContent from '../../footerSection/FooterContent';
 import CookiePolicy from '../../CookiePolicy';
 import ContactUs from '../../chatbot';
-import useDarkMode from '../../../../utilities/hooks/useDarkMode';
 import NotFound from '../NotFound';
+import { useTheme } from '../../../../utilities/contexts/ThemeContext';
 
 const TestimonialContent = () => {
   const { name } = useParams('name');
   const authorData = testimonials.find(({ author }) => author === name);
-  const mode = useDarkMode();
+  const { colorScheme } = useTheme();
 
   return (
     <div className='dark:bg-dark-ash-800'>
@@ -22,10 +22,10 @@ const TestimonialContent = () => {
       ) : (
         <>
           <ContactUs />
-          <TestimonialHeaderContent item={authorData} mode={mode} />
-          <TestimonialContentTemplate description={authorData} mode={mode} />
+          <TestimonialHeaderContent item={authorData} colorScheme={colorScheme} />
+          <TestimonialContentTemplate description={authorData} colorScheme={colorScheme} />
           <Testimonial testimonialCaption='You may also like' />
-          <FooterContent mode={mode} />
+          <FooterContent />
           <CookiePolicy />
         </>
       )}

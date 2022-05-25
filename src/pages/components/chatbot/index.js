@@ -9,7 +9,7 @@ import chatbotConfig from './configs/chatbotConfig';
 import ActionProvider from './configs/ActionProvider';
 import MessageParser from './configs/MessageParser';
 
-const ContactUs = ({ mode }) => {
+const ContactUs = ({ colorScheme }) => {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
 
   window.addEventListener('beforeunload', () => {
@@ -27,7 +27,7 @@ const ContactUs = ({ mode }) => {
   };
 
   const chatBoxIcon = () => {
-    if (mode === 'light') {
+    if (colorScheme === 'light') {
       if (isChatBoxOpen) {
         return '/images/CloseFloatingButton.svg';
       }
@@ -43,7 +43,7 @@ const ContactUs = ({ mode }) => {
     <Fragment>
       {isChatBoxOpen && (
         <Chatbot
-          config={chatbotConfig(closeChatBox, mode)}
+          config={chatbotConfig(closeChatBox)}
           actionProvider={ActionProvider}
           messageHistory={loadMessages()}
           messageParser={MessageParser}

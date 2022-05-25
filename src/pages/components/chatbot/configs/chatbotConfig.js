@@ -5,7 +5,7 @@ import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
-const config = (closeChatBox, mode) => {
+const config = (closeChatBox) => {
   const initialMessages = [
     createChatBotMessage("Hi, I'm Swipet Assistant"),
     createChatBotMessage('How may I help you? Below list are the topics I can help you with.', {
@@ -25,13 +25,7 @@ const config = (closeChatBox, mode) => {
     initialMessages,
     customComponents: {
       header: () => (
-        <div
-          className={`w-100 flex h-16 items-center justify-between ${
-            mode === 'light'
-              ? 'bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500'
-              : 'bg-dark-ash-900'
-          } rounded-t-lg px-3`}
-        >
+        <div className='w-100 flex h-16 items-center justify-between rounded-t-lg bg-gradient-to-b from-sky-900 via-sky-700 to-mocha-500 px-3 dark:bg-dark-ash-900 dark:bg-none'>
           <LazyLoadImage
             className='w-10 rounded-full'
             src='/images/RoundOrangeLogo.svg'

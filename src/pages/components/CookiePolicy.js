@@ -27,7 +27,7 @@ const CookiePolicy = () => {
       <p className='text-sm lg:text-base'>
         Swipet stores cookies on your computer. These cookies are used in order to improve and
         customize your browsing experience and for analytics and metrics about our visitors both on
-        this website and other media. To learn more, see our
+        this website and other media. To learn more, see our &nbsp;
         <Link to='/privacy-policy' className='text-navy-900 hover:underline' target='_blank'>
           Privacy Policy
         </Link>

@@ -5,10 +5,13 @@ import { informationLinks } from '../../../utilities/constants';
 import FacebookIcon from '../icons/FacebookIcon';
 import TwitterIcon from '../icons/TwitterIcon';
 import InstagramIcon from '../icons/InstagramIcon';
+import { useTheme } from '../../../utilities/contexts/ThemeContext';
 
-const FooterContent = ({ mode }) => {
+const FooterContent = () => {
+  const { colorScheme } = useTheme();
+
   const setDarkColor = {
-    ...(mode === 'dark' && { color: '#d8782e' }),
+    ...(colorScheme === 'dark' && { color: '#d8782e' }),
   };
 
   return (
@@ -17,14 +20,15 @@ const FooterContent = ({ mode }) => {
         <div className='mt-12 flex w-[300px] flex-col items-center justify-center md:w-[250px] lg:items-start lg:pb-12'>
           <Link to='/'>
             <LazyLoadImage
-              src={`${mode === 'light' ? '/images/LogoDarkFit.svg' : '/images/LogoDarkTheme.svg'}`}
+              src={`${
+                colorScheme === 'light' ? '/images/LogoDarkFit.svg' : '/images/LogoDarkTheme.svg'
+              }`}
               alt='LogoDark'
               className='h-12 w-48'
             />
           </Link>
           <p className='mt-8 text-center lg:text-left'>
-            Swipet is a mobile application that makes pet adoption fun and
-            easier.
+            Swipet is a mobile application that makes pet adoption fun and easier.
           </p>
         </div>
         <div className='flex w-auto flex-col items-center justify-center lg:mt-[40px] lg:items-start xl:mt-[57px]'>
@@ -50,11 +54,7 @@ const FooterContent = ({ mode }) => {
       <hr />
       <div className='my-11 flex flex-col items-center justify-between gap-10 lg:flex-row'>
         <div className='flex w-80 justify-center gap-12 lg:justify-start'>
-          <a
-            href='https://www.facebook.com/'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
+          <a href='https://www.facebook.com/' target='_blank' rel='noreferrer noopener'>
             <FacebookIcon {...setDarkColor} />
           </a>
           <a href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'>

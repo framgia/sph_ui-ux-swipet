@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import TestimonialMainContent from './TestimonialMainContent';
 
-const TestimonialContentTemplate = ({ mode, description }) => (
+const TestimonialContentTemplate = ({ description, colorScheme }) => (
   <Fragment>
     <header className='flex px-[20px] pt-[64px] sm:px-[55px] sm:pt-[38px] lg:px-[100px] lg:pt-[51px] xl:px-[200px] 2xl:px-[339px]'>
       <LazyLoadImage
-        src={`${mode === 'light' ? '/images/Avatar01.svg' : '/images/Avatar01dark.svg'}`}
+        src={`${colorScheme === 'light' ? '/images/Avatar01.svg' : '/images/Avatar01dark.svg'}`}
         alt='profile'
         className='h-[71px]'
       />
