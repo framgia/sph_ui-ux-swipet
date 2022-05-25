@@ -12,27 +12,27 @@ import TermsAndConditions from './pages/components/externalPages/TermsAndConditi
 import NotFound from './pages/components/externalPages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import TestimonialContent from './pages/components/externalPages/TestimonialExternalPages/TestimonialContent';
+import ThemeProvider from './utilities/contexts/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HelmetProvider>
     <React.StrictMode>
-      <Router>
-        <ScrollToTop>
-          <Routes>
-            <Route path='*' element={<NotFound />} />
-            <Route index element={<Home />} />
-            <Route path='/about-swipet' element={<AboutSwipet />} />
-            <Route path='/faq' element={<FaqPage />} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-            <Route
-              path='/terms-and-conditions'
-              element={<TermsAndConditions />}
-            />
-            <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
-          </Routes>
-        </ScrollToTop>
-      </Router>
+      <ThemeProvider>
+        <Router>
+          <ScrollToTop>
+            <Routes>
+              <Route path='*' element={<NotFound />} />
+              <Route index element={<Home />} />
+              <Route path='/about-swipet' element={<AboutSwipet />} />
+              <Route path='/faq' element={<FaqPage />} />
+              <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+              <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+              <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
+            </Routes>
+          </ScrollToTop>
+        </Router>
+      </ThemeProvider>
     </React.StrictMode>
   </HelmetProvider>,
 );

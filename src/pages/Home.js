@@ -5,18 +5,18 @@ import FeatureSection from './components/feature';
 import Testimonial from './components/testimonial';
 import FooterSection from './components/footerSection';
 import CookiePolicy from './components/CookiePolicy';
-import useDarkMode from '../utilities/hooks/useDarkMode';
+import { useTheme } from '../utilities/contexts/ThemeContext';
 
 const Home = () => {
-  const mode = useDarkMode();
+  const { colorScheme } = useTheme();
 
   return (
     <div className='overflow-x-hidden'>
-      <MainHeadline mode={mode} />
-      <Chatbot mode={mode} />
+      <MainHeadline colorScheme={colorScheme} />
+      <Chatbot colorScheme={colorScheme} />
       <FeatureSection />
       <Testimonial />
-      <FooterSection mode={mode} />
+      <FooterSection />
       <CookiePolicy />
     </div>
   );
