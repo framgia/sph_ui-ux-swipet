@@ -22,9 +22,9 @@ const CookiePolicy = () => {
     <div
       className={`${
         isPopUp ? 'block' : 'hidden'
-      } fixed bottom-0 z-20 border-t-2 bg-white py-4 px-2 text-justify leading-6 dark:border-t-dark-ash-700 dark:bg-dark-ash-800 md:px-12 lg:py-10 lg:px-[200px]`}
+      } fixed bottom-0 z-20 border-t-2 bg-white py-4 px-2 text-justify leading-6 dark:border-t-dark-ash-700 dark:bg-dark-ash-800 dark:text-white md:px-12 lg:py-10 lg:px-[200px]`}
     >
-      <p className='text-sm dark:text-white lg:text-base'>
+      <p className='text-sm lg:text-base'>
         Swipet stores cookies on your computer. These cookies are used in order to improve and
         customize your browsing experience and for analytics and metrics about our visitors both on
         this website and other media. To learn more, see our &nbsp;
@@ -37,9 +37,7 @@ const CookiePolicy = () => {
         </Link>
       </p>
       <div className='mt-6 block items-center justify-start md:flex lg:justify-between'>
-        <p className='text-sm dark:text-white lg:text-base'>
-          By using our site you agree to our use of cookies.
-        </p>
+        <p className='text-sm lg:text-base'>By using our site you agree to our use of cookies.</p>
         <button className='primary-button ml-0 mt-4 md:ml-8 md:mt-0' onClick={onClickNoted}>
           Got it!
         </button>
