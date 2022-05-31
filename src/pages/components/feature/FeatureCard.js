@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom';
 import PawTrail from './PawTrail';
 
-const FeatureCard = ({ item, index, length }) => {
+const FeatureCard = ({ item, index, length, isHome }) => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -13,7 +14,7 @@ const FeatureCard = ({ item, index, length }) => {
   }, []);
 
   const displayPaws = () => {
-    if (index < length - 1) {
+    if (isHome && index < length - 1) {
       return (
         <div
           className={`absolute top-[155px] -z-10 hidden md:top-[286px] md:left-[369px] lg:left-[401px] 
@@ -54,6 +55,13 @@ const FeatureCard = ({ item, index, length }) => {
             <p className='text-center text-sm text-brown-900 dark:text-white sm:text-base md:w-full md:text-left lg:text-lg'>
               {item.description}
             </p>
+            {isHome && (
+              <Link to={`/feature/${item.name}`}>
+                <button className='mt-4 rounded-lg bg-orange-900 py-3 px-5 text-lg text-white'>
+                  Learn More
+                </button>
+              </Link>
+            )}
           </div>
         </div>
         {displayPaws()}

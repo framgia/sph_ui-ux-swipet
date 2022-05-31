@@ -6,15 +6,16 @@ import Testimonial from './components/testimonial';
 import FooterSection from './components/footerSection';
 import CookiePolicy from './components/CookiePolicy';
 import { useTheme } from '../utilities/contexts/ThemeContext';
+import { features } from '../utilities/constants';
 
 const Home = () => {
   const { colorScheme } = useTheme();
 
   return (
     <div className='overflow-x-hidden'>
-      <MainHeadline colorScheme={colorScheme} />
+      <MainHeadline colorScheme={colorScheme} isHome />
       <Chatbot colorScheme={colorScheme} />
-      <FeatureSection />
+      <FeatureSection hasHeading isHome features={features} />
       <Testimonial />
       <FooterSection />
       <CookiePolicy />

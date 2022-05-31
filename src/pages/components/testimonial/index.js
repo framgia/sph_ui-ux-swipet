@@ -8,9 +8,8 @@ import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
 
-const Testimonial = ({ testimonialCaption }) => {
+const Testimonial = ({ testimonialCaption, isMain = true, gallery }) => {
   const { t } = useTranslation();
-  // eslint-disable-next-line
   let sliderRef = useRef < Slider > null;
 
   const { name } = useParams('name');
@@ -22,25 +21,19 @@ const Testimonial = ({ testimonialCaption }) => {
     infinite: true,
     autoplay: false,
     speed: 500,
-    slidesToShow: 3.5,
+    slidesToShow: gallery.length <= 3 ? gallery.length : 3.5,
     lazyLoad: false,
     responsive: [
       {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3.5,
-        },
-      },
-      {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: gallery.length <= 2 ? gallery.length : 2.5,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: gallery.length <= 1 ? gallery.length : 1.5,
         },
       },
     ],
@@ -49,11 +42,21 @@ const Testimonial = ({ testimonialCaption }) => {
   return (
     <section className='bg-white pl-5 dark:bg-dark-ash-700 sm:px-0'>
       {/* Heading */}
-      <div className='title-heading ml-0 mr-5 py-20 sm:mx-auto sm:w-[452px] xl:w-[660px]'>
+      <div className='ml-0 mr-5 py-20 sm:mx-auto sm:w-[452px] xl:w-[600px]'>
         <h2 className='heading-size dark:text-orange-900'>
           {testimonialCaption || t('testimonialHeading')}
         </h2>
       </div>
+
+      {/* Sub Heading */}
+      {!isMain && (
+        <p className='mx-auto w-4/5 pb-[99px] text-center text-[24px] font-medium text-brown-900 sm:w-9/12'>
+          Help find these pets new home and refer this app to your friends or you can become a{' '}
+          <span className='font-bold'>Swipey</span>- a contributor to the adoption community and be
+          one of our sponsors.
+        </p>
+      )}
+
       {/* Carousel */}
       <div className='z-0 pb-20 sm:pl-14 lg:pl-[200px]'>
         <Slider
@@ -63,7 +66,8 @@ const Testimonial = ({ testimonialCaption }) => {
           {...settings}
         >
           {t('testimonials', { ns: 'testimonials' }).map(
-            (item, index) => name !== item.author && <TestimonialCard key={index} item={item} />,
+            (item, index) =>
+              name !== item.author && <TestimonialCard key={index} item={item} isMain={isMain} />,
           )}
         </Slider>
         {/* Controls */}

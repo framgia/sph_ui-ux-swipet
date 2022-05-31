@@ -14,6 +14,7 @@ import reportWebVitals from './reportWebVitals';
 import TestimonialContent from './pages/components/externalPages/TestimonialExternalPages/TestimonialContent';
 import ThemeProvider from './utilities/contexts/ThemeContext';
 import './i18n';
+import FeatureDetail from './pages/featureDetail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
               <Route path='/privacy-policy' element={<PrivacyPolicy />} />
               <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
               <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
+              <Route path='/feature/:name' element={<FeatureDetail />} />
             </Routes>
           </ScrollToTop>
         </Router>
