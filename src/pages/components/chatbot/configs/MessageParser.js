@@ -5,7 +5,7 @@ class MessageParser {
   }
 
   parse(message) {
-    let userMessages = this.state.messages;
+    const userMessages = this.state.messages;
 
     userMessages.push({
       id: Math.floor(Math.random() * 100),
@@ -13,7 +13,7 @@ class MessageParser {
       type: 'user',
     });
 
-    userMessages = message.toLowerCase();
+    message.toLowerCase();
 
     localStorage.setItem('chat_messages', JSON.stringify(userMessages));
 
