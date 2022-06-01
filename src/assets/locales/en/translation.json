@@ -1,0 +1,65 @@
+{
+  "mainHeading": "Find your <span className='text-yellow-900 dark:text-orange-900'>best companion</span>",
+  "subHeading": "Tired of dating apps? Your partner left you for someone else? Get a furbaby instead. With <span className='text-yellow-900 dark:text-orange-900'>Swipet</span>, you get the love you deserve.",
+  "featureHeading": "Adopting a pet has never been easier",
+  "features": [
+    {
+      "name": "profile",
+      "title": "Let them know you",
+      "src": "/images/FeatureProfile.webp",
+      "description": "Flex your best qualities on your profile. Show your interests. Let it scream, “I'm the best fur parent in the whole world!”."
+    },
+    {
+      "name": "match",
+      "title": "Match with your perfect buddy",
+      "src": "/images/FeatureMatch.webp",
+      "description": "Swipe to the right for the pet you like until you get your match."
+    },
+    {
+      "name": "chat",
+      "title": "Get to know them",
+      "src": "/images/FeatureChat.webp",
+      "description": "Chat with the keeper of your match pet, and learn more about them."
+    },
+    {
+      "name": "adopt",
+      "title": "Adopt",
+      "src": "/images/FeatureAdopt.webp",
+      "description": "Adopt, don't shop. Make a deal with the pet keeper, and become a certified fur parent."
+    }
+  ],
+  "testimonialHeading": "Start a life-changing journey",
+  "testimonialHeading2": "You may also like",
+  "footerBanner": "Your <span className='text-yellow-900 dark:text-orange-900'>bestfriend</span> is<br />waiting for <span className='text-yellow-900 dark:text-orange-900'>you</span>",
+  "swipetDescription": "Swipet is a mobile application that makes pet adoption fun and easier.",
+  "information": "Information",
+  "informationLinks": [
+    {
+      "to": "/about-swipet",
+      "title": "About Swipet"
+    },
+    {
+      "to": "/faq",
+      "title": "FAQs"
+    },
+    {
+      "to": "/terms-and-conditions",
+      "title": "Terms & Conditions"
+    },
+    {
+      "to": "/privacy-policy",
+      "title": "Privacy Policy"
+    }
+  ],
+  "contact": "Contact",
+  "copyright": "Copyright © 2022 Swipet, Inc. All Rights Reserved.",
+  "404Message": "Wooofs! We can't sniff out the page you're looking for.",
+  "returnHomeButton": "RETURN TO HOME",
+  "aboutSwipet": "About Swipet",
+  "faqsAboutPetAdoption": "FAQs About Pet Adoption",
+  "terms&Conditions": "Terms and Conditions",
+  "privacyPolicyForSwipet": "Privacy Policy for Swipet",
+  "cookieP1": "Swipet stores cookies on your computer. These cookies are used in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To learn more, see our <Link> Privacy Policy.</Link>",
+  "cookieP2": "By using our site you agree to our use of cookies.",
+  "agreeButton": "Got it!"
+}

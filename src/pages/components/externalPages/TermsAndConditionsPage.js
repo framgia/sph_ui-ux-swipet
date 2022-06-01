@@ -1,13 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ExternalPageTemplate from './ExternalPageTemplate';
 import MetaDecorator from '../MetaDecorator';
-import {
-  termsAndConditionsConstant,
-  termServiceMetaData,
-} from '../../../utilities/constants';
+import { termServiceMetaData } from '../../../utilities/constants';
 
 const TermsAndConditionsPage = () => {
-  const allUlTags = termsAndConditionsConstant.filter((list) => list.isUlTag === true);
+  const { t } = useTranslation();
+  const termsAndConditions = t('termsAndConditions', { ns: 'informations' });
+
+  const allUlTags = termsAndConditions.filter((list) => list.isUlTag === true);
 
   const allListText = allUlTags.map((list) => list.text);
 
@@ -17,10 +18,10 @@ const TermsAndConditionsPage = () => {
   }
 
   return (
-    <ExternalPageTemplate title='Terms and Conditions'>
+    <ExternalPageTemplate title={t('terms&Conditions')}>
       <MetaDecorator title={termServiceMetaData.title} content={termServiceMetaData.content} />
 
-      {termsAndConditionsConstant.map((item, index) => (
+      {termsAndConditions.map((item, index) => (
         <div key={index}>
           {item.isPTag && <p className='pb-4 text-lg'>{item.text}</p>}
           {item.isH3Tag && <h3 className='pb-4 text-2xl font-medium'>{item.text}</h3>}

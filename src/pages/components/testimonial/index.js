@@ -3,12 +3,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
-import { testimonials } from '../../../utilities/constants';
 
 const Testimonial = ({ testimonialCaption }) => {
+  const { t } = useTranslation();
   // eslint-disable-next-line
   let sliderRef = useRef < Slider > null;
 
@@ -48,9 +49,9 @@ const Testimonial = ({ testimonialCaption }) => {
   return (
     <section className='bg-white pl-5 dark:bg-dark-ash-700 sm:px-0'>
       {/* Heading */}
-      <div className='title-heading ml-0 mr-5 py-20 sm:mx-auto sm:w-[452px] xl:w-[600px]'>
+      <div className='title-heading ml-0 mr-5 py-20 sm:mx-auto sm:w-[452px] xl:w-[660px]'>
         <h2 className='heading-size dark:text-orange-900'>
-          {testimonialCaption || 'Start a life-changing journey'}
+          {testimonialCaption || t('testimonialHeading')}
         </h2>
       </div>
       {/* Carousel */}
@@ -61,7 +62,7 @@ const Testimonial = ({ testimonialCaption }) => {
           }}
           {...settings}
         >
-          {testimonials.map(
+          {t('testimonials', { ns: 'testimonials' }).map(
             (item, index) => name !== item.author && <TestimonialCard key={index} item={item} />,
           )}
         </Slider>

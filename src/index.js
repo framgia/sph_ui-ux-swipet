@@ -13,6 +13,7 @@ import NotFound from './pages/components/externalPages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import TestimonialContent from './pages/components/externalPages/TestimonialExternalPages/TestimonialContent';
 import ThemeProvider from './utilities/contexts/ThemeContext';
+import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

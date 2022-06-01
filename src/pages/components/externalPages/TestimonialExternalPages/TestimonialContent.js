@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { testimonials } from '../../../../utilities/constants';
+import { useTranslation } from 'react-i18next';
 import TestimonialHeaderContent from './TestimonialHeaderContent';
 import TestimonialContentTemplate from './TestimonialContentTemplate';
 import Testimonial from '../../testimonial';
@@ -12,7 +12,10 @@ import { useTheme } from '../../../../utilities/contexts/ThemeContext';
 
 const TestimonialContent = () => {
   const { name } = useParams('name');
-  const authorData = testimonials.find(({ author }) => author === name);
+  const { t } = useTranslation();
+  const authorData = t('testimonials', { ns: 'testimonials' }).find(
+    ({ author }) => author === name,
+  );
   const { colorScheme } = useTheme();
 
   return (
@@ -24,7 +27,7 @@ const TestimonialContent = () => {
           <ContactUs />
           <TestimonialHeaderContent item={authorData} colorScheme={colorScheme} />
           <TestimonialContentTemplate description={authorData} colorScheme={colorScheme} />
-          <Testimonial testimonialCaption='You may also like' />
+          <Testimonial testimonialCaption={t('testimonialHeading2')} />
           <FooterContent />
           <CookiePolicy />
         </>
