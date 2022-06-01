@@ -1,0 +1,65 @@
+{
+  "mainHeading": "<span className='text-yellow-900 dark:text-orange-900'>最高の仲間</span>を探す",
+  "subHeading": "出会い系アプリにうんざりしていませんか？あなたのパートナーはあなたを他の誰かに任せましたか？代わりにファーベイビーを入手してください。 <span className='text-yellow-900 dark:text-orange-900'>Swipet</span>を使用すると、あなたはあなたが値する愛を得ることができます。",
+  "featureHeading": "ペットを飼うことはかつてないほど容易になりました",
+  "features": [
+    {
+      "name": "プロフィール",
+      "title": "彼らにあなたを知らせてください",
+      "src": "/images/FeatureProfile.webp",
+      "description": "あなたのプロフィールであなたの最高の資質を曲げてください。あなたの興味を示してください。 「私は全世界で最高の毛皮の親です！」と叫びましょう。"
+    },
+    {
+      "name": "マッチ",
+      "title": "あなたの完璧な仲間と一致します",
+      "src": "/images/FeatureMatch.webp",
+      "description": "マッチするまで、好きなペットを右にスワイプします。"
+    },
+    {
+      "name": "チャット",
+      "title": "それらを知る",
+      "src": "/images/FeatureChat.webp",
+      "description": "マッチペットの飼い主とチャットして、彼らについてもっと学びましょう。"
+    },
+    {
+      "name": "採用",
+      "title": "採用",
+      "src": "/images/FeatureAdopt.webp",
+      "description": "採用し、買い物をしないでください。ペットの飼い主と取引をし、毛皮の親として認定されます。"
+    }
+  ],
+  "testimonialHeading": "人生を変える旅を始める",
+  "testimonialHeading2": "あなたも好きかも",
+  "footerBanner": "あなたの<span className='text-yellow-900 dark:text-orange-900'>親友</span>は<br /><span className='text-yellow-900 dark:text-orange-900'>あなた</span>を待っています",
+  "swipetDescription": "Swipetは、ペットの養子縁組を楽しく簡単にするモバイルアプリケーションです。",
+  "information": "情報",
+  "informationLinks": [
+    {
+      "to": "/about-swipet",
+      "title": "Swipetについて"
+    },
+    {
+      "to": "/faq",
+      "title": "よくある質問"
+    },
+    {
+      "to": "/terms-and-conditions",
+      "title": "利用規約"
+    },
+    {
+      "to": "/privacy-policy",
+      "title": "プライバシーポリシー"
+    }
+  ],
+  "contact": "コンタクト",
+  "copyright": "Copyright ©2 022Swipet、Inc.無断複写・転載を禁じます。",
+  "404Message": "ウーフス！お探しのページをスニッフィングすることはできません。",
+  "returnHomeButton": "家に帰る",
+  "aboutSwipet": "Swipetについて",
+  "faqsAboutPetAdoption": "ペットの譲渡に関するよくある質問",
+  "terms&Conditions": "規約と条件",
+  "privacyPolicyForSwipet": "Swipetのプライバシーポリシー",
+  "cookieP1": "SwipetはCookieをコンピューターに保存します。これらのCookieは、ブラウジングエクスペリエンスを改善およびカスタマイズするため、およびこのWebサイトと他のメディアの両方での訪問者に関する分析とメトリックのために使用されます。詳細については、 <Link> プライバシーポリシー。</Link>",
+  "cookieP2": "当サイトを使用することにより、Cookieの使用に同意したことになります。",
+  "agreeButton": "とった！"
+}

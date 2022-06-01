@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { informationLinks } from '../../../utilities/constants';
+import { useTranslation } from 'react-i18next';
 import FacebookIcon from '../icons/FacebookIcon';
 import TwitterIcon from '../icons/TwitterIcon';
 import InstagramIcon from '../icons/InstagramIcon';
 import { useTheme } from '../../../utilities/contexts/ThemeContext';
+import LanguageSelect from '../LanguageSelect';
 
 const FooterContent = () => {
+  const { t } = useTranslation();
   const { colorScheme } = useTheme();
 
   const setDarkColor = {
@@ -27,13 +29,14 @@ const FooterContent = () => {
               className='h-12 w-48'
             />
           </Link>
-          <p className='mt-8 text-center lg:text-left'>
-            Swipet is a mobile application that makes pet adoption fun and easier.
-          </p>
+          <p className='mt-8 text-center lg:text-left'>{t('swipetDescription')}</p>
+          <div className='mt-8'>
+            <LanguageSelect />
+          </div>
         </div>
         <div className='flex w-auto flex-col items-center justify-center lg:mt-[40px] lg:items-start xl:mt-[57px]'>
-          <div className='text-2xl font-semibold'>Information</div>
-          {informationLinks.map((item, i) => (
+          <div className='text-2xl font-semibold'>{t('information')}</div>
+          {t('informationLinks').map((item, i) => (
             <Link
               key={i}
               className={`${i === 0 ? 'mt-7' : 'mt-2'}  mb-2 hover:text-orange-700`}
@@ -45,7 +48,7 @@ const FooterContent = () => {
           ))}
         </div>
         <div className='flex flex-col items-center justify-center lg:items-start'>
-          <div className='text-2xl font-semibold '>Contact</div>
+          <div className='text-2xl font-semibold '>{t('contact')}</div>
           <div className='mt-7'>+63-905-478-9285</div>
           <div className='mt-2 mb-2'>swipet.contact@sun-asterisk.com</div>
           <div>Don Gil Garcia St, Cebu City</div>
@@ -64,9 +67,7 @@ const FooterContent = () => {
             <InstagramIcon {...setDarkColor} />
           </a>
         </div>
-        <p className='text-sm dark:text-white sm:text-base'>
-          Copyright © 2022 Swipet, Inc. All Rights Reserved
-        </p>
+        <p className='text-sm dark:text-white sm:text-base'>{t('copyright')}</p>
       </div>
     </div>
   );
