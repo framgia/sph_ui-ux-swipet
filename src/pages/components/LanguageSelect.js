@@ -59,9 +59,11 @@ const LanguageSelect = () => {
             {lang.map((l, i) => (
               <Listbox.Option
                 key={i}
-                className={({ active }) => `relative flex cursor-pointer select-none items-center py-1 px-3 ${
-                  active ? 'bg-amber-100 text-orange-900' : 'text-brown-900 dark:text-white'
-                }`}
+                className={({ active }) =>
+                  `relative flex cursor-pointer select-none items-center py-1 px-3 ${
+                    active ? 'bg-amber-100 text-orange-900' : 'text-brown-900 dark:text-white'
+                  }`
+                }
                 value={l}
                 onClick={() => selectedLanguageCheck(i)}
               >

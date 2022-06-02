@@ -72,5 +72,4 @@ const FooterContent = () => {
     </div>
   );
 };
-
 export default FooterContent;

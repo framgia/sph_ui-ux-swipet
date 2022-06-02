@@ -12,7 +12,7 @@ const Home = () => {
   const { colorScheme } = useTheme();
 
   return (
-    <div className='overflow-x-hidden'>
+    <div>
       <MainHeadline colorScheme={colorScheme} isHome />
       <Chatbot colorScheme={colorScheme} />
       <FeatureSection hasHeading isHome features={features} />

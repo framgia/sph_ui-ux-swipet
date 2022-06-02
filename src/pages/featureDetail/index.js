@@ -26,7 +26,13 @@ const FeatureDetail = () => {
       case 'chat':
         return <TipSection />;
       case 'adopt':
-        return <Testimonial isMain={false} gallery={availablePets} />;
+        return (
+          <Testimonial
+            isMain={false}
+            gallery={availablePets}
+            testimonialCaption='Go beyond boundaries'
+          />
+        );
       default:
         return null;
     }

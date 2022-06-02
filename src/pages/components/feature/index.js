@@ -4,6 +4,7 @@ import FeatureCard from './FeatureCard';
 
 const FeatureSection = ({ hasHeading, isHome, features = {} }) => {
   const { t } = useTranslation();
+  const list = isHome ? t('features') : features;
 
   return (
     <section
@@ -18,14 +19,8 @@ const FeatureSection = ({ hasHeading, isHome, features = {} }) => {
         </div>
       )}
       {/* Cards */}
-      {t('features').map((item, index) => (
-        <FeatureCard
-          item={item}
-          key={index}
-          index={index}
-          length={t('features').length}
-          isHome={isHome}
-        />
+      {list.map((item, index) => (
+        <FeatureCard item={item} key={index} index={index} length={list.length} isHome={isHome} />
       ))}
     </section>
   );

@@ -45,15 +45,7 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
           className='pb-12 text-lg text-white sm:text-xl md:text-center
                 lg:w-[500px] lg:pb-12 lg:text-left xl:w-[416px] xl:text-xl 2xl:w-[500px] 2xl:text-2xl 3xl:w-[600px]'
         >
-          {isHome ? (
-            <>
-              Tired of dating apps? Your partner left you for someone else? Get a furbaby instead.
-              With <span className='text-yellow-900 dark:text-orange-900'>swipet</span>, you get the
-              love you deserve.
-            </>
-          ) : (
-            description
-          )}
+          {isHome ? <Trans components={{ span: <span /> }}>subHeading</Trans> : description}
         </h3>
         <div className='flex justify-center space-x-5 sm:space-x-8'>
           <DownloadButton
