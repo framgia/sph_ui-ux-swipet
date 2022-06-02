@@ -1,3 +1,10 @@
+import {
+  showOptionKeywords,
+  adoptionProcessKeywords,
+  paperworkKeywords,
+  requirementKeywords,
+} from '../../../../utilities/constants';
+
 class MessageParser {
   constructor(actionProvider, state) {
     this.actionProvider = actionProvider;
@@ -17,24 +24,19 @@ class MessageParser {
 
     localStorage.setItem('chat_messages', JSON.stringify(userMessages));
 
-    if (
-      message.includes('options') ||
-      message.includes('help') ||
-      message.includes('question') ||
-      message.includes('do for me')
-    ) {
+    if (showOptionKeywords.some((i) => message.includes(i))) {
       return this.actionProvider.showOptions();
     }
 
-    if (message.includes('adopt') || message.includes('process')) {
+    if (adoptionProcessKeywords.some((i) => message.includes(i))) {
       return this.actionProvider.handleAdoptionProcessReply();
     }
 
-    if (message.includes('paperwork') || message.includes('document')) {
+    if (paperworkKeywords.some((i) => message.includes(i))) {
       return this.actionProvider.handlePaperworksReply();
     }
 
-    if (message.includes('requirement')) {
+    if (requirementKeywords.some((i) => message.includes(i))) {
       return this.actionProvider.handleRequirementsReply();
     }
 

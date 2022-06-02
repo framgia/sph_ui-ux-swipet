@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -10,6 +11,8 @@ import ActionProvider from './configs/ActionProvider';
 import MessageParser from './configs/MessageParser';
 
 const ContactUs = ({ colorScheme }) => {
+  const { t } = useTranslation();
+
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
 
   window.addEventListener('beforeunload', () => {
@@ -43,11 +46,11 @@ const ContactUs = ({ colorScheme }) => {
     <Fragment>
       {isChatBoxOpen && (
         <Chatbot
-          config={chatbotConfig(closeChatBox)}
+          config={chatbotConfig(closeChatBox, t)}
           actionProvider={ActionProvider}
           messageHistory={loadMessages()}
           messageParser={MessageParser}
-          placeholderText='Send a message...'
+          placeholderText={t('chatBotPlaceholder')}
           validator={validateInput}
         />
       )}

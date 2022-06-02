@@ -61,5 +61,55 @@
   "privacyPolicyForSwipet": "Privacy Policy for Swipet",
   "cookieP1": "Swipet stores cookies on your computer. These cookies are used in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To learn more, see our <Link> Privacy Policy.</Link>",
   "cookieP2": "By using our site you agree to our use of cookies.",
-  "agreeButton": "Got it!"
+  "agreeButton": "Got it!",
+  "chatBotMessage1": "Hi, I'm Swipet Assistant",
+  "chatBotMessage2": "How may I help you? Below list are the topics I can help you with.",
+  "chatBotPlaceholder": "Send a message...",
+  "showOptions": "Below list are the topics I can help you with.",
+  "adoptionProcess": "Adoption Process",
+  "paperwork": "Paperwork",
+  "requirements": "Requirements",
+  "handleUnkownKeywords": "I don't understand. Can you ask again using a few key words or choose from any of the topics below.",
+  "adoptionProcessReplyBot1": "Once you have matched with a pet that liked you back, the adoption process will be a personal transaction between you and the pet handler through our chat feature.",
+  "adoptionProcessReplyBot2": "But here are some steps of what you can expect especially if the pet is from an animal shelter:",
+  "adoptionProcessReplyBot3": "The pet adoption steps mentioned above may differ because some may have an additional step or two that you need to go through to proceed with the adoption.",
+  "handlePaperworksReply": "The paperwork needed to adopt will be provided by the pet handler of your matched pet.",
+  "handleRequirementsReply": "Are you ready to adopt? Here are the basic requirements for you to be qualified:",
+  "handleRequirementsReplyFollowUp": "Take note that these are just the basic requirements and may vary, some pet owners may require more than what is on the given list.",
+  "adoptionProcessList": [
+    {
+      "id": 1,
+      "title": "Fill out same form",
+      "text": "You may need to fill up a questionnaire or an adoption application form provided by them."
+    },
+    {
+      "id": 2,
+      "title": "Interview",
+      "text": "Others may conduct an interview to know more about you and if you have the capability to care for a pet. They may also answer questions you may have."
+    },
+    {
+      "id": 3,
+      "title": "Meet and Greet",
+      "text": "Here is when you get the chance to meet the pet in person and bond with them."
+    },
+    {
+      "id": 4,
+      "title": "Finalizing the Adoption",
+      "text": "Once you have passed and gone through all the other steps, the final thing to do is you would need to sign some paperwork and others may require you to pay certain fees."
+    }
+  ],
+  "requirementsList": [
+    {
+      "id": 1,
+      "text": "Can cover all the financial expenses of owning a pet."
+    },
+    {
+      "id": 2,
+      "text": "Has a secure and suitable home for a pet."
+    },
+    {
+      "id": 3,
+      "text": "Has the time to train and socialise with a pet to give them enough company so they don’t get lonely."
+    }
+  ]
 }

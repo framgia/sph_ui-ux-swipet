@@ -5,10 +5,10 @@ import Topics from '../widgets/Topics';
 import Requirements from '../widgets/Requirements';
 import Process from '../widgets/Process';
 
-const config = (closeChatBox) => {
+const config = (closeChatBox, t) => {
   const initialMessages = [
-    createChatBotMessage("Hi, I'm Swipet Assistant"),
-    createChatBotMessage('How may I help you? Below list are the topics I can help you with.', {
+    createChatBotMessage(t('chatBotMessage1')),
+    createChatBotMessage(t('chatBotMessage2'), {
       withAvatar: true,
       delay: 700,
       widget: 'options',
