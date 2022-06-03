@@ -72,19 +72,8 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
                  isHome ? 'lg:top-[40px]' : 'lg:top-[0px]'
                } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
         >
-          <LazyLoadImage
-            className='origin-center rotate-12 lg:rotate-0'
-            src={`${isHome ? '/images/Hero.webp' : src}`}
-            alt=' a dog on the app'
-          />
+          <AnimationForHeroImage />
         </div>
-      >
-        {/* <LazyLoadImage
-          className='origin-center rotate-12 lg:rotate-0 absolute'
-          src='./images/Hero.webp'
-          alt=' a dog on the app'
-        /> */}
-        <AnimationForHeroImage />
       </div>
     </header>
   );
