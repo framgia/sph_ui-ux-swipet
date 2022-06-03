@@ -4,6 +4,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from './DownloadButton';
 import ThemeSelect from './ThemeSelect';
+import AnimationForHeroImage from './animation';
 
 const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
   const { t } = useTranslation();
@@ -77,6 +78,13 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
             alt=' a dog on the app'
           />
         </div>
+      >
+        {/* <LazyLoadImage
+          className='origin-center rotate-12 lg:rotate-0 absolute'
+          src='./images/Hero.webp'
+          alt=' a dog on the app'
+        /> */}
+        <AnimationForHeroImage />
       </div>
     </header>
   );
