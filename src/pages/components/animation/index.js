@@ -10,7 +10,7 @@ const AnimationForHeroImage = () => (
     <pointLight position={[-10, -1, -10]} />
     <pointLight position={[-10, -1, 10]} />
     <pointLight position={[0, 0, 200]} />
-    <Model position={[0, -1.5, 0]} rotation={[0, 5.8, 0]} scale={[1, 1, 1]} />
+    <Model position={[0, -2.2, 0]} rotation={[0, 5.8, 0]} scale={[1, 1, 1]} />
   </Canvas>
 );
 
