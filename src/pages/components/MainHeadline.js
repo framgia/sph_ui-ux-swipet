@@ -5,8 +5,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from './DownloadButton';
 import ThemeSelect from './ThemeSelect';
 
-const MainHeadline = ({ colorScheme }) => {
+const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
   const { t } = useTranslation();
+  const { title, description, src } = featureData;
+
   return (
     <header
       className='h-[710px] bg-gradient-to-b from-orange-900 to-mocha-900 px-5 pt-14 dark:bg-dark-ash-900
@@ -22,31 +24,39 @@ const MainHeadline = ({ colorScheme }) => {
         </Link>
         <ThemeSelect />
       </div>
-      <div className='relative flex flex-col items-center lg:items-start'>
+      <div
+        className={`relative flex flex-col items-center ${
+          !isHome && 'pt-16 md:pt-8'
+        } lg:items-start`}
+      >
         <h1
-          className='heading-size mt-12 flex flex-col self-start pb-4 font-bold
-              text-white md:flex-row md:self-auto lg:flex-col lg:pb-4'
+          className={`heading-size mt-12 flex flex-col self-start pb-4 font-bold
+                text-white md:flex-row md:self-auto lg:flex-col lg:pb-4 ${!isHome && 'w-2/3'}`}
         >
-          <Trans t={t} components={{ span: <span /> }}>
-            mainHeading
-          </Trans>
+          {isHome ? (
+            <Trans t={t} components={{ span: <span /> }}>
+              mainHeading
+            </Trans>
+          ) : (
+            title
+          )}
         </h1>
         <h3
           className='pb-12 text-lg text-white sm:text-xl md:text-center
-              lg:w-[500px] lg:pb-12 lg:text-left xl:w-[416px] xl:text-xl 2xl:w-[500px] 2xl:text-2xl 3xl:w-[700px]'
+                lg:w-[500px] lg:pb-12 lg:text-left xl:w-[416px] xl:text-xl 2xl:w-[500px] 2xl:text-2xl 3xl:w-[600px]'
         >
-          <Trans components={{ span: <span /> }}>subHeading</Trans>
+          {isHome ? <Trans components={{ span: <span /> }}>subHeading</Trans> : description}
         </h3>
         <div className='flex justify-center space-x-5 sm:space-x-8'>
           <DownloadButton
-            src='./images/GooglePlay.svg'
+            src='/images/GooglePlay.svg'
             alt='google play store'
             upperText='ANDROID APP ON'
             lowerText='Google Play'
             link='https://play.google.com/store'
           />
           <DownloadButton
-            src='./images/AppStore.svg'
+            src='/images/AppStore.svg'
             alt='apple app store'
             upperText='DOWNLOAD ON THE'
             lowerText='App Store'
@@ -56,12 +66,14 @@ const MainHeadline = ({ colorScheme }) => {
         <div
           data-aos='fade-left'
           data-aos-duration='1000'
-          className='absolute top-[400px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px]
-              md:top-[312px] lg:right-0 lg:top-[40px] lg:h-[507px] lg:w-[430px] xl:w-[464px]'
+          className={`absolute top-[400px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px]
+               md:top-[312px] lg:right-0 ${
+                 isHome ? 'lg:top-[40px]' : 'lg:top-[0px]'
+               } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
         >
           <LazyLoadImage
             className='origin-center rotate-12 lg:rotate-0'
-            src='./images/Hero.webp'
+            src={`${isHome ? '/images/Hero.webp' : src}`}
             alt=' a dog on the app'
           />
         </div>

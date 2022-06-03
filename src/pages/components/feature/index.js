@@ -2,17 +2,25 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import FeatureCard from './FeatureCard';
 
-const FeatureSection = () => {
+const FeatureSection = ({ hasHeading, isHome, features = {} }) => {
   const { t } = useTranslation();
+  const list = isHome ? t('features') : features;
+
   return (
-    <section className='pb-[70px] pt-24 dark:bg-dark-ash-800 sm:pt-16 lg:pt-0'>
+    <section
+      className={`pb-[70px] pt-24 dark:bg-dark-ash-800 sm:pt-16 ${
+        hasHeading ? 'lg:pt-0' : 'lg:pt-16'
+      }`}
+    >
       {/* Heading */}
-      <div className='title-heading'>
-        <h2 className='heading-size dark:text-orange-900'>{t('featureHeading')}</h2>
-      </div>
+      {hasHeading && (
+        <div className='title-heading pt-32 sm:pt-72 md:pt-56 lg:pt-40'>
+          <h2 className='heading-size dark:text-orange-900'>{t('featureHeading')}</h2>
+        </div>
+      )}
       {/* Cards */}
-      {t('features').map((item, index) => (
-        <FeatureCard item={item} key={index} index={index} length={t('features').length} />
+      {list.map((item, index) => (
+        <FeatureCard item={item} key={index} index={index} length={list.length} isHome={isHome} />
       ))}
     </section>
   );

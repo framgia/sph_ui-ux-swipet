@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TestimonialCard = ({ item }) => (
+const TestimonialCard = ({ item, isMain }) => (
   <figure className='relative py-5 pr-5 pb-5 duration-700 hover:scale-105'>
     <Link to={`/swipet-journeys/${item.author}`} target='none'>
       {/* Image */}
@@ -12,8 +12,8 @@ const TestimonialCard = ({ item }) => (
       />
       {/* Content */}
       <figcaption className='absolute left-0 right-0 bottom-5 mr-5 rounded-lg bg-gradient-to-t from-black pb-5 text-white'>
-        <p className='mx-4 mb-4 text-sm font-semibold xl:text-lg'>{item.text}</p>
-        <p className='mx-4 font-allison text-[32px]'>{item.author}</p>
+        {isMain && <p className='mx-4 mb-4 text-sm font-semibold xl:text-lg'>{item.text}</p>}
+        <p className={`mx-4 ${!isMain && 'text-center'} font-allison text-[32px]`}>{item.author}</p>
       </figcaption>
     </Link>
   </figure>
