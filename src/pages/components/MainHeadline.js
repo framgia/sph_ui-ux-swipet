@@ -4,10 +4,11 @@ import { Trans, useTranslation } from 'react-i18next';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from './DownloadButton';
 import ThemeSelect from './ThemeSelect';
+import AnimationForHeroImage from './animation';
 
 const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
   const { t } = useTranslation();
-  const { title, description, src } = featureData;
+  const { title, description } = featureData;
 
   return (
     <header
@@ -68,14 +69,10 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
           data-aos-duration='1000'
           className={`absolute top-[400px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px]
                md:top-[312px] lg:right-0 ${
-                 isHome ? 'lg:top-[40px]' : 'lg:top-[0px]'
+                 isHome ? 'lg:top-[0px]' : 'lg:top-[0px]'
                } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
         >
-          <LazyLoadImage
-            className='origin-center rotate-12 lg:rotate-0'
-            src={`${isHome ? '/images/Hero.webp' : src}`}
-            alt=' a dog on the app'
-          />
+          <AnimationForHeroImage />
         </div>
       </div>
     </header>
