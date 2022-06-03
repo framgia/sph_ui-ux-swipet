@@ -16,9 +16,11 @@ const LanguageSelect = () => {
   const selectedLanguageCheck = (index) => {
     if (index === 0) {
       i18n.changeLanguage('en');
+      window.location.reload(true);
     }
     if (index === 1) {
       i18n.changeLanguage('jp');
+      window.location.reload(true);
     }
   };
 

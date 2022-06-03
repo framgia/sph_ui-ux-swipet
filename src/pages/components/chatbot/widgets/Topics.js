@@ -1,19 +1,20 @@
+import i18next from 'i18next';
 import Options from './Options';
 
 const GeneralOptions = (props) => {
   const options = [
     {
-      name: 'Adoption Process',
+      name: i18next.t('adoptionProcess'),
       handler: props.actionProvider.handleAdoptionProcessReply,
       id: 2,
     },
     {
-      name: 'Paperwork',
+      name: i18next.t('paperwork'),
       handler: props.actionProvider.handlePaperworksReply,
       id: 3,
     },
     {
-      name: 'Requirements',
+      name: i18next.t('requirements'),
       handler: props.actionProvider.handleRequirementsReply,
       id: 4,
     },
