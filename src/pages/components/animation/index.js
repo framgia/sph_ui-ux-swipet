@@ -4,7 +4,7 @@ import Model from './Scene';
 
 const AnimationForHeroImage = () => (
   <Canvas>
-    <OrbitControls />
+    <OrbitControls enableZoom={false} />
     <ambientLight intensity={0.5} />
     <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
     <pointLight position={[-10, -1, -10]} />
