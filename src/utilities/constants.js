@@ -176,22 +176,22 @@ export const subscriptions = [
 export const summaries = [
   {
     name: 'dog',
-    count: '34,000',
+    count: 34000,
     title: 'Number of Dogs Registered',
   },
   {
     name: 'cat',
-    count: '17,000',
+    count: 17000,
     title: 'Number of Cats Registered',
   },
   {
     name: 'petparent',
-    count: '55,000',
+    count: 55000,
     title: 'Number of Potencial Pet Parents Registered',
   },
   {
     name: 'match',
-    count: '65,000',
+    count: 65000,
     title: 'Number of matches',
   },
 ];
