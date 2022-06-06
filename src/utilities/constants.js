@@ -206,7 +206,7 @@ export const tips = [
 export const availablePets = [
   {
     author: 'Bingo',
-    src: '/images/Snow.webp',
+    src: '/images/Bingo.webp',
   },
   {
     author: 'Stitch',
@@ -218,23 +218,23 @@ export const availablePets = [
   },
   {
     author: 'Merry',
-    src: '/images/Stitch.webp',
+    src: '/images/Merry.webp',
   },
   {
     author: 'Rolo',
-    src: '/images/Snow.webp',
+    src: '/images/Rolo.webp',
   },
   {
     author: 'Lilly',
-    src: '/images/Stitch.webp',
+    src: '/images/Lilly.webp',
   },
   {
     author: 'Marshall',
-    src: '/images/Snow.webp',
+    src: '/images/Marshall.webp',
   },
   {
     author: 'Sweetie',
-    src: '/images/Stitch.webp',
+    src: '/images/Sweetie.webp',
   },
 ];
 
