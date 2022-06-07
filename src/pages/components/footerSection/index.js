@@ -19,14 +19,14 @@ const FooterSection = () => {
           </div>
           <div className='flex justify-center space-x-3 lg:space-x-4'>
             <DownloadButton
-              src='./images/GooglePlay.svg'
+              src='../images/GooglePlay.svg'
               alt='google play store'
               upperText='ANDROID APP ON'
               lowerText='Google Play'
               link='https://play.google.com/store'
             />
             <DownloadButton
-              src='./images/AppStore.svg'
+              src='../images/AppStore.svg'
               alt='apple app store'
               upperText='DOWNLOAD ON THE'
               lowerText='App Store'
