@@ -25,14 +25,12 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
         </Link>
         <ThemeSelect />
       </div>
-      <div
-        className={`relative flex flex-col items-center ${
-          !isHome && 'pt-16 md:pt-8'
-        } lg:items-start`}
-      >
+      <div className={`relative flex flex-col items-center ${!isHome && 'md:pt-8'} lg:items-start`}>
         <h1
           className={`heading-size mt-12 flex flex-col self-start pb-4 font-bold
-                text-white md:flex-row md:self-auto lg:flex-col lg:pb-4 ${!isHome && 'w-2/3'}`}
+                text-white md:flex-row md:self-auto md:text-center lg:flex-col lg:pb-4 lg:text-left ${
+                  !isHome && 'lg:w-2/3'
+                }`}
         >
           {isHome ? (
             <Trans t={t} components={{ span: <span /> }}>
@@ -68,9 +66,9 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
           data-aos='fade-left'
           data-aos-duration='1000'
           className={`absolute top-[400px] h-[311px] w-[290px] sm:top-[384px] sm:h-[446px] sm:w-[408px]
-               md:top-[312px] lg:right-0 ${
-                 isHome ? 'lg:top-[0px]' : 'lg:top-[0px]'
-               } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
+              md:top-[312px] lg:right-0 ${
+                isHome ? 'lg:top-[0px]' : 'lg:top-[0px]'
+              } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
         >
           <AnimationForHeroImage />
         </div>

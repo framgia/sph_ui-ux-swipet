@@ -27,7 +27,7 @@ const SummaryCard = ({ summary }) => {
   };
 
   return (
-    <div className='flex h-[200px] w-[227px] flex-col items-center rounded-lg bg-sky-300 py-4 px-2 text-center dark:bg-dark-ash-800 sm:w-full'>
+    <div className='flex h-[200px] w-[227px] flex-col items-center rounded-lg bg-sky-300 py-4 px-2 text-center dark:bg-dark-ash-800 md:h-[230px] lg:py-6'>
       <div className='mb-6'>{iconComponent()}</div>
       <animated.p
         ref={ref}

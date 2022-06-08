@@ -6,7 +6,7 @@ const TestimonialCard = ({ item, isMain }) => (
     <Link to={`/swipet-journeys/${item.author}`} target='none'>
       {/* Image */}
       <img
-        className='h-[467px] w-full rounded-lg object-cover drop-shadow-md'
+        className='h-[250px] w-full rounded-lg  object-cover drop-shadow-md md:h-[265px] xl:h-[400px]'
         src={item.src}
         alt={item.name}
       />
