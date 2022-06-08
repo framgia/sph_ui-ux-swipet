@@ -27,12 +27,15 @@ const SummaryCard = ({ summary }) => {
   };
 
   return (
-    <div className='flex h-[200px] w-[227px] flex-col items-center rounded-lg bg-sky-300 py-4 px-2 text-center sm:w-full'>
+    <div className='flex h-[200px] w-[227px] flex-col items-center rounded-lg bg-sky-300 py-4 px-2 text-center dark:bg-dark-ash-800 sm:w-full'>
       <div className='mb-6'>{iconComponent()}</div>
-      <animated.p ref={ref} className='mb-[26px] text-2xl font-semibold text-navy-900'>
+      <animated.p
+        ref={ref}
+        className='mb-[26px] text-2xl font-semibold text-navy-900 dark:text-orange-900'
+      >
         {props.count.to((x) => new Intl.NumberFormat().format(Math.floor(x)))}
       </animated.p>
-      <p className='font-medium text-brown-900'>{summary.title}</p>
+      <p className='font-medium text-brown-900 dark:text-white'>{summary.title}</p>
     </div>
   );
 };

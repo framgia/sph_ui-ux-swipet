@@ -52,7 +52,7 @@ const Testimonial = ({ testimonialCaption, isMain = true, gallery = {} }) => {
 
       {/* Sub Heading */}
       {!isMain && (
-        <p className='mx-auto w-4/5 pb-[99px] text-center text-[24px] font-medium text-brown-900 sm:w-9/12 3xl:w-3/5'>
+        <p className='mx-auto w-4/5 pb-[99px] text-center text-[24px] font-medium text-brown-900 dark:text-white sm:w-9/12 3xl:w-3/5'>
           Help find these pets new home and refer this app to your friends or you can become a{' '}
           <span className='font-bold'>Swipey</span>- a contributor to the adoption community and be
           one of our sponsors.

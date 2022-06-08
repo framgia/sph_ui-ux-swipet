@@ -3,7 +3,7 @@ import PlanCard from './PlanCard';
 import { subscriptions } from '../../../utilities/constants';
 
 const SubscriptionSection = () => (
-  <section className='bg-white py-28'>
+  <section className='bg-white py-28 dark:bg-dark-ash-700'>
     {/* Heading */}
     <div className='title-heading pb-[80px]'>
       <h2 className='heading-size dark:text-orange-900'>Boost your Swipet experience</h2>
