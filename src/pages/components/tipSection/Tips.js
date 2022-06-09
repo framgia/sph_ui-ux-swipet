@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import CheckCirledIcon from '../icons/CheckCircledIcon';
 
 const Tips = () => {
-  const { t } = useTranslation();
-  const tips = t('tips', { ns: 'features' });
+  const { t } = useTranslation('features');
+  const tips = t('tips');
 
   return (
     <>
@@ -18,7 +18,7 @@ const Tips = () => {
         ))}
       </ul>
       <p className='text-center text-3xl font-semibold text-brown-900 dark:text-white'>
-        {t('tipsEnd', { ns: 'features' })}
+        {t('tipsEnd')}
       </p>
     </>
   );

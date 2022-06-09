@@ -13,10 +13,10 @@ import TipSection from '../components/tipSection';
 import Testimonial from '../components/testimonial';
 
 const FeatureDetail = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('features');
   const { name } = useParams('name');
   const { colorScheme } = useTheme();
-  const features = t('features', { ns: 'features' });
+  const features = t('features');
 
   const featureData = features.find((feature) => feature.name === name);
 
@@ -33,7 +33,7 @@ const FeatureDetail = () => {
           <Testimonial
             isMain={false}
             gallery={availablePets}
-            testimonialCaption={t('testimonialsHeading', { ns: 'features' })}
+            testimonialCaption={t('testimonialsHeading')}
           />
         );
       default:

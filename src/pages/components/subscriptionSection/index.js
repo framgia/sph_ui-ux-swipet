@@ -3,16 +3,14 @@ import { useTranslation } from 'react-i18next';
 import PlanCard from './PlanCard';
 
 const SubscriptionSection = () => {
-  const { t } = useTranslation();
-  const subscriptions = t('subscriptions', { ns: 'features' });
+  const { t } = useTranslation('features');
+  const subscriptions = t('subscriptions');
 
   return (
     <section className='bg-white py-28 px-14 dark:bg-dark-ash-700'>
       {/* Heading */}
       <div className='title-heading pb-[80px]'>
-        <h2 className='heading-size dark:text-orange-900'>
-          {t('subscriptionHeading', { ns: 'features' })}
-        </h2>
+        <h2 className='heading-size dark:text-orange-900'>{t('subscriptionHeading')}</h2>
       </div>
 
       {/* Cards */}

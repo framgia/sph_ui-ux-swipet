@@ -2,32 +2,6 @@
   "mainHeading": "<span className='text-yellow-900 dark:text-orange-900'>最高の仲間</span>を探す",
   "subHeading": "出会い系アプリにうんざりしていませんか？あなたのパートナーはあなたを他の誰かに任せましたか？代わりにファーベイビーを入手してください。 <span className='text-yellow-900 dark:text-orange-900'>Swipet</span>を使用すると、あなたはあなたが値する愛を得ることができます。",
   "featureHeading": "ペットを飼うことはかつてないほど容易になりました",
-  "features": [
-    {
-      "name": "profile",
-      "title": "彼らにあなたを知らせてください",
-      "src": "/images/FeatureProfile.webp",
-      "description": "あなたのプロフィールであなたの最高の資質を曲げてください。あなたの興味を示してください。 「私は全世界で最高の毛皮の親です！」と叫びましょう。"
-    },
-    {
-      "name": "match",
-      "title": "あなたの完璧な仲間と一致します",
-      "src": "/images/FeatureMatch.webp",
-      "description": "マッチするまで、好きなペットを右にスワイプします。"
-    },
-    {
-      "name": "chat",
-      "title": "それらを知る",
-      "src": "/images/FeatureChat.webp",
-      "description": "マッチペットの飼い主とチャットして、彼らについてもっと学びましょう。"
-    },
-    {
-      "name": "adopt",
-      "title": "採用",
-      "src": "/images/FeatureAdopt.webp",
-      "description": "採用し、買い物をしないでください。ペットの飼い主と取引をし、毛皮の親として認定されます。"
-    }
-  ],
   "testimonialHeading": "人生を変える旅を始める",
   "testimonialHeading2": "あなたも好きかも",
   "footerBanner": "あなたの<span className='text-yellow-900 dark:text-orange-900'>親友</span>は<br /><span className='text-yellow-900 dark:text-orange-900'>あなた</span>を待っています",
