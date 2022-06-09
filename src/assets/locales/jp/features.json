@@ -1,0 +1,205 @@
+{
+  "features": [
+    {
+      "name": "profile",
+      "title": "彼らにあなたを知らせてください",
+      "src": "/images/FeatureProfile.webp",
+      "description": "あなたのプロフィールであなたの最高の資質を曲げてください。あなたの興味を示してください。 「私は全世界で最高の毛皮の親です！」と叫びましょう。",
+      "subFeatures": [
+        {
+          "title": "リッチなプロフィールで差をつけましょう",
+          "description": "あなたのベスト写真を選んで、あなた自身についてもっと詳しく教えてください。趣味の話や、任意参加の質問者への回答もアピールしてみましょう。ペットの親になるためのヒントを与えてください。",
+          "src": "/images/Profile.webp"
+        },
+        {
+          "title": "認証の獲得",
+          "description": "自撮り写真と身分証明書を用意することで、より多くの「いいね！」を獲得し、あなたの信頼性を高めることができます。よりリアルに、よりキャッチーに。数分で、採用デートの準備が整います。",
+          "src": "/images/GetVerified.webp"
+        }
+      ]
+    },
+    {
+      "name": "match",
+      "title": "あなたの完璧な仲間と一致します",
+      "src": "/images/FeatureMatch.webp",
+      "description": "マッチするまで、好きなペットを右にスワイプします。",
+      "subFeatures": [
+        {
+          "title": "人を探す",
+          "description": "数百万人の中からあなたの一番好きなペットを選び出し、可能な限り高い確率でマッチングさせましょう。より具体的であればあるほど、より正確であることを忘れないでください。",
+          "src": "/images/DiscoverPeople.webp"
+        },
+        {
+          "title": "スワイプでキャッチ!",
+          "description": "収集し、選択し、右にスワイプするか、ハートマークを反応させると、お気に入りリストに登録されます。もし、あなたの理想の親友と一致しない場合は、いつでも左にスワイプすることができます。",
+          "src": "/images/SwipeThatCatch.webp"
+        }
+      ]
+    },
+    {
+      "name": "chat",
+      "title": "それらを知る",
+      "src": "/images/FeatureChat.webp",
+      "description": "マッチペットの飼い主とチャットして、彼らについてもっと学びましょう。",
+      "subFeatures": [
+        {
+          "title": "チャットでお相手の様子をうかがう",
+          "description": "その動きを最初に見せて、未来の親友とすぐに知り合いになりましょう。それはあなたと同じ雰囲気と悪寒を取得しているかどうかを確認します。",
+          "src": "/images/Chat.webp"
+        },
+        {
+          "title": "待ち合わせの手配",
+          "description": "最適なスケジュールを調整し、もうすぐ生まれるペットに会うための会場を設定します。運が良ければ、シェルターによっては、自宅まで配達してくれるところもあるので、移動中のかさばるケージを気にする必要はありません。",
+          "src": "/images/ArrangeAMeetUp.webp"
+        }
+      ]
+    },
+    {
+      "name": "adopt",
+      "title": "採用",
+      "src": "/images/FeatureAdopt.webp",
+      "description": "採用し、買い物をしないでください。ペットの飼い主と取引をし、毛皮の親として認定されます。",
+      "subFeatures": [
+        {
+          "title": "必要事項の処理",
+          "description": "ペーパーレスで必要事項をアップロードできるので、新しいペットとの待ち合わせの際、手荷物が増えることもなく、迅速に対応できます。",
+          "src": "/images/ProcessRequirements.webp"
+        },
+        {
+          "title": "里親探しの旅を共有する",
+          "description": "毛皮のような親友に出会うまでのストーリーを投稿して、他のペット愛好家がペットの里親になる喜びを発見できるようにしましょう。",
+          "src": "/images/ShareYourJourney.webp"
+        }
+      ]
+    }
+  ],
+  "subscriptionHeading": "Swipetの使用感を向上させる",
+  "subscriptions": [
+    {
+      "name": "無料",
+      "content": [
+        {
+          "included": true,
+          "description": "マッチ、チャット、採用"
+        },
+        {
+          "included": false,
+          "description": "無制限のスワイプ"
+        },
+        {
+          "included": false,
+          "description": "無制限のリワインド"
+        },
+        {
+          "included": false,
+          "description": "チャットとマッチの有効期限なし"
+        },
+        {
+          "included": false,
+          "description": "広告なし"
+        },
+        {
+          "included": false,
+          "description": "トッププロフィールに掲載される"
+        }
+      ]
+    },
+    {
+      "name": "シルバー",
+      "content": [
+        {
+          "included": true,
+          "description": "マッチ、チャット、採用"
+        },
+        {
+          "included": true,
+          "description": "無制限のスワイプ"
+        },
+        {
+          "included": true,
+          "description": "無制限のリワインド"
+        },
+        {
+          "included": true,
+          "description": "チャットとマッチの有効期限なし"
+        },
+        {
+          "included": false,
+          "description": "広告なし"
+        },
+        {
+          "included": false,
+          "description": "トッププロフィールに掲載される"
+        }
+      ]
+    },
+    {
+      "name": "ゴールド",
+      "content": [
+        {
+          "included": true,
+          "description": "マッチ、チャット、採用"
+        },
+        {
+          "included": true,
+          "description": "無制限のスワイプ"
+        },
+        {
+          "included": true,
+          "description": "無制限のリワインド"
+        },
+        {
+          "included": true,
+          "description": "チャットとマッチの有効期限なし"
+        },
+        {
+          "included": true,
+          "description": "広告なし"
+        },
+        {
+          "included": true,
+          "description": "トッププロフィールに掲載される"
+        }
+      ]
+    }
+  ],
+  "summariesHeading": "ネットワークに参加して、ペットの親になろう",
+  "summariesSubHeading": "ペットを飼うことは、変幻自在でエキサイティングな体験ですが、時には大変な思いをすることもあります。Swipetはすべてにおいてあなたの側にいて、あなたと親友をマッチングさせますので、ご安心ください。",
+  "summaries": [
+    {
+      "name": "dog",
+      "count": 34000,
+      "title": "犬登録頭数"
+    },
+    {
+      "name": "cat",
+      "count": 17000,
+      "title": "猫登録数"
+    },
+    {
+      "name": "petparent",
+      "count": 55000,
+      "title": "潜在的なペットの親登録者数"
+    },
+    {
+      "name": "match",
+      "count": 65000,
+      "title": "マッチング数"
+    }
+  ],
+  "tipsHeading": "あなたのエンゲージメントにさらなる感動を!",
+  "tipsSubHeading": "ストーリーにひと工夫して、好印象を持続させる。",
+  "tipsFirstPar": "好みのペットを飼うには、冗談半分でまともな会話を続けられることが必要です。出会い系アプリは、人と会話ができることを前提に作られています。",
+  "tipsSecPar": "採用の可能性は会話に勝るとも劣らないので、冒頭のセリフは目を引くようにする必要があります。",
+  "tipsEnd": "行ってもいいですよ!",
+  "tipsBtnOne": "ヒント",
+  "tipsBtnTwo": "デモ",
+  "tips": [
+    "良いオープニングラインを持つ",
+    "オープンな質問で会話を続ける",
+    "コミットメントに対する彼らの心配が問題無いことを思い出させる",
+    "常に正直で合法的であること"
+  ],
+  "testimonialsHeading": "境界線を越える",
+  "testimonialSubHeading": "このアプリを友達に紹介したり、ペット親コミュニティへの貢献者である <span className='font-bold'> Swipey</span> になって、私たちのスポンサーの 1 つになって、ペットの新しい家を見つける手助けをしてください。"
+}

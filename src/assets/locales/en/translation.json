@@ -2,32 +2,6 @@
   "mainHeading": "Find your\u00a0<span className='text-yellow-900 dark:text-orange-900'>best companion</span>",
   "subHeading": "Tired of dating apps? Your partner left you for someone else? Get a furbaby instead. With <span className='text-yellow-900 dark:text-orange-900'>Swipet</span>, you get the love you deserve.",
   "featureHeading": "Adopting a pet has never been easier",
-  "features": [
-    {
-      "name": "profile",
-      "title": "Let them know you",
-      "src": "/images/FeatureProfile.webp",
-      "description": "Flex your best qualities on your profile. Show your interests. Let it scream, “I'm the best fur parent in the whole world!”."
-    },
-    {
-      "name": "match",
-      "title": "Match with your perfect buddy",
-      "src": "/images/FeatureMatch.webp",
-      "description": "Swipe to the right for the pet you like until you get your match."
-    },
-    {
-      "name": "chat",
-      "title": "Get to know them",
-      "src": "/images/FeatureChat.webp",
-      "description": "Chat with the keeper of your match pet, and learn more about them."
-    },
-    {
-      "name": "adopt",
-      "title": "Adopt",
-      "src": "/images/FeatureAdopt.webp",
-      "description": "Adopt, don't shop. Make a deal with the pet keeper, and become a certified fur parent."
-    }
-  ],
   "testimonialHeading": "Start a life-changing journey",
   "testimonialHeading2": "You may also like",
   "footerBanner": "Your <span className='text-yellow-900 dark:text-orange-900'>bestfriend</span> is<br />waiting for <span className='text-yellow-900 dark:text-orange-900'>you</span>",

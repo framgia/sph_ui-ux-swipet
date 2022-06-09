@@ -4,7 +4,7 @@ import FeatureCard from './FeatureCard';
 
 const FeatureSection = ({ hasHeading, isHome, features = {} }) => {
   const { t } = useTranslation();
-  const list = isHome ? t('features') : features;
+  const list = isHome ? t('features', { ns: 'features' }) : features;
 
   return (
     <section

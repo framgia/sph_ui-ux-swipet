@@ -1,0 +1,205 @@
+{
+  "features": [
+    {
+      "name": "profile",
+      "title": "Let them know you",
+      "src": "/images/FeatureProfile.webp",
+      "description": "Flex your best qualities on your profile. Show your interests. Let it scream, “I’m the best fur parent in the whole world!”.",
+      "subFeatures": [
+        {
+          "title": "Stand Out with rich Profile",
+          "description": "Pick your best photos and share more details about yourself. Describe your hobbies and showcase your answers to optional questioners too. Give them hints that makes you a perfect fit to be a fur parent.",
+          "src": "/images/Profile.webp"
+        },
+        {
+          "title": "Get Verified",
+          "description": "Gain more likes by securing a selfie photo and valid ID of yourself to boost your reliability. The more realistic, the more catchy. It will just take a few minutes and you are ready for adoption dating.",
+          "src": "/images/GetVerified.webp"
+        }
+      ]
+    },
+    {
+      "name": "match",
+      "title": "Match with your perfect buddy",
+      "src": "/images/FeatureMatch.webp",
+      "description": "Swipe to the right for the pet you like until you get your match.",
+      "subFeatures": [
+        {
+          "title": "Discover people",
+          "description": "Filter out your most preffered pet out from millions out there and be match with the highest possible results. Remember the more specific, the more accurate. ",
+          "src": "/images/DiscoverPeople.webp"
+        },
+        {
+          "title": "Swipe that catch!",
+          "description": "Collect and select, swipe right or react heart to put them on your favorite   list. You can always swipe left too if the results don’t match your ideal bestfriend.",
+          "src": "/images/SwipeThatCatch.webp"
+        }
+      ]
+    },
+    {
+      "name": "chat",
+      "title": " Get to know them",
+      "src": "/images/FeatureChat.webp",
+      "description": "Chat with the keeper of your match pet, and learn more about them.",
+      "subFeatures": [
+        {
+          "title": "Chat and get a glimpse of your match",
+          "description": "Be the first one to show that moves and get acquainted right away with your future bestfriend. See if it’s getting the same vibe and chills you’re in.",
+          "src": "/images/Chat.webp"
+        },
+        {
+          "title": "Arrange a meet up",
+          "description": "Arrange the best schedule and set a venue to meet your soon to be pet. If lucky enough, some shelters provide home and delivery so you won’t worry about that bulky cage along the ride.",
+          "src": "/images/ArrangeAMeetUp.webp"
+        }
+      ]
+    },
+    {
+      "name": "adopt",
+      "title": "Adopt",
+      "src": "/images/FeatureAdopt.webp",
+      "description": "Adopt, don’t shop. Make a deal with the pet keeper, and become a certified fur parent.",
+      "subFeatures": [
+        {
+          "title": "Process Requirements",
+          "description": "Paperless uploading of requirements, so quick and no hassle when it comes to extra baggage when meeting up with your new pet. ",
+          "src": "/images/ProcessRequirements.webp"
+        },
+        {
+          "title": "Share your adopting journey",
+          "description": "Submit us the story of how you met your furry best friend and help other pet lovers discover the joys of pet adoption.",
+          "src": "/images/ShareYourJourney.webp"
+        }
+      ]
+    }
+  ],
+  "subscriptionHeading": "Boost your Swipet experience",
+  "subscriptions": [
+    {
+      "name": "FREE",
+      "content": [
+        {
+          "included": true,
+          "description": "Match, Chat, Adopt."
+        },
+        {
+          "included": false,
+          "description": "Unlimited Swipes"
+        },
+        {
+          "included": false,
+          "description": "Unlimited Rewinds"
+        },
+        {
+          "included": false,
+          "description": "No chat and match expiry"
+        },
+        {
+          "included": false,
+          "description": "No Advertisements"
+        },
+        {
+          "included": false,
+          "description": "Get on the Top Profile"
+        }
+      ]
+    },
+    {
+      "name": "SILVER",
+      "content": [
+        {
+          "included": true,
+          "description": "Match, Chat, Adopt."
+        },
+        {
+          "included": true,
+          "description": "Unlimited Swipes"
+        },
+        {
+          "included": true,
+          "description": "Unlimited Rewinds"
+        },
+        {
+          "included": true,
+          "description": "No chat and match expiry"
+        },
+        {
+          "included": false,
+          "description": "No Advertisements"
+        },
+        {
+          "included": false,
+          "description": "Get on the Top Profile"
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "content": [
+        {
+          "included": true,
+          "description": "Match, Chat, Adopt."
+        },
+        {
+          "included": true,
+          "description": "Unlimited Swipes"
+        },
+        {
+          "included": true,
+          "description": "Unlimited Rewinds"
+        },
+        {
+          "included": true,
+          "description": "No chat and match expiry"
+        },
+        {
+          "included": true,
+          "description": "No Advertisements"
+        },
+        {
+          "included": true,
+          "description": "Get on the Top Profile"
+        }
+      ]
+    }
+  ],
+  "summariesHeading": "Join the network and be a Fur Parent",
+  "summariesSubHeading": "Adopting a pet is a transformative and exciting experience, but it can be daunting at times. Rest assured that Swipet will be by your side in everything and will match you with your best friend.",
+  "summaries": [
+    {
+      "name": "dog",
+      "count": 34000,
+      "title": "Number of Dogs Registered"
+    },
+    {
+      "name": "cat",
+      "count": 17000,
+      "title": "Number of Cats Registered"
+    },
+    {
+      "name": "petparent",
+      "count": 55000,
+      "title": "Number of Potencial Pet Parents Registered"
+    },
+    {
+      "name": "match",
+      "count": 65000,
+      "title": "Number of matches"
+    }
+  ],
+  "tipsHeading": "Give your engagement a BLAST!",
+  "tipsSubHeading": "Give your story a little whirl and make good impressions last.",
+  "tipsFirstPar": "In order to adopt your preferred pet, you need to be able to continue a half-hearted and decent conversation. Dating app is designed to be able to talk to people.",
+  "tipsSecPar": "The possibility of adoption is as good as a conversation, so you need to make sure thatthe opening line is eye-catching.",
+  "tipsEnd": "You’re good to go!",
+  "tipsBtnOne": "Tips",
+  "tipsBtnTwo": "Demo",
+  "tips": [
+    "Have A Good Opening Line",
+    "Keep The Conversation Going With Open Questions",
+    "Remind Them That Their Fear of Commitment Is a Non-Issue",
+    "Always be honest and legit"
+  ],
+  "testimonialsHeading": "Go beyond boundaries",
+  "testimonialSubHeading": "Help find these pets new home and refer this app to your friends or you can become a <span className='font-bold'> Swipey</span> - a contributor to the adoption community and be one of our sponsors."
+}

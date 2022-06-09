@@ -6,7 +6,6 @@ import Testimonial from './components/testimonial';
 import FooterSection from './components/footerSection';
 import CookiePolicy from './components/CookiePolicy';
 import { useTheme } from '../utilities/contexts/ThemeContext';
-import { features } from '../utilities/constants';
 
 const Home = () => {
   const { colorScheme } = useTheme();
@@ -15,7 +14,7 @@ const Home = () => {
     <div>
       <MainHeadline colorScheme={colorScheme} isHome />
       <Chatbot colorScheme={colorScheme} />
-      <FeatureSection hasHeading isHome features={features} />
+      <FeatureSection hasHeading isHome />
       <Testimonial />
       <FooterSection />
       <CookiePolicy />

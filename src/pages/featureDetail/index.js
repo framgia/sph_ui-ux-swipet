@@ -1,9 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import MainHeadline from '../components/MainHeadline';
 import NotFound from '../components/externalPages/NotFound';
 import FooterSection from '../components/footerSection';
-import { features, availablePets } from '../../utilities/constants';
+import { availablePets } from '../../utilities/constants';
 import { useTheme } from '../../utilities/contexts/ThemeContext';
 import FeatureSection from '../components/feature';
 import SubscriptionSection from '../components/subscriptionSection';
@@ -12,8 +13,10 @@ import TipSection from '../components/tipSection';
 import Testimonial from '../components/testimonial';
 
 const FeatureDetail = () => {
+  const { t } = useTranslation('features');
   const { name } = useParams('name');
   const { colorScheme } = useTheme();
+  const features = t('features');
 
   const featureData = features.find((feature) => feature.name === name);
 
@@ -30,7 +33,7 @@ const FeatureDetail = () => {
           <Testimonial
             isMain={false}
             gallery={availablePets}
-            testimonialCaption='Go beyond boundaries'
+            testimonialCaption={t('testimonialsHeading')}
           />
         );
       default:
