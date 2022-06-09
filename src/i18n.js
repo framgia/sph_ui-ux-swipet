@@ -7,6 +7,8 @@ import testimonialsEN from './assets/locales/en/testimonials.json';
 import testimonialsJP from './assets/locales/jp/testimonials.json';
 import informationsEN from './assets/locales/en/informations.json';
 import informationsJP from './assets/locales/jp/informations.json';
+import featuresEN from './assets/locales/en/features.json';
+import featuresJP from './assets/locales/jp/features.json';
 
 i18n
   .use(LanguageDetector)
@@ -18,17 +20,19 @@ i18n
         translations: translationEN,
         testimonials: testimonialsEN,
         informations: informationsEN,
+        features: featuresEN,
       },
       jp: {
         translations: translationJP,
         testimonials: testimonialsJP,
         informations: informationsJP,
+        features: featuresJP,
       },
     },
     fallbackLng: 'en',
     debug: false,
     // have a common namespace used around the full app
-    ns: ['translations', 'testimonials', 'informations'],
+    ns: ['translations', 'testimonials', 'informations', 'features'],
     defaultNS: 'translations',
     keySeparator: false, // we use content as keys
     interpolation: {

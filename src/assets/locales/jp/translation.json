@@ -4,25 +4,25 @@
   "featureHeading": "ペットを飼うことはかつてないほど容易になりました",
   "features": [
     {
-      "name": "プロフィール",
+      "name": "profile",
       "title": "彼らにあなたを知らせてください",
       "src": "/images/FeatureProfile.webp",
       "description": "あなたのプロフィールであなたの最高の資質を曲げてください。あなたの興味を示してください。 「私は全世界で最高の毛皮の親です！」と叫びましょう。"
     },
     {
-      "name": "マッチ",
+      "name": "match",
       "title": "あなたの完璧な仲間と一致します",
       "src": "/images/FeatureMatch.webp",
       "description": "マッチするまで、好きなペットを右にスワイプします。"
     },
     {
-      "name": "チャット",
+      "name": "chat",
       "title": "それらを知る",
       "src": "/images/FeatureChat.webp",
       "description": "マッチペットの飼い主とチャットして、彼らについてもっと学びましょう。"
     },
     {
-      "name": "採用",
+      "name": "adopt",
       "title": "採用",
       "src": "/images/FeatureAdopt.webp",
       "description": "採用し、買い物をしないでください。ペットの飼い主と取引をし、毛皮の親として認定されます。"
