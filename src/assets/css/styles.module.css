@@ -1,0 +1,21 @@
+.deck {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deck > div {
+  touch-action: none;
+  background-color: white;
+  background-size: 242px 455px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 45vh;
+  max-width: 237px;
+  height: 210vh;
+  max-height: 438px;
+  will-change: transform;
+  border-radius: 0px 0px 18px 30px;
+}
+

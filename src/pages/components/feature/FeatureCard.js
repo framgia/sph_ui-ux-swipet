@@ -46,6 +46,7 @@ const FeatureCard = ({ item, index, length, isHome }) => {
               src={item.src}
               alt={item.name}
             />
+            {!isHome && <button>Click Here!!</button>}
           </div>
           {/* Content */}
           <div className='flex flex-1 flex-col items-center lg:items-start'>
