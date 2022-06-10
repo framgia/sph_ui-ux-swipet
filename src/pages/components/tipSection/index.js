@@ -12,7 +12,7 @@ const TipSection = () => {
   const [isNotActive, setIsNotActive] = useState(true);
 
   useEffect(() => {
-    if (isDemo === false) {
+    if (!isDemo) {
       setIsActive(
         'h-[38px] w-20 rounded-l-lg bg-navy-600 px-2 py-1 text-lg font-semibold text-white hover:underline focus:bg-navy-600 focus:text-white',
       );
@@ -24,7 +24,7 @@ const TipSection = () => {
   }, [isDemo]);
 
   useEffect(() => {
-    if (isDemo === true) {
+    if (isDemo) {
       setIsNotActive(
         'h-[38px] w-20 rounded-r-lg bg-navy-600 px-2 py-1 text-lg font-semibold text-white hover:underline focus:bg-navy-600 focus:text-white',
       );
@@ -69,9 +69,7 @@ const TipSection = () => {
               {t('tipsBtnTwo')}
             </button>
           </div>
-          <div className='flex flex-col items-center md:px-14'>
-            {isDemo === true ? <Demo /> : <Tips />}
-          </div>
+          <div className='flex flex-col items-center md:px-14'>{isDemo ? <Demo /> : <Tips />}</div>
         </div>
       </div>
     </section>
