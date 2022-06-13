@@ -23,19 +23,19 @@ const Testimonial = ({ testimonialCaption, isMain = true, gallery = {} }) => {
     infinite: true,
     autoplay: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: list.length < 4 ? list.length : 4,
     lazyLoad: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: list.length < 3 ? list.length : 3,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: list.length < 2 ? list.length : 2,
         },
       },
     ],
