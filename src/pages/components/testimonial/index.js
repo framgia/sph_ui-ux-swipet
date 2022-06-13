@@ -21,21 +21,21 @@ const Testimonial = ({ testimonialCaption, isMain = true, gallery = {} }) => {
     arrows: false,
     dots: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
-    slidesToShow: gallery.length <= 3 ? gallery.length : 3.5,
-    lazyLoad: false,
+    slidesToShow: 4,
+    lazyLoad: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: gallery.length <= 2 ? gallery.length : 2.5,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: gallery.length <= 1 ? gallery.length : 1.5,
+          slidesToShow: 2,
         },
       },
     ],
