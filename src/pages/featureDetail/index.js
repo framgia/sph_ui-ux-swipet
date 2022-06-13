@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Chatbot from '../components/chatbot';
 import MainHeadline from '../components/MainHeadline';
 import NotFound from '../components/externalPages/NotFound';
 import FooterSection from '../components/footerSection';
@@ -11,6 +12,7 @@ import SubscriptionSection from '../components/subscriptionSection';
 import SummarySection from '../components/summarySection';
 import TipSection from '../components/tipSection';
 import Testimonial from '../components/testimonial';
+import CookiePolicy from '../components/CookiePolicy';
 
 const FeatureDetail = () => {
   const { t } = useTranslation('features');
@@ -53,6 +55,8 @@ const FeatureDetail = () => {
           <FooterSection />
         </>
       )}
+      <CookiePolicy />
+      <Chatbot colorScheme={colorScheme} />
     </>
   );
 };
