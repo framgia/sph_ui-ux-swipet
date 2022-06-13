@@ -90,9 +90,6 @@ module.exports = {
       screens: {
         '3xl': '1720px',
       },
-      animation: {
-        'spin-slow': 'spin 40s linear infinite',
-      },
     },
   },
   plugins: [],
