@@ -117,14 +117,14 @@ export const socialMediaLinks = [
 ];
 
 export const images = [
-  '/images/Ben.png',
-  '/images/Cathy.png',
-  '/images/Leo.png',
-  '/images/Chuc.png',
+  '/images/Ben.webp',
+  '/images/Cathy.webp',
+  '/images/Leo.webp',
+  '/images/Chuc.webp',
 ];
 
 export const icons = [
-  '/images/Close.png',
-  '/images/Heart.png',
-  '/images/Mobile.png',
+  '/images/Close.webp',
+  '/images/Heart.webp',
+  '/images/Mobile.webp',
 ];

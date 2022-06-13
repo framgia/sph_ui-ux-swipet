@@ -20,6 +20,9 @@ const trans = (r: number) => `rotateZ(${r}deg)`;
 function Deck({ icons }) {
   const leftP = useSpring({ scale: 1 });
   const rightP = useSpring({ scale: 1 });
+  // const [isRight, setIsRight] = useState(false)
+
+  // console.log(isRight)
 
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, (i) => ({
@@ -40,7 +43,7 @@ function Deck({ icons }) {
       if (xDir === 1 && mx > 0) { rightP.scale.set(1.5) } else { rightP.scale.set(1) };
 
       api.start((i) => {
-        if (index !== i) return''; // We're only interested in changing spring-data for the current spring
+        if (index !== i) return ''; // We're only interested in changing spring-data for the current spring
         const isGone = gone.has(index);
 
         if (isGone && rightP.scale.set(1));
@@ -99,6 +102,7 @@ function Deck({ icons }) {
         <animated.div
           className='bg-no-repeat bg-center bg-[33px] h-[47px] w-[49px] ml-[12px] mb-[35px]'
           style={{ backgroundImage: `url(${icons[0]})`, scale: leftP.scale, backgroundSize: '43px' }}
+        // onClick={() => setIsRight(true)}
         />
         <animated.div
           className='bg-no-repeat bg-center bg-[33px] h-[47px] w-[49px] mr-[12px] mb-[35px]'
