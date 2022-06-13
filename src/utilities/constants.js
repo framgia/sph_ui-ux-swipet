@@ -115,3 +115,16 @@ export const socialMediaLinks = [
     alt: 'twitter icon',
   },
 ];
+
+export const images = [
+  '/images/Ben.webp',
+  '/images/Cathy.webp',
+  '/images/Leo.webp',
+  '/images/Chuc.webp',
+];
+
+export const icons = [
+  '/images/Close.webp',
+  '/images/Heart.webp',
+  '/images/Mobile.webp',
+];

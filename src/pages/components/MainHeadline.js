@@ -5,6 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DownloadButton from './DownloadButton';
 import ThemeSelect from './ThemeSelect';
 import AnimationForHeroImage from './animation';
+import SwipeAnimation from './swipe';
 
 const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
   const { t } = useTranslation();
@@ -70,7 +71,7 @@ const MainHeadline = ({ colorScheme, isHome, featureData = {} }) => {
                 isHome ? 'lg:top-[0px]' : 'lg:top-[0px]'
               } lg:h-[507px] lg:w-[430px] xl:w-[464px]`}
         >
-          <AnimationForHeroImage />
+          <div className='flex justify-center w-[100%] h-[100%]' >{ isHome ? <AnimationForHeroImage /> : <SwipeAnimation /> }</div>
         </div>
       </div>
     </header>
