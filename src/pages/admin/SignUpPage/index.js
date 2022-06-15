@@ -49,7 +49,7 @@ const AdminSignUpPage = () => {
         </form>
         <p className='mt-[27px] text-[20px] flex justify-center gap-1 font-bold text-brown-900'>
           Already have an account?
-          <Link to='/admin/registration' className='text-orange-900'>
+          <Link to='/admin/login' className='text-orange-900'>
             Login
           </Link>
         </p>

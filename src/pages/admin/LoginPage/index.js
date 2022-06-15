@@ -44,7 +44,7 @@ const AdminLoginPage = () => {
         </form>
         <p className='mt-[27px] flex justify-center gap-1 font-bold text-brown-900'>
           Don’t have an account?
-          <Link to='/admin/registration' className='text-orange-900 hover:text-orange-700'>
+          <Link to='/admin/sign-up' className='text-orange-900 hover:text-orange-700'>
             Sign up!
           </Link>
         </p>
