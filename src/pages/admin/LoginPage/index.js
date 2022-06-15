@@ -1,8 +1,8 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import ButtonComponent from '../../components/buttonComponent/ButtonComponent';
-import InputField from '../../components/inputField';
+import ButtonComponent from '../../components/shared/buttonComponent/ButtonComponent';
+import InputField from '../../components/shared/inputField';
 
 const AdminLoginPage = () => {
   const handleSubmit = (e) => {
@@ -14,12 +14,12 @@ const AdminLoginPage = () => {
 
   return (
     <div className='flex h-screen items-center justify-center bg-gradient-to-b from-orange-900'>
-      <div className='pb:0 w-[300px] rounded-[5px] bg-sky-100 p-7 sm:w-[545px] sm:p-14 sm:pb-5'>
+      <div className='w-[300px] rounded-[5px] bg-orange-100 p-7 sm:w-[545px] sm:p-14 sm:pb-5'>
         <div className='flex w-full justify-center'>
           <LazyLoadImage
             src='/images/LogoDarkFit.svg'
             alt='logo'
-            className='mb:0 h-[68px] w-[288px] sm:mb-[27px]'
+            className='h-[68px] w-[288px] sm:mb-[27px]'
           />
         </div>
         <form onSubmit={handleSubmit}>
