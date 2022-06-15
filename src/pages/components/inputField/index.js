@@ -3,7 +3,7 @@ import React from 'react';
 const InputField = ({ name, type, placeholder, onChange }) => (
   <div className='mt-[30px] flex flex-col'>
     <div>
-      <span className='text-base font-bold text-brown-900'>{name}</span>
+      <p className='text-base font-bold text-brown-900'>{name}</p>
       <input
         type={type}
         name={name}

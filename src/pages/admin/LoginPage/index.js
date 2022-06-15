@@ -10,9 +10,7 @@ const AdminLoginPage = () => {
     window.location = '/admin/home';
   };
 
-  const handleOnChange = (e) => {
-    console.log(e.target.value);
-  };
+  const handleOnChange = (e) => e.target.value;
 
   return (
     <div className='flex h-screen items-center justify-center bg-gradient-to-b from-orange-900'>
