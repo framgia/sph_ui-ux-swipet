@@ -1,9 +1,9 @@
 import React from 'react';
 
 const InputField = ({ name, type, placeholder, onChange }) => (
-  <div className='mt-[30px] flex flex-col'>
+  <div className='mt-[37px] flex flex-col'>
     <div>
-      <p className='text-base font-bold text-brown-900'>{name}</p>
+      <p className='text-base font-bold text-brown-900 mb-[13px] text-[24px]'>{name}</p>
       <input
         type={type}
         name={name}

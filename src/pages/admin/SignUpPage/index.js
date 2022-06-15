@@ -1,8 +1,8 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import ButtonComponent from '../../components/buttonComponent/ButtonComponent';
-import InputField from '../../components/inputField';
+import Button from '../../components/shared/Button';
+import InputField from '../../components/shared/InputField';
 
 const AdminSignUpPage = () => {
   const handleSubmit = (e) => {
@@ -15,12 +15,12 @@ const AdminSignUpPage = () => {
 
   return (
     <div className='flex h-screen items-center justify-center bg-gradient-to-b from-orange-900'>
-      <div className='pb:0 rounded-[5px] bg-orange-100 p-7 h-[685px] w-[545px] py-[38px] px-[58px] pb-5'>
+      <div className='rounded-[5px] bg-orange-100 p-7 h-[685px] w-[545px] py-[38px] px-[58px] pb-5'>
         <div className='flex w-full justify-center mb-[39px]'>
           <LazyLoadImage
             src='/images/LogoDarkFit.svg'
             alt='logo'
-            className='mb:0 h-[68px] w-[288px]'
+            className='h-[68px] w-[288px]'
           />
         </div>
         <form onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ const AdminSignUpPage = () => {
             placeholder='Place your password here'
             onChange={handleOnChange}
           />
-          <ButtonComponent buttonLabel='Sign up' type='submit' />
+          <Button buttonLabel='Sign up' type='submit' />
         </form>
         <p className='mt-[27px] text-[20px] flex justify-center gap-1 font-bold text-brown-900'>
           Already have an account?
