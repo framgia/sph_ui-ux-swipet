@@ -15,6 +15,7 @@ import TestimonialContent from './pages/components/externalPages/TestimonialExte
 import ThemeProvider from './utilities/contexts/ThemeContext';
 import './i18n';
 import FeatureDetail from './pages/featureDetail';
+import AdminLoginPage from './pages/admin/LoginPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
               <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
               <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
               <Route path='/feature/:name' element={<FeatureDetail />} />
+              <Route path='/admin/login' element={<AdminLoginPage />} />
             </Routes>
           </ScrollToTop>
         </Router>
