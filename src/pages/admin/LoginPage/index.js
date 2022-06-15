@@ -1,8 +1,8 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import ButtonComponent from '../../components/shared/buttonComponent/ButtonComponent';
-import InputField from '../../components/shared/inputField';
+import Button from '../../components/shared/Button';
+import InputField from '../../components/shared/InputField';
 
 const AdminLoginPage = () => {
   const handleSubmit = (e) => {
@@ -40,7 +40,7 @@ const AdminLoginPage = () => {
           <p className='mt-2 flex justify-end font-bold text-brown-900 hover:text-brown-700'>
             <Link to='/admin/forgot-password'>Forgot Password?</Link>
           </p>
-          <ButtonComponent buttonLabel='Login' type='submit' />
+          <Button buttonLabel='Login' type='submit' />
         </form>
         <p className='mt-[27px] flex justify-center gap-1 font-bold text-brown-900'>
           Don’t have an account?
