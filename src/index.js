@@ -16,6 +16,7 @@ import ThemeProvider from './utilities/contexts/ThemeContext';
 import './i18n';
 import FeatureDetail from './pages/featureDetail';
 import AdminLoginPage from './pages/admin/LoginPage';
+import AdminSignUpPage from './pages/admin/SignUpPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,7 @@ root.render(
               <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
               <Route path='/feature/:name' element={<FeatureDetail />} />
               <Route path='/admin/login' element={<AdminLoginPage />} />
+              <Route path='/admin/sign-up' element={<AdminSignUpPage />} />
             </Routes>
           </ScrollToTop>
         </Router>
