@@ -19,10 +19,10 @@ const SideBar = () => {
         <NavLink
           key={index}
           to={item.path}
-          className='items-cente flex py-3 px-5 text-white'
+          className='flex items-center py-3 px-5 text-white'
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          <div className='mr-[17px] h-5 w-5 '>{item.icon}</div>
+          <div className='mr-[17px] mb-[2px] h-5 w-5'>{item.icon}</div>
           <div className='text-xl'>{item.title}</div>
         </NavLink>
       ))}
