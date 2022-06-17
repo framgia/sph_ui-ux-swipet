@@ -17,6 +17,7 @@ import './i18n';
 import FeatureDetail from './pages/featureDetail';
 import AdminLoginPage from './pages/admin/LoginPage';
 import AdminSignUpPage from './pages/admin/SignUpPage';
+import AdminRoute from './pages/admin/AdminRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
               <Route path='/feature/:name' element={<FeatureDetail />} />
               <Route path='/admin/login' element={<AdminLoginPage />} />
               <Route path='/admin/sign-up' element={<AdminSignUpPage />} />
+              <Route path='/admin/*' element={<AdminRoute />} />
             </Routes>
           </ScrollToTop>
         </Router>
