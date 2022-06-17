@@ -54,7 +54,7 @@ const AdminMySettings = () => {
                   </Tab>
                 ))}
               </Tab.List>
-              <Tab.Panels className='mt-3 rounded-md border border-brown-900 py-10 px-10'>
+              <Tab.Panels className='mt-3 rounded-md border border-brown-900 px-10 py-[59px]'>
                 <Tab.Panel>
                   <AdminProfileTab />
                 </Tab.Panel>

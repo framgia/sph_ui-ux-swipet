@@ -31,7 +31,6 @@ const AdminProfileTab = () => {
             onChange={handleOnChange}
           />
         </div>
-
         <div className='grid grid-cols-2 gap-14 px-6'>
           <InputField
             name='First Name'
@@ -48,7 +47,7 @@ const AdminProfileTab = () => {
             onChange={handleOnChange}
           />
         </div>
-        <hr className='my-10 border border-orange-900' />
+        <hr className='mt-10 mb-[46px] border border-orange-900' />
         <div className='text-xl font-bold'>CONTACT INFORMATION</div>
         <div className='px-6'>
           <InputField
@@ -82,7 +81,7 @@ const AdminProfileTab = () => {
             onChange={handleOnChange}
           />
         </div>
-        <hr className='my-10 border border-orange-900' />
+        <hr className='mt-10 mb-[45px] border border-orange-900' />
         <TextArea
           labelText='ABOUT ME'
           htmlFor='aboutme'
@@ -95,7 +94,7 @@ const AdminProfileTab = () => {
         <Button
           type='submit'
           buttonLabel='Update Profile'
-          className='absolute -bottom-36 -left-10 w-[176px]'
+          className='absolute -bottom-44 -left-10 w-[176px]'
         />
       </form>
     </div>
