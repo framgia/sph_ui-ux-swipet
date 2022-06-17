@@ -14,7 +14,7 @@ const AdminAccountTab = () => {
     <div className='relative text-brown-900'>
       <form onSubmit={handleSubmit}>
         <div className='text-xl font-bold'>CHANGE PASSWORD</div>
-        <div className='w-[455px] gap-14 px-6'>
+        <div className='w-[455px] px-6'>
           <InputField
             name='Current Password'
             type='password'
