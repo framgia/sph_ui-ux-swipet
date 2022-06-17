@@ -19,21 +19,18 @@ const AdminAccountTab = () => {
             name='Current Password'
             type='password'
             value='currentPassword'
-            placeholder='*************'
             onChange={handleOnChange}
           />
           <InputField
             name='New Password'
             type='password'
             value='newPassword'
-            placeholder='*************'
             onChange={handleOnChange}
           />
           <InputField
             name='Confirm New Password'
             type='password'
             value='confirmNewPassword'
-            placeholder='*************'
             onChange={handleOnChange}
           />
         </div>
