@@ -1,8 +1,10 @@
 import React, { Fragment, useRef } from 'react';
 import { Tab } from '@headlessui/react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Breadcrumb from '../../components/shared/Breadcrumb';
 import AdminProfileTab from './Profile';
 import AdminAccountTab from './Account';
+import Button from '../../components/shared/Button';
 
 const classNames = (...classes) => classes.filter(Boolean).join(' ');
 
@@ -21,19 +23,18 @@ const AdminMySettings = () => {
         <hr className='mt-3 border border-orange-900' />
         <div className='mx-8 mt-8 flex'>
           <div className='flex flex-col items-center'>
-            <img
+            <LazyLoadImage
               src='/images/Test05.webp'
               className='mb-10 h-[294px] w-[294px] rounded-full'
               alt='profile'
             />
             <div>
               <input type='file' name='image' ref={fileInput} style={{ display: 'none' }} />
-              <button
-                className='rounded-md bg-orange-900 px-5 py-2 font-semibold text-white'
+              <Button
+                className='mt-0 max-h-[43px] w-[140px] rounded-md bg-orange-900 px-5 py-2 text-[16px] font-semibold text-white'
                 onClick={() => fileInput.current.click()}
-              >
-                Upload Photo
-              </button>
+                buttonLabel='Upload Photo'
+              />
             </div>
           </div>
           <div className='mx-11 w-[1000px]'>

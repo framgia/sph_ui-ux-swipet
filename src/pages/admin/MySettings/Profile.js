@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/shared/Button';
 import InputField from '../../components/shared/InputField';
+import TextArea from '../../components/shared/TextArea';
 
 const AdminProfileTab = () => {
   const handleSubmit = (e) => {
@@ -82,15 +83,15 @@ const AdminProfileTab = () => {
           />
         </div>
         <hr className='my-10 border border-orange-900' />
-        <label htmlFor='aboutme' className='flex flex-col text-xl font-bold'>
-          ABOUT ME
-          <textarea
-            id='aboutme'
-            rows='4'
-            className='mx-5 mt-9 rounded-md border border-brown-900 p-5 text-base focus:outline-none'
-            placeholder='Some quick example text'
-          />
-        </label>
+        <TextArea
+          labelText='ABOUT ME'
+          htmlFor='aboutme'
+          labelClassName='flex flex-col text-xl font-bold'
+          id='aboutme'
+          rows='4'
+          textAreaClassName='mx-5 mt-9 rounded-md border border-brown-900 p-5 text-base focus:outline-none'
+          placeholder='About me'
+        />
         <Button
           type='submit'
           buttonLabel='Update Profile'
