@@ -7,10 +7,8 @@ import SideBar from '../components/sidebar';
 
 const AdminRoute = () => (
   <div className='flex'>
-    <nav className='h-screen w-[225px] bg-gradient-to-b from-orange-900 to-mocha-900 pt-6'>
-      <SideBar />
-    </nav>
-    <main>
+    <SideBar />
+    <main className='w-screen p-[35px]'>
       <Routes>
         <Route path='dashboard' element={<AdminDashboard />} />
         <Route path='user-list' element={<AdminUserList />} />
