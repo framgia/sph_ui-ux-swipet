@@ -9,6 +9,7 @@ import informationsEN from './assets/locales/en/informations.json';
 import informationsJP from './assets/locales/jp/informations.json';
 import featuresEN from './assets/locales/en/features.json';
 import featuresJP from './assets/locales/jp/features.json';
+import listOfPlaces from './assets/locales/en/places.json';
 
 i18n
   .use(LanguageDetector)
@@ -21,6 +22,7 @@ i18n
         testimonials: testimonialsEN,
         informations: informationsEN,
         features: featuresEN,
+        places: listOfPlaces,
       },
       jp: {
         translations: translationJP,
