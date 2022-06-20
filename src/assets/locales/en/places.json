@@ -1,0 +1,133 @@
+{
+    "listOfPlaces" : [
+        {
+          "place": "ALCANTARA",
+          "percentage": "0.6%"
+        },
+        {
+          "place": "ALCOY",
+          "percentage": "2.5%"
+        },
+        {
+          "place": "ALEGRIA ",
+          "percentage": "16.2%"
+        },
+        {
+          "place": "ALOGUINSAN",
+          "percentage": "2.1%"
+        },
+        {
+          "place": "ARGAO",
+          "percentage": "0.1%"
+        },
+        {
+          "place": "ASTURIAS",
+          "percentage": "1.6%"
+        },
+        {
+          "place": "BADIAN",
+          "percentage": "1.3%"
+        },
+        {
+          "place": "BALAMBAN",
+          "percentage": "2.3%"
+        },
+      
+          {
+          "place": "BANTAYAN",
+          "percentage": "1.5%"
+        },
+        {
+          "place": "BARILI",
+          "percentage": "2.2%"
+        },
+        {
+          "place": "BASAK",
+          "percentage": "33%"
+        },
+        {
+          "place": "BOLJOON",
+          "percentage": "2.4%"
+        },
+        {
+          "place": "BORBON",
+          "percentage": "11.4%"
+        },
+        {
+          "place": "Cabadiangan",
+          "percentage": "1.8%"
+        },
+        {
+          "place": "CARMEN",
+          "percentage": "2.2%"
+        },
+        {
+          "place": "CARCAR",
+          "percentage": "12%"
+        },
+        {
+          "place": "CATMON",
+          "percentage": "2.1%"
+        },
+        {
+          "place": "Cabil-isan",
+          "percentage": "1.5%"
+        },
+        {
+          "place": "CONSOLACION",
+          "percentage": "4.1%"
+        },
+        {
+          "place": "CORDOVA",
+          "percentage": "14.7%"
+        },
+        {
+          "place": "Candabong",
+          "percentage": "2.2%"
+        },
+        {
+          "place": "COMPOSTELA",
+          "percentage": "0.6%"
+        },
+        {
+          "place": "DAANBANTAYAN",
+          "percentage": "2.5%"
+        },
+        {
+          "place": "DALAGUETE",
+          "percentage": "16.2%"
+        },
+        {
+          "place": "DUMANJUG",
+          "percentage": "2.1%"
+        },
+        {
+          "place": "GINATILAN",
+          "percentage": "0.1%"
+        },
+        {
+          "place": "LILOAN",
+          "percentage": "1.6%"
+        },
+        {
+          "place": "Lawaan",
+          "percentage": "25%"
+        },
+        {
+          "place": "MADRIDEJOS",
+          "percentage": "2.3%"
+        },
+        {
+          "place": "MANDAUE",
+          "percentage": "1.5%"
+        },
+        {
+          "place": "MALABUYOC",
+          "percentage": "2.2%"
+        },
+        {
+          "place": "Manga",
+          "percentage": "1.6%"
+        }
+      ]
+}

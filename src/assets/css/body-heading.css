@@ -5,3 +5,6 @@
 .heading-size {
   @apply text-4xl sm:text-5xl 2xl:text-6xl;
 }
+.ReactModal__Overlay--after-open {
+  @apply bg-dark-ash-700 opacity-75 !important;
+}
