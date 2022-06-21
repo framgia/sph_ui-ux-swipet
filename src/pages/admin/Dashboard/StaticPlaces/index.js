@@ -3,6 +3,9 @@ import Modal from 'react-modal';
 import DotsHorizontalIcon from '../../../components/icons/DotsHorizontalIcon';
 import LocationIcon from '../../../components/icons/LocationIcon';
 import PlacesContent from './PlacesContent';
+import PlacesStaticAnalytics from './PlacesStaticAnalytics';
+import PlacePercentage from './PlacePercentage';
+import CaretDown from '../../../components/icons/CaretDown';
 
 const AdminStaticPlaces = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -35,8 +38,22 @@ const AdminStaticPlaces = () => {
   );
 
   return (
-    <div>
-      <button onClick={openModal}>Open Modal</button>
+    <div className='flex h-[345px] w-[750px] flex-col justify-center rounded-lg bg-navy-100 p-[23px]'>
+      <div className='flex justify-between font-bold'>
+        <div className='text-[16px]'>Location</div>
+        <button
+          className='flex items-center justify-center text-[12px] text-[#A3AED0]'
+          onClick={openModal}
+        >
+          Cebu <CaretDown fill='#A3AED0' />
+        </button>
+      </div>
+      <div className='h-[250px] w-full'>
+        <PlacesStaticAnalytics />
+      </div>
+      <div className='flex h-[75px] w-full items-center justify-center rounded-[15px] bg-white'>
+        <PlacePercentage />
+      </div>
       {modal}
     </div>
   );
