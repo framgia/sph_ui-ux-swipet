@@ -6,8 +6,8 @@ const AnalyticsOfUsers = () => {
 
   return (
     <Fragment>
-      <div className='flex h-[373px] gap-[200px] rounded-lg bg-navy-100'>
-        <div className='w-[1059px]'>
+      <div className='flex h-[373px] w-full gap-[100px] rounded-lg bg-[#E4EBEF]'>
+        <div className='w-[1300px]'>
           <h1 className='flex justify-center pt-[13px] text-[32px] font-semibold'>
             Analytics of Users
           </h1>

@@ -38,7 +38,7 @@ const AdminStaticPlaces = () => {
   );
 
   return (
-    <div className='flex h-[345px] w-[750px] flex-col justify-center rounded-lg bg-navy-100 p-[23px]'>
+    <div className='flex h-[345px] w-[331px] flex-col justify-center rounded-lg bg-[#E4EBEF] p-[23px]'>
       <div className='flex justify-between font-bold'>
         <div className='text-[16px]'>Location</div>
         <button

@@ -10,6 +10,7 @@ import informationsJP from './assets/locales/jp/informations.json';
 import featuresEN from './assets/locales/en/features.json';
 import featuresJP from './assets/locales/jp/features.json';
 import listOfPlaces from './assets/locales/en/places.json';
+import adminSummaries from './assets/locales/en/adminFeatures.json';
 
 i18n
   .use(LanguageDetector)
@@ -23,6 +24,7 @@ i18n
         informations: informationsEN,
         features: featuresEN,
         places: listOfPlaces,
+        adminFeatures: adminSummaries,
       },
       jp: {
         translations: translationJP,

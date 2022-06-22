@@ -5,6 +5,9 @@ import DogIcon from '../icons/DogIcon';
 import CatIcon from '../icons/CatIcon';
 import PetParentIcon from '../icons/PetParentIcon';
 import PetMatchIcon from '../icons/PetMatchIcon';
+import DogAndCatIcon from '../icons/DogAndCatIcon';
+import PaperIcon from '../icons/PaperIcon';
+import InternetIcon from '../icons/InternetIcon';
 
 const SummaryCard = ({ summary }) => {
   const { ref, inView } = useInView();
@@ -21,6 +24,12 @@ const SummaryCard = ({ summary }) => {
         return <PetParentIcon />;
       case 'match':
         return <PetMatchIcon />;
+      case 'dogAndCat':
+        return <DogAndCatIcon />;
+      case 'paper':
+        return <PaperIcon />;
+      case 'internet':
+        return <InternetIcon />;
       default:
         return null;
     }
