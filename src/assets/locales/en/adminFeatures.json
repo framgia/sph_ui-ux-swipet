@@ -1,0 +1,24 @@
+{
+    "adminSummaries": [
+        {
+            "name": "dogAndCat",
+            "count": 17000,
+            "title": "Number of Approval of Adoption"
+        },
+        {
+            "name": "paper",
+            "count": 6000,
+            "title": "Number of Pending Adoption process"
+        },
+        {
+            "name": "petparent",
+            "count": 64000,
+            "title": "Total Numbers of Pets that have been Adopted"
+        },
+        {
+            "name": "internet",
+            "count": 10003,
+            "title": "Total of Visit"
+        }
+    ]
+}
