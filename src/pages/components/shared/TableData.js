@@ -15,13 +15,13 @@ const TableData = ({
 }) => (
   <table className={tableStyle}>
     <thead className={tHeadStyle}>
-      {tableHeaderNames.map((header, idx) => (
-        <td key={idx} className={tDStyle}>
-          <div>
-            <div>{header.title}</div>
-          </div>
-        </td>
-      ))}
+      <tr>
+        {tableHeaderNames.map((header, idx) => (
+          <td key={idx} className={tDStyle}>
+            {header.title}
+          </td>
+        ))}
+      </tr>
     </thead>
     <tbody>
       {renderTableData()}

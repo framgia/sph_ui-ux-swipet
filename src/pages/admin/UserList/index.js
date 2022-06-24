@@ -9,7 +9,7 @@ const AdminUserList = () => (
       <Breadcrumb text='Dashboard' to='/admin/dashboard' />
       <Breadcrumb text='User List' last />
     </div>
-    <p1 className='text-2xl font-bold text-brown-900'>Users List</p1>
+    <h1 className='text-2xl font-bold text-brown-900'>Users List</h1>
     <hr className='border-orange-900' />
     <div className='mt-[30px] flex flex-col gap-[32px]'>
       <SearchBar />
