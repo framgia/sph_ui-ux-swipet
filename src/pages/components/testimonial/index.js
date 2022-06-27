@@ -8,7 +8,7 @@ import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
 
-const Testimonial = ({ testimonialCaption, isMain = true, gallery = {} }) => {
+const Testimonial = ({ testimonialCaption, isMain = true, gallery = {}, getLink }) => {
   const { t } = useTranslation();
   let sliderRef = useRef < Slider > null;
 
@@ -69,7 +69,9 @@ const Testimonial = ({ testimonialCaption, isMain = true, gallery = {} }) => {
         >
           {list.map(
             (item, index) =>
-              name !== item.author && <TestimonialCard key={index} item={item} isMain={isMain} />,
+              name !== item.author && (
+                <TestimonialCard key={index} item={item} isMain={isMain} onGetLink={getLink} />
+              ),
           )}
         </Slider>
         {/* Controls */}

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TestimonialCard = ({ item, isMain }) => (
+const TestimonialCard = ({ item, isMain, onGetLink }) => (
   <figure className='relative py-5 pr-5 pb-5 duration-700 hover:scale-105'>
-    <Link to={`/swipet-journeys/${item.author}`} target='none'>
+    <Link to={`/${onGetLink}/${item.author}`} target='none'>
       {/* Image */}
       <img
         className='h-[183px] w-full rounded-lg  object-cover drop-shadow-md md:h-[218px] lg:h-[186px] xl:h-[390px]'

@@ -36,6 +36,7 @@ const FeatureDetail = () => {
             isMain={false}
             gallery={availablePets}
             testimonialCaption={t('testimonialsHeading')}
+            getLink='pet-info'
           />
         );
       default:

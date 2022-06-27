@@ -18,6 +18,7 @@ import FeatureDetail from './pages/featureDetail';
 import AdminLoginPage from './pages/admin/LoginPage';
 import AdminSignUpPage from './pages/admin/SignUpPage';
 import AdminRoute from './pages/admin/AdminRoute';
+import PetsInfoContent from './pages/components/externalPages/PetsInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,7 @@ root.render(
               <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
               <Route path='/swipet-journeys/:name' element={<TestimonialContent />} />
               <Route path='/feature/:name' element={<FeatureDetail />} />
+              <Route path='/pet-info/:petName' element={<PetsInfoContent />} />
               <Route path='/admin/login' element={<AdminLoginPage />} />
               <Route path='/admin/sign-up' element={<AdminSignUpPage />} />
               <Route path='/admin/*' element={<AdminRoute />} />
