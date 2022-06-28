@@ -4,7 +4,7 @@ import FactsAboutPetInfo from './FactsAboutPetInfo';
 
 const PetsDetails = ({ getData }) => (
   <div>
-    <h1 className='mb-[70px] text-[48px] font-semibold text-brown-900'>
+    <h1 className='mb-[70px] text-[48px] font-semibold text-brown-900 dark:text-white'>
       Hi my name is <span className='text-[64px] font-bold text-orange-900'>{getData.author}</span>
     </h1>
     <div className='mb-[132px] flex justify-center gap-[64px]'>
