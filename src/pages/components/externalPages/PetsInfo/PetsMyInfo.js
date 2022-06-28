@@ -7,7 +7,7 @@ const PetsMyInfo = ({ getData }) => (
     <div className='grid grid-flow-col grid-rows-3 gap-4 pl-[64px] pb-[123px] text-[16px] font-bold'>
       {getData.map((item, idx) => (
         <div className='flex gap-[9px]' key={idx}>
-          <CheckCircledIcon /> <span>{item.item}</span>
+          <CheckCircledIcon /> <span>{item}</span>
         </div>
       ))}
     </div>
