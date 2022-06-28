@@ -2,17 +2,14 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useParams } from 'react-router-dom';
 import { Trans, useTranslation } from 'react-i18next';
 import PreviousIcon from '../icons/PreviousIcon';
 import NextIcon from '../icons/NextIcon';
 import TestimonialCard from './TestimonialCard';
 
-const Testimonial = ({ testimonialCaption, isMain = true, gallery = {}, getLink }) => {
+const Testimonial = ({ testimonialCaption, isMain = true, gallery = {}, getLink, name }) => {
   const { t } = useTranslation();
   let sliderRef = useRef < Slider > null;
-
-  const { name } = useParams('name');
 
   const list = isMain ? t('testimonials', { ns: 'testimonials' }) : gallery;
 

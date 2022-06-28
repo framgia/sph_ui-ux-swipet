@@ -27,7 +27,11 @@ const TestimonialContent = () => {
           <Chatbot colorScheme={colorScheme} />
           <TestimonialHeaderContent item={authorData} colorScheme={colorScheme} />
           <TestimonialContentTemplate description={authorData} colorScheme={colorScheme} />
-          <Testimonial testimonialCaption={t('testimonialHeading2')} getLink='swipet-journeys' />
+          <Testimonial
+            testimonialCaption={t('testimonialHeading2')}
+            getLink='swipet-journeys'
+            name={authorData.author}
+          />
           <FooterContent />
           <CookiePolicy />
         </>
