@@ -26,6 +26,7 @@ const PetsInfoContent = () => {
         gallery={availablePets}
         testimonialCaption={t('testimonialsHeading')}
         getLink='pet-info'
+        name={PetData.author}
       />
       <FooterSection />
       <CookiePolicy />
