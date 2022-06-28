@@ -15,7 +15,7 @@ const Home = () => {
       <MainHeadline colorScheme={colorScheme} isHome />
       <Chatbot colorScheme={colorScheme} />
       <FeatureSection hasHeading isHome />
-      <Testimonial />
+      <Testimonial getLink='swipet-journeys' />
       <FooterSection />
       <CookiePolicy />
     </div>
